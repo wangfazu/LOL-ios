@@ -1,0 +1,13 @@
+<page>
+    <NavigationBar back="true" title="适合英雄"/>
+    <GridView key="grid_view" width="match_parent" height="match_parent" numColumns="2" lineSpace="12">
+        <Item width="match_parent" height="56" reuseIdentifier="HeroItemCellIdentifierNew">
+            <RelativeContainer width="match_parent" height="56">
+                <Image key="hero_head" width="48" height="48" src="default_hero_head" isCircle="true" data="url" borderWidth="1" borderColor="0xd3bf8d"/>
+                <Label width="wrap_content" height="wrap_content" textColor="0x121212" textSize="13" data="nick" margin_left="56"/>
+                <Label textColor="0x646464" textSize="12" data="name" margin_left="56" alignCenterVertical="@key/hero_head"/>
+                <Label textColor="0xbd9955" textSize="11" data="tag" margin_left="56" alignBottom="@key/hero_head"/>
+            </RelativeContainer>
+        </Item>
+    </GridView>
+</page>

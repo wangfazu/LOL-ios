@@ -1,0 +1,14 @@
+<page>
+    <NavigationBar back="true" title="物品资料"/>
+    <SearchBar key="search_bar"/>
+    <FilterView key="filter_view" default_titles="全部地图,全部物品"/>
+    <GridView key="grid_view" width="match_parent" height="match_parent" numColumns="5" lineSpace="8">
+        <Item width="48" height="90" reuseIdentifier="GoodItemCollectionViewCell">
+            <LinearContainer width="48" height="90" orientation="纵向">
+                <Image width="48" height="48" src="default_hero_head" data="url"/>
+                <Label width="match_parent" height="wrap_content" data="name" numberOfLines="2" textSize="12" textColor="0x121212"/>
+            </LinearContainer>
+        </Item>
+    </GridView>
+</page>
+

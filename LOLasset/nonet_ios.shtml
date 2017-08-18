@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html> 
+<head> 
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+    <title>网络连结不可用</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <style>
+			/*---- global.css begin----*/
+			html, body, div, span,applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dd, dl, dt, li, ol, ul, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {margin:0;padding:0;}
+			html,body{background:#fff;}
+			body{font:normal normal normal 12px/1.5em Arial, Helvetica,"\5B8B\4F53";text-align: center;height:100%;word-break : break-all;font-family:"\5FAE\8F6F\96C5\9ED1","\5B8B\4F53";}
+			div {text-align:left;}
+			h1,h2,h3,h4,h5,h6{font-size:100%;}
+			a{text-decoration: none;color:#007bca;}
+			a:hover{text-decoration: none;}
+			a:active,a:focus{outline:none;}
+			q:before, q:after {   content: '';   }    
+			abbr, acronym {  border: 0; }
+			::-moz-selection {color:#FFFFFF;background-color:#209EEB;}
+			img{border: none;}
+			fieldset{border-style: none }
+			label,button{cursor: pointer;}
+			select,input,textarea{font-size:12px;line-height:1.2em;}
+			.clearfix:before,.clearfix:after{clear:both;content:'.';display:block;height:0;visibility:hidden;line-height:0;}
+			.clearfix{*zoom:1;}
+			.fix{word-break:keep-all;overflow:hidden;text-overflow:ellipsis;}
+			.clear{font-size:0;line-height:0;height:0;clear:both;overflow: hidden;display: block;}
+			.none{display:none;}
+
+			html,body{background:#efeff4;color:#726f6f;}
+			.box_error .hd{padding:20px 18px;border-bottom:1px solid #cdcdd0;}
+			.box_error .hd h1{font-size:14px;font-weight:bold;line-height:24px;}
+			.box_error .bd{padding:18px 18px;}
+			.box_error .bd h3{font-size:14px;line-height:20px;padding:10px 0;font-weight:normal;}
+			.box_error .bd ul{padding-left:36px;}
+			.box_error .bd li{font-size:14px;line-height:24px;}
+    </style>
+</head> 
+<body>
+	<div class="box_error">
+		<div class="hd">
+			<h1>你的设备未启用移动网络或Wi-Fi网络</h1>
+		</div>
+		<div class="bd">
+			<h3>如需要连接到互联网，可以参照以下方法：</h3>
+			<ul>
+				<li>在设备的“<strong>设置</strong>”-“<strong>Wi-Fi网络</strong>”设置面板中选择一个可用的Wi-Fi热点接入。</li>
+				<li>在设备的“<strong>设置</strong>”-“<strong>通用</strong>”-“<strong>网络</strong>”设置面板中启用<strong>蜂窝数据</strong>（启用后运营商可能会收取数据通讯费用）。</li>
+			</ul>
+			<h3>如要你已接入Wi-Fi网络：</h3>
+			<ul>
+				<li>请检查你所连接的Wi-Fi热点是否已接入互联网，或该热点是否已允许你的设备访问互联网。</li>
+			</ul>
+            <h3>如要你的手机是iOS10系统并且首次安装掌上英雄联盟：</h3>
+            <ul>
+                <li>在设备的“<strong>设置</strong>”-“<strong>蜂窝移动网络</strong>”-“<strong>使用无线局域网与蜂窝移动的应用</strong>“</li>
+                <li>在列表中任意选择一个App，先关闭“无线局域网与蜂窝移动数据“，即不允许其使用数据。然后再重新打开允许使用“无线局域网与蜂窝移动数据”。</li>
+                <li>返回桌面，再次打开掌上英雄联盟，这时候系统会提示“是否允许App使用数据网络”，点击“允许”，即可顺利联网使用。</li>
+            </ul>
+        </div>
+	</div>
+</body>
+</html>

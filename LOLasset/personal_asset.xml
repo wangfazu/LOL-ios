@@ -1,0 +1,7 @@
+<view width="match_parent" height="45" type="horizontal">
+    <GoldArrow y="center"/>
+    <label text="余额" color="@Color_Text_Main" left_gap="1" y="center"/>
+    <!--<label text="点券 @coin    金币 @money" color="0xbd9955" left_gap="1" y="center"/>
+    <label text="余额" color="0x959494"/>
+    <image type="right_arrow"/>-->
+</view>
