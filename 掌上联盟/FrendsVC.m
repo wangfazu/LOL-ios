@@ -14,15 +14,6 @@
 
 @implementation FrendsVC
 
-- (instancetype)init
-{
-    self = [super init];
-    if (self) {
-//        [self setTabBarWithImgNomal:@"tab_icon_friend_normal" imgSelected:@"tab_icon_friend_press" tabBarItem:@"朋友"];
-
-    }
-    return self;
-}
 
 - (void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];
@@ -31,8 +22,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.title = @"朋友";
-    // Do any additional setup after loading the view.
+
 }
 
 - (void)didReceiveMemoryWarning {

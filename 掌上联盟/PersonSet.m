@@ -1,31 +1,37 @@
 //
-//  MineVC.m
+//  PersonSet.m
 //  LOL
 //
-//  Created by mac on 17/8/18.
+//  Created by mac on 17/8/21.
 //  Copyright © 2017年 mac. All rights reserved.
 //
 
-#import "MineVC.h"
+#import "PersonSet.h"
 
-@interface MineVC ()
+@interface PersonSet ()
 
 @end
 
-@implementation MineVC
-- (void)viewWillAppear:(BOOL)animated{
-    [super viewWillAppear:animated];
-
-
+@implementation PersonSet
+{
+    UIView *bgView ;
 }
-
-
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.title = @"我的";
-    // Do any additional setup after loading the view.
+    //添加背景图片
+    [self.view addSubview:[self bgView]];
+
+    
 }
 
+- (UIView *)bgView{
+    if (!bgView) {
+        bgView = [[UIView alloc]initWithFrame:CGRectMake(280, 0, APPWidth-280, APPHeight)];
+        bgView.backgroundColor = [UIColor redColor];
+    }
+    return bgView;
+    
+}
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.

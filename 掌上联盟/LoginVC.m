@@ -65,39 +65,55 @@
     
     [self setUpMainView];
 }
+
 - (void)setUpMainView{
     //进入主界面，先验证，再进入
     UITabBarController *tabBar = [[UITabBarController alloc]init];
+    tabBar.tabBar.tintColor = UIColorFromRGB(0xaf883c);
     
     MessageVC *mesVc = [[MessageVC alloc]init];;
     FrendsVC *frendsVc = [[FrendsVC alloc]init];;
-    [frendsVc setTabBarWithImgNomal:@"tab_icon_friend_normal" imgSelected:@"tab_icon_friend_press" tabBarItem:@"朋友"];
     ShopVC *shopVc = [[ShopVC alloc]init];
     FindVC *findVc = [FindVC new];
     MineVC *mineVc = [MineVC new];
+    PersonSet *personSetVc = [PersonSet new];
     
-    vcArr = [[NSArray alloc]initWithObjects:@"mesVc",@"frendsVc",@"shopVc",@"findVc",@"findVc",@"mineVc", nil];
-    img1Arr = [[NSArray alloc]initWithObjects:@"",@"",@"",@"",@"",@"", nil];
-    img2Arr = [[NSArray alloc]initWithObjects:@"",@"",@"",@"",@"",@"", nil];
-    tabItemArr = [[NSArray alloc]initWithObjects:@"",@"",@"",@"",@"",@"", nil];
+    
+    vcArr = [[NSArray alloc]initWithObjects:
+             mesVc,
+             frendsVc,
+             shopVc,
+             findVc,
+             mineVc, nil];
+    img1Arr = [[NSArray alloc]initWithObjects:
+               @"tab_icon_news_normal",
+               @"tab_icon_friend_normal",
+               @"tab_icon_mobile_store_normal",
+               @"tab_icon_quiz_normal",
+               @"tab_icon_more_normal", nil];
+    img2Arr = [[NSArray alloc]initWithObjects:
+               @"tab_icon_news_press",
+               @"tab_icon_friend_press",
+               @"tab_icon_mobile_store_press",
+               @"tab_icon_quiz_press",
+               @"tab_icon_more_press", nil];
+    tabItemArr = [[NSArray alloc]initWithObjects:
+                  @"资讯",
+                  @"好友",
+                  @"商城",
+                  @"发现",
+                  @"我", nil];
     //加载tabbar 上的选择图片
     for (int i = 0; i<5; i++) {
         [vcArr[i] setTabBarWithImgNomal:img1Arr[i] imgSelected:img2Arr[i] tabBarItem:tabItemArr[i]];
+        [tabBar addChildViewController:[[UINavigationController alloc]initWithRootViewController:vcArr[i]]];
     }
+    
+    //DDmenu实现侧滑的效果
+    DDMenuController *dm=[[DDMenuController alloc]initWithRootViewController:tabBar];
+    dm.leftViewController = personSetVc;
 
-    UINavigationController *mesNav = [[UINavigationController alloc]initWithRootViewController:mesVc];
-    UINavigationController *frendNav = [[UINavigationController alloc]initWithRootViewController:frendsVc];
-    UINavigationController *shopNav = [[UINavigationController alloc]initWithRootViewController:shopVc];
-    UINavigationController *findNav = [[UINavigationController alloc]initWithRootViewController:findVc];
-    UINavigationController *mineNav = [[UINavigationController alloc]initWithRootViewController:mineVc];
-    
-    [tabBar addChildViewController:mesNav];
-    [tabBar addChildViewController:frendNav];
-    [tabBar addChildViewController:shopNav];
-    [tabBar addChildViewController:findNav];
-    [tabBar addChildViewController:mineNav];
-    
-    [[[UIApplication sharedApplication]delegate]window].rootViewController =tabBar;
+    [[[UIApplication sharedApplication]delegate]window].rootViewController = dm;
 }
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

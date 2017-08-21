@@ -16,7 +16,7 @@
 
 - (void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];
-    [self setTabBarWithImgNomal:@"tab_icon_news_normal" imgSelected:@"tab_icon_news_press" tabBarItem:@"资讯"];
+
 
 }
 

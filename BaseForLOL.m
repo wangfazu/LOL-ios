@@ -13,17 +13,17 @@
 @end
 
 @implementation BaseForLOL
-
+- (void)viewWillAppear:(BOOL)animated{
+    
+    [super viewWillAppear:YES];
+    self.navigationController.navigationBarHidden = YES;
+    [self preferredStatusBarStyle];//将状态栏，改变为白色
+}
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
 }
-- (void)viewWillAppear:(BOOL)animated{
-    
-    [super viewWillAppear:YES];
-    self.navigationController.navigationBarHidden = NO;
-    [self preferredStatusBarStyle];//将状态栏，改变为白色
-}
+
 #pragma mark - 自定义导航栏
 -(void)setNavgationBarItemName:(NSString *)setString{
     _titleview= [[UIView alloc]initWithFrame:CGRectMake(0, 0, APPWidth, 64)];

@@ -15,7 +15,7 @@
 @implementation ShopVC
 - (void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];
-    [self setTabBarWithImgNomal:@"tab_icon_mobile_store_normal" imgSelected:@"tab_icon_mobile_store_press" tabBarItem:@"商城"];
+
 
 }
 

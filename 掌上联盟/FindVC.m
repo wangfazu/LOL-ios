@@ -15,7 +15,6 @@
 @implementation FindVC
 - (void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];
-    [self setTabBarWithImgNomal:@"tab_icon_quiz_normal" imgSelected:@"tab_icon_quiz_press" tabBarItem:@"发现"];
 
 }
 

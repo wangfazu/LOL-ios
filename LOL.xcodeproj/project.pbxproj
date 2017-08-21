@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		042818C11F46C9160033413F /* LLGifImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 042818BE1F46C9160033413F /* LLGifImageView.m */; };
 		042818C21F46C9160033413F /* LLGifView.m in Sources */ = {isa = PBXBuildFile; fileRef = 042818C01F46C9160033413F /* LLGifView.m */; };
-		042818C41F46CC680033413F /* login_quick_btn_normal.gif in Resources */ = {isa = PBXBuildFile; fileRef = 042818C31F46CC680033413F /* login_quick_btn_normal.gif */; };
 		04281EC41F46E36A0033413F /* CodeResources in Resources */ = {isa = PBXBuildFile; fileRef = 042818C71F46E35B0033413F /* CodeResources */; };
 		04281EC51F46E36A0033413F /* ability_lol_hero_time@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 042818C81F46E35B0033413F /* ability_lol_hero_time@2x.png */; };
 		04281EC61F46E36A0033413F /* add_friend_nearby@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 042818C91F46E35B0033413F /* add_friend_nearby@2x.png */; };
@@ -1539,6 +1538,8 @@
 		042824BA1F46E36A0033413F /* WsjPaySDKResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 04281EC21F46E36A0033413F /* WsjPaySDKResources.bundle */; };
 		042824BB1F46E36A0033413F /* yellow_clock_icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 04281EC31F46E36A0033413F /* yellow_clock_icon@2x.png */; };
 		042824FC1F46E4170033413F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 042824FB1F46E4170033413F /* Assets.xcassets */; };
+		045435C11F4A8B9600FEEA40 /* DDMenuController.m in Sources */ = {isa = PBXBuildFile; fileRef = 045435C01F4A8B9600FEEA40 /* DDMenuController.m */; };
+		045435C41F4A8D1000FEEA40 /* PersonSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 045435C31F4A8D1000FEEA40 /* PersonSet.m */; };
 		0472AB271F46A74E00B654E0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0472AB261F46A74E00B654E0 /* main.m */; };
 		0472AB2A1F46A74E00B654E0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0472AB291F46A74E00B654E0 /* AppDelegate.m */; };
 		0472AB301F46A74E00B654E0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0472AB2E1F46A74E00B654E0 /* Main.storyboard */; };
@@ -1577,7 +1578,6 @@
 		042818BE1F46C9160033413F /* LLGifImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LLGifImageView.m; sourceTree = "<group>"; };
 		042818BF1F46C9160033413F /* LLGifView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LLGifView.h; sourceTree = "<group>"; };
 		042818C01F46C9160033413F /* LLGifView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LLGifView.m; sourceTree = "<group>"; };
-		042818C31F46CC680033413F /* login_quick_btn_normal.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = login_quick_btn_normal.gif; path = "掌上联盟/Assets.xcassets/LOLasset/login_quick_btn_normal.dataset/login_quick_btn_normal.gif"; sourceTree = "<group>"; };
 		042818C71F46E35B0033413F /* CodeResources */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = CodeResources; sourceTree = "<group>"; };
 		042818C81F46E35B0033413F /* ability_lol_hero_time@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ability_lol_hero_time@2x.png"; sourceTree = "<group>"; };
 		042818C91F46E35B0033413F /* add_friend_nearby@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "add_friend_nearby@2x.png"; sourceTree = "<group>"; };
@@ -3107,6 +3107,10 @@
 		04281EC21F46E36A0033413F /* WsjPaySDKResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = WsjPaySDKResources.bundle; sourceTree = "<group>"; };
 		04281EC31F46E36A0033413F /* yellow_clock_icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "yellow_clock_icon@2x.png"; sourceTree = "<group>"; };
 		042824FB1F46E4170033413F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		045435BF1F4A8B9600FEEA40 /* DDMenuController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDMenuController.h; sourceTree = "<group>"; };
+		045435C01F4A8B9600FEEA40 /* DDMenuController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDMenuController.m; sourceTree = "<group>"; };
+		045435C21F4A8D1000FEEA40 /* PersonSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonSet.h; sourceTree = "<group>"; };
+		045435C31F4A8D1000FEEA40 /* PersonSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonSet.m; sourceTree = "<group>"; };
 		0472AB221F46A74E00B654E0 /* LOL.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LOL.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0472AB261F46A74E00B654E0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		0472AB281F46A74E00B654E0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -3164,7 +3168,7 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		042818BC1F46C9160033413F /* LLGifView */ = {
+		042818BC1F46C9160033413F /* LLGifView(GIF) */ = {
 			isa = PBXGroup;
 			children = (
 				042818BD1F46C9160033413F /* LLGifImageView.h */,
@@ -3172,6 +3176,7 @@
 				042818BF1F46C9160033413F /* LLGifView.h */,
 				042818C01F46C9160033413F /* LLGifView.m */,
 			);
+			name = "LLGifView(GIF)";
 			path = LLGifView;
 			sourceTree = "<group>";
 		};
@@ -4668,7 +4673,8 @@
 				04281EC21F46E36A0033413F /* WsjPaySDKResources.bundle */,
 				04281EC31F46E36A0033413F /* yellow_clock_icon@2x.png */,
 			);
-			path = LOLasset;
+			name = LOLasset;
+			path = ../LOLasset;
 			sourceTree = "<group>";
 		};
 		042818C61F46E35B0033413F /* _CodeSignature */ = {
@@ -4742,11 +4748,27 @@
 			path = SC_Info;
 			sourceTree = "<group>";
 		};
+		045435BE1F4A8B4600FEEA40 /* DDmenu(侧滑栏) */ = {
+			isa = PBXGroup;
+			children = (
+				045435BF1F4A8B9600FEEA40 /* DDMenuController.h */,
+				045435C01F4A8B9600FEEA40 /* DDMenuController.m */,
+			);
+			name = "DDmenu(侧滑栏)";
+			sourceTree = "<group>";
+		};
+		045435C51F4A93DE00FEEA40 /* PersonSet */ = {
+			isa = PBXGroup;
+			children = (
+				045435C21F4A8D1000FEEA40 /* PersonSet.h */,
+				045435C31F4A8D1000FEEA40 /* PersonSet.m */,
+			);
+			name = PersonSet;
+			sourceTree = "<group>";
+		};
 		0472AB191F46A74E00B654E0 = {
 			isa = PBXGroup;
 			children = (
-				042818C51F46E35B0033413F /* LOLasset */,
-				042818C31F46CC680033413F /* login_quick_btn_normal.gif */,
 				0472AB581F46A8E700B654E0 /* PrefixHeader.pch */,
 				0472AB5C1F46AB8000B654E0 /* BaseForLOL.h */,
 				0472AB5D1F46AB8000B654E0 /* BaseForLOL.m */,
@@ -4775,6 +4797,7 @@
 				0472AB791F46C87D00B654E0 /* SDK */,
 				0472AB5F1F46ACA300B654E0 /* Main */,
 				0472AB651F46ADB700B654E0 /* other */,
+				042818C51F46E35B0033413F /* LOLasset */,
 				0472AB251F46A74E00B654E0 /* Supporting Files */,
 			);
 			name = LOL;
@@ -4813,6 +4836,7 @@
 			isa = PBXGroup;
 			children = (
 				0472AB751F46AEF700B654E0 /* LoginMainView */,
+				045435C51F4A93DE00FEEA40 /* PersonSet */,
 				0472AB601F46AD3000B654E0 /* message */,
 				0472AB611F46AD4000B654E0 /* frends */,
 				0472AB621F46AD4B00B654E0 /* shop */,
@@ -4892,7 +4916,8 @@
 		0472AB791F46C87D00B654E0 /* SDK */ = {
 			isa = PBXGroup;
 			children = (
-				042818BC1F46C9160033413F /* LLGifView */,
+				042818BC1F46C9160033413F /* LLGifView(GIF) */,
+				045435BE1F4A8B4600FEEA40 /* DDmenu(侧滑栏) */,
 			);
 			name = SDK;
 			sourceTree = "<group>";
@@ -5954,7 +5979,6 @@
 				04281F871F46E36A0033413F /* chat_detail_plus_nor@2x.png in Resources */,
 				0428249B1F46E36A0033413F /* wall_paper_tab_has_enshrine_view_normal@2x.png in Resources */,
 				0428234F1F46E36A0033413F /* smiley_16@2x.png in Resources */,
-				042818C41F46CC680033413F /* login_quick_btn_normal.gif in Resources */,
 				0428207C1F46E36A0033413F /* good_data_view_down_arrow@2x.png in Resources */,
 				0428248B1F46E36A0033413F /* video_play_news_cell_mark@2x.png in Resources */,
 				042823C71F46E36A0033413F /* subscribe_match_recommend_tip_bg@2x.png in Resources */,
@@ -6562,6 +6586,8 @@
 				042818C21F46C9160033413F /* LLGifView.m in Sources */,
 				0472AB5B1F46AA1500B654E0 /* UIView+Frame.m in Sources */,
 				0472AB741F46AEC200B654E0 /* MineVC.m in Sources */,
+				045435C11F4A8B9600FEEA40 /* DDMenuController.m in Sources */,
+				045435C41F4A8D1000FEEA40 /* PersonSet.m in Sources */,
 				0472AB2A1F46A74E00B654E0 /* AppDelegate.m in Sources */,
 				042818C11F46C9160033413F /* LLGifImageView.m in Sources */,
 				0472AB681F46AE0700B654E0 /* MessageVC.m in Sources */,
