@@ -14,7 +14,7 @@
 
 @implementation PersonSet
 {
-    UIView *bgView ;
+    UIImageView *bgImgV ;
 }
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -25,11 +25,11 @@
 }
 
 - (UIView *)bgView{
-    if (!bgView) {
-        bgView = [[UIView alloc]initWithFrame:CGRectMake(280, 0, APPWidth-280, APPHeight)];
-        bgView.backgroundColor = [UIColor redColor];
+    if (!bgImgV) {
+        bgImgV = [[UIImageView alloc]initWithFrame:CGRectMake(0, 0, APPWidth, APPHeight)];
+        bgImgV.image = [UIImage imageNamed:@"twoDimension_view_background" ];
     }
-    return bgView;
+    return bgImgV;
     
 }
 - (void)didReceiveMemoryWarning {

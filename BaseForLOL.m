@@ -26,17 +26,18 @@
 
 #pragma mark - 自定义导航栏
 -(void)setNavgationBarItemName:(NSString *)setString{
-    _titleview= [[UIView alloc]initWithFrame:CGRectMake(0, 0, APPWidth, 64)];
-    [self.view addSubview: _titleview];
-    _titleview.backgroundColor = UIColorFromRGB(0x43d3a2);
+    _titleImgV= [[UIImageView alloc]initWithFrame:CGRectMake(0, 0, APPWidth, 64)];
+    [self.view addSubview: _titleImgV];
+    _titleImgV.backgroundColor = UIColorFromRGB(0x43d3a2);
+    _titleImgV.image = [UIImage imageNamed:@"personal_info_share_back_ground"];
     
     _lab  = [[UILabel alloc]initWithFrame:CGRectMake(APPWidth/2-100, 28, 200, 29)];
-    _lab.textColor = [UIColor whiteColor];
+    _lab.textColor = APPColor;
     _lab.text = setString;
     _lab.textAlignment = NSTextAlignmentCenter;
     _lab.font=[UIFont systemFontOfSize:18];
     
-    [_titleview addSubview:_lab];
+    [_titleImgV addSubview:_lab];
 }
 #pragma mark - 自定义，导航栏上面返回的，button
 
@@ -44,7 +45,7 @@
     _backBtn = [[UIButton alloc]initWithFrame:CGRectMake(12, 30, 13, 23)];
     [_backBtn addTarget:self action:@selector(backVCclick) forControlEvents:UIControlEventTouchUpInside];
     [_backBtn setBackgroundImage:[UIImage imageNamed:@"return"] forState:UIControlStateNormal];
-    [_titleview addSubview:_backBtn];
+    [_titleImgV addSubview:_backBtn];
     
 }
 - (void)backVCclick{
@@ -78,7 +79,7 @@
     //    rightBtnNav.backgroundColor = [UIColor redColor];
     [rightBtnNav setBackgroundImage:[UIImage imageNamed:btnImageName] forState:UIControlStateNormal];
     [rightBtnNav addTarget:self action:@selector(rightBtnClick) forControlEvents:UIControlEventTouchUpInside];
-    [_titleview addSubview:rightBtnNav];
+    [_titleImgV addSubview:rightBtnNav];
 }
 
 
@@ -109,6 +110,13 @@
     UIImage *imgSelected=[[UIImage imageNamed:img2] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
     self.tabBarItem = [[UITabBarItem alloc] initWithTitle:item image:imgNomal selectedImage:imgSelected];
     
+}
+
+- (void)LOLaddChildViewControler:(UIViewController *)ViewController MultipleWidth:(int)Multiple{
+    [self addChildViewController:ViewController];
+    [self.view addSubview:ViewController.view];
+    ViewController.view.frame = CGRectMake(0, 64, APPWidth * Multiple, APPHeight);
+    [ViewController didMoveToParentViewController:self];
 }
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

@@ -1,24 +1,18 @@
 //
-//  MineVC.m
+//  DT_VideoVC.m
 //  LOL
 //
-//  Created by mac on 17/8/18.
+//  Created by mac on 17/8/21.
 //  Copyright © 2017年 mac. All rights reserved.
 //
 
-#import "MineVC.h"
+#import "DT_VideoVC.h"
 
-@interface MineVC ()
+@interface DT_VideoVC ()
 
 @end
 
-@implementation MineVC
-- (void)viewWillAppear:(BOOL)animated{
-    [super viewWillAppear:animated];
-
-
-}
-
+@implementation DT_VideoVC
 
 - (void)viewDidLoad {
     [super viewDidLoad];

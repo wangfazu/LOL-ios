@@ -1,24 +1,18 @@
 //
-//  MineVC.m
+//  DT_ColumnVC.m
 //  LOL
 //
-//  Created by mac on 17/8/18.
+//  Created by mac on 17/8/21.
 //  Copyright © 2017年 mac. All rights reserved.
 //
 
-#import "MineVC.h"
+#import "DT_ColumnVC.h"
 
-@interface MineVC ()
+@interface DT_ColumnVC ()
 
 @end
 
-@implementation MineVC
-- (void)viewWillAppear:(BOOL)animated{
-    [super viewWillAppear:animated];
-
-
-}
-
+@implementation DT_ColumnVC
 
 - (void)viewDidLoad {
     [super viewDidLoad];

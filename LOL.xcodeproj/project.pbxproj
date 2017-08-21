@@ -1540,6 +1540,13 @@
 		042824FC1F46E4170033413F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 042824FB1F46E4170033413F /* Assets.xcassets */; };
 		045435C11F4A8B9600FEEA40 /* DDMenuController.m in Sources */ = {isa = PBXBuildFile; fileRef = 045435C01F4A8B9600FEEA40 /* DDMenuController.m */; };
 		045435C41F4A8D1000FEEA40 /* PersonSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 045435C31F4A8D1000FEEA40 /* PersonSet.m */; };
+		045435C81F4AAA8200FEEA40 /* DT_LastVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 045435C71F4AAA8200FEEA40 /* DT_LastVC.m */; };
+		045435CB1F4AAAAA00FEEA40 /* DT_NewVersionVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 045435CA1F4AAAAA00FEEA40 /* DT_NewVersionVC.m */; };
+		045435CE1F4AAABD00FEEA40 /* DT_HeroVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 045435CD1F4AAABD00FEEA40 /* DT_HeroVC.m */; };
+		045435D11F4AAAD100FEEA40 /* DT_VideoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 045435D01F4AAAD100FEEA40 /* DT_VideoVC.m */; };
+		045435D41F4AAB0100FEEA40 /* DT_GameVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 045435D31F4AAB0100FEEA40 /* DT_GameVC.m */; };
+		045435D71F4AAB3400FEEA40 /* DT_ColumnVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 045435D61F4AAB3400FEEA40 /* DT_ColumnVC.m */; };
+		045435DB1F4AD91B00FEEA40 /* DT_BaseCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 045435DA1F4AD91B00FEEA40 /* DT_BaseCell.m */; };
 		0472AB271F46A74E00B654E0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0472AB261F46A74E00B654E0 /* main.m */; };
 		0472AB2A1F46A74E00B654E0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0472AB291F46A74E00B654E0 /* AppDelegate.m */; };
 		0472AB301F46A74E00B654E0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0472AB2E1F46A74E00B654E0 /* Main.storyboard */; };
@@ -3111,6 +3118,20 @@
 		045435C01F4A8B9600FEEA40 /* DDMenuController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDMenuController.m; sourceTree = "<group>"; };
 		045435C21F4A8D1000FEEA40 /* PersonSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonSet.h; sourceTree = "<group>"; };
 		045435C31F4A8D1000FEEA40 /* PersonSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonSet.m; sourceTree = "<group>"; };
+		045435C61F4AAA8200FEEA40 /* DT_LastVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DT_LastVC.h; sourceTree = "<group>"; };
+		045435C71F4AAA8200FEEA40 /* DT_LastVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DT_LastVC.m; sourceTree = "<group>"; };
+		045435C91F4AAAAA00FEEA40 /* DT_NewVersionVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DT_NewVersionVC.h; sourceTree = "<group>"; };
+		045435CA1F4AAAAA00FEEA40 /* DT_NewVersionVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DT_NewVersionVC.m; sourceTree = "<group>"; };
+		045435CC1F4AAABD00FEEA40 /* DT_HeroVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DT_HeroVC.h; sourceTree = "<group>"; };
+		045435CD1F4AAABD00FEEA40 /* DT_HeroVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DT_HeroVC.m; sourceTree = "<group>"; };
+		045435CF1F4AAAD100FEEA40 /* DT_VideoVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DT_VideoVC.h; sourceTree = "<group>"; };
+		045435D01F4AAAD100FEEA40 /* DT_VideoVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DT_VideoVC.m; sourceTree = "<group>"; };
+		045435D21F4AAB0100FEEA40 /* DT_GameVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DT_GameVC.h; sourceTree = "<group>"; };
+		045435D31F4AAB0100FEEA40 /* DT_GameVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DT_GameVC.m; sourceTree = "<group>"; };
+		045435D51F4AAB3400FEEA40 /* DT_ColumnVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DT_ColumnVC.h; sourceTree = "<group>"; };
+		045435D61F4AAB3400FEEA40 /* DT_ColumnVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DT_ColumnVC.m; sourceTree = "<group>"; };
+		045435D91F4AD91B00FEEA40 /* DT_BaseCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DT_BaseCell.h; sourceTree = "<group>"; };
+		045435DA1F4AD91B00FEEA40 /* DT_BaseCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DT_BaseCell.m; sourceTree = "<group>"; };
 		0472AB221F46A74E00B654E0 /* LOL.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LOL.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0472AB261F46A74E00B654E0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		0472AB281F46A74E00B654E0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -4766,6 +4787,35 @@
 			name = PersonSet;
 			sourceTree = "<group>";
 		};
+		045435D81F4AABB300FEEA40 /* MainScrollView */ = {
+			isa = PBXGroup;
+			children = (
+				045435DC1F4AD92500FEEA40 /* TableView-CELL */,
+				045435C61F4AAA8200FEEA40 /* DT_LastVC.h */,
+				045435C71F4AAA8200FEEA40 /* DT_LastVC.m */,
+				045435C91F4AAAAA00FEEA40 /* DT_NewVersionVC.h */,
+				045435CA1F4AAAAA00FEEA40 /* DT_NewVersionVC.m */,
+				045435CC1F4AAABD00FEEA40 /* DT_HeroVC.h */,
+				045435CD1F4AAABD00FEEA40 /* DT_HeroVC.m */,
+				045435CF1F4AAAD100FEEA40 /* DT_VideoVC.h */,
+				045435D01F4AAAD100FEEA40 /* DT_VideoVC.m */,
+				045435D21F4AAB0100FEEA40 /* DT_GameVC.h */,
+				045435D31F4AAB0100FEEA40 /* DT_GameVC.m */,
+				045435D51F4AAB3400FEEA40 /* DT_ColumnVC.h */,
+				045435D61F4AAB3400FEEA40 /* DT_ColumnVC.m */,
+			);
+			name = MainScrollView;
+			sourceTree = "<group>";
+		};
+		045435DC1F4AD92500FEEA40 /* TableView-CELL */ = {
+			isa = PBXGroup;
+			children = (
+				045435D91F4AD91B00FEEA40 /* DT_BaseCell.h */,
+				045435DA1F4AD91B00FEEA40 /* DT_BaseCell.m */,
+			);
+			name = "TableView-CELL";
+			sourceTree = "<group>";
+		};
 		0472AB191F46A74E00B654E0 = {
 			isa = PBXGroup;
 			children = (
@@ -4851,6 +4901,7 @@
 			children = (
 				0472AB661F46AE0700B654E0 /* MessageVC.h */,
 				0472AB671F46AE0700B654E0 /* MessageVC.m */,
+				045435D81F4AABB300FEEA40 /* MainScrollView */,
 			);
 			name = message;
 			sourceTree = "<group>";
@@ -6580,17 +6631,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				045435D11F4AAAD100FEEA40 /* DT_VideoVC.m in Sources */,
 				0472AB6B1F46AE2100B654E0 /* FrendsVC.m in Sources */,
 				0472AB6E1F46AE9E00B654E0 /* ShopVC.m in Sources */,
 				0472AB781F46AF3B00B654E0 /* LoginVC.m in Sources */,
 				042818C21F46C9160033413F /* LLGifView.m in Sources */,
+				045435C81F4AAA8200FEEA40 /* DT_LastVC.m in Sources */,
+				045435D41F4AAB0100FEEA40 /* DT_GameVC.m in Sources */,
 				0472AB5B1F46AA1500B654E0 /* UIView+Frame.m in Sources */,
+				045435DB1F4AD91B00FEEA40 /* DT_BaseCell.m in Sources */,
 				0472AB741F46AEC200B654E0 /* MineVC.m in Sources */,
 				045435C11F4A8B9600FEEA40 /* DDMenuController.m in Sources */,
+				045435D71F4AAB3400FEEA40 /* DT_ColumnVC.m in Sources */,
 				045435C41F4A8D1000FEEA40 /* PersonSet.m in Sources */,
 				0472AB2A1F46A74E00B654E0 /* AppDelegate.m in Sources */,
+				045435CE1F4AAABD00FEEA40 /* DT_HeroVC.m in Sources */,
 				042818C11F46C9160033413F /* LLGifImageView.m in Sources */,
 				0472AB681F46AE0700B654E0 /* MessageVC.m in Sources */,
+				045435CB1F4AAAAA00FEEA40 /* DT_NewVersionVC.m in Sources */,
 				0472AB711F46AEAD00B654E0 /* FindVC.m in Sources */,
 				0472AB5E1F46AB8000B654E0 /* BaseForLOL.m in Sources */,
 				0472AB271F46A74E00B654E0 /* main.m in Sources */,

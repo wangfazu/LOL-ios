@@ -69,7 +69,7 @@
 - (void)setUpMainView{
     //进入主界面，先验证，再进入
     UITabBarController *tabBar = [[UITabBarController alloc]init];
-    tabBar.tabBar.tintColor = UIColorFromRGB(0xaf883c);
+    tabBar.tabBar.tintColor = APPColor;
     
     MessageVC *mesVc = [[MessageVC alloc]init];;
     FrendsVC *frendsVc = [[FrendsVC alloc]init];;

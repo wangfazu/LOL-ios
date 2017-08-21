@@ -1,27 +1,24 @@
+
 //
-//  MineVC.m
+//  DT_HeroVC.m
 //  LOL
 //
-//  Created by mac on 17/8/18.
+//  Created by mac on 17/8/21.
 //  Copyright © 2017年 mac. All rights reserved.
 //
 
-#import "MineVC.h"
+#import "DT_HeroVC.h"
 
-@interface MineVC ()
+@interface DT_HeroVC ()
 
 @end
 
-@implementation MineVC
-- (void)viewWillAppear:(BOOL)animated{
-    [super viewWillAppear:animated];
-
-
-}
-
+@implementation DT_HeroVC
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.view
+    .backgroundColor = [UIColor redColor];
     // Do any additional setup after loading the view.
 }
 

@@ -18,11 +18,21 @@
 
 #import "LoginVC.h"
 #import "PersonSet.h"
+
 #import "MessageVC.h"
+#import "DT_LastVC.h"
+#import "DT_NewVersionVC.h"
+#import "DT_HeroVC.h"
+#import "DT_VideoVC.h"
+#import "DT_GameVC.h"
+#import "DT_ColumnVC.h"
+
 #import "FrendsVC.h"
 #import "ShopVC.h"
 #import "FindVC.h"
 #import "MineVC.h"
+//cell
+#import "DT_BaseCell.h"
 ///SDK
 #import "LLGifView.h"
 #import "LLGifImageView.h"
@@ -31,4 +41,5 @@
 #define UIColorFromRGB(rgbValue) [UIColor colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 green:((float)((rgbValue & 0xFF00) >> 8))/255.0 blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0]
 #define  APPWidth [UIScreen mainScreen].bounds.size.width
 #define  APPHeight [UIScreen mainScreen].bounds.size.height
+#define APPColor UIColorFromRGB(0xaf883c)
 #endif /* PrefixHeader_pch */

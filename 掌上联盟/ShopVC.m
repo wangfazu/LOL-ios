@@ -22,7 +22,6 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.title = @"商城";
     // Do any additional setup after loading the view.
 }
 

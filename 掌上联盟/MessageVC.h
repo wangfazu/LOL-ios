@@ -8,6 +8,6 @@
 
 #import "BaseForLOL.h"
 
-@interface MessageVC : BaseForLOL
+@interface MessageVC : BaseForLOL<UIScrollViewDelegate>
 
 @end

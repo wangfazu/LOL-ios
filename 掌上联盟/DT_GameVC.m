@@ -1,27 +1,23 @@
 //
-//  MineVC.m
+//  DT_GameVC.m
 //  LOL
 //
-//  Created by mac on 17/8/18.
+//  Created by mac on 17/8/21.
 //  Copyright © 2017年 mac. All rights reserved.
 //
 
-#import "MineVC.h"
+#import "DT_GameVC.h"
 
-@interface MineVC ()
+@interface DT_GameVC ()
 
 @end
 
-@implementation MineVC
-- (void)viewWillAppear:(BOOL)animated{
-    [super viewWillAppear:animated];
-
-
-}
-
+@implementation DT_GameVC
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.view
+    .backgroundColor = [UIColor greenColor];
     // Do any additional setup after loading the view.
 }
 
