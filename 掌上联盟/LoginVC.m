@@ -23,6 +23,7 @@
     NSArray *tabItemArr;
     
 }
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     //添加背景图片，和登录的按钮；
@@ -71,6 +72,7 @@
     UITabBarController *tabBar = [[UITabBarController alloc]init];
     tabBar.tabBar.tintColor = APPColor;
     
+
     MessageVC *mesVc = [[MessageVC alloc]init];;
     FrendsVC *frendsVc = [[FrendsVC alloc]init];;
     ShopVC *shopVc = [[ShopVC alloc]init];

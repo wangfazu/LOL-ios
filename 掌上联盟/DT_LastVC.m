@@ -14,20 +14,58 @@
 
 @implementation DT_LastVC
 {
+    NSMutableArray *dataMuArr;
 }
 
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    [self preferredStatusBarStyle];
+    [self initDataSourse];
     [self.view addSubview:self.lastTV];
 }
 
+- (void)initDataSourse{
+    
+    dataMuArr = [[NSMutableArray alloc]init];
+    [dataMuArr addObject:@"666"];
+    [dataMuArr addObject:@"666"];
+    [dataMuArr addObject:@"666"];
+    
+}
 - (UITableView *)lastTV{
     if (!_lastTV) {
-        _lastTV = [[UITableView alloc]initWithFrame:CGRectMake(10, 0, APPWidth -20, APPHeight) style:UITableViewStylePlain];
+        _lastTV = [[UITableView alloc]initWithFrame:CGRectMake(10, 0, APPWidth -20, APPHeight -64 -49) style:UITableViewStylePlain];
         _lastTV.delegate = self;
         _lastTV.dataSource = self;
+        _lastTV.tableHeaderView = [[DT_LastHeadView alloc]init];
+        _lastTV.tableFooterView = [[DT_LastHeadView alloc]init];
+
     }
+    
+    //刷新tableview 增加数据 或者请求数据
+    _lastTV.mj_header=[MJRefreshNormalHeader headerWithRefreshingBlock:^{
+        NSLog(@"调用了 表格 头刷新");
+        
+        for (int i =0; i<5; i ++) {
+            [dataMuArr addObject:[NSString stringWithFormat:@"%d",i]];
+            
+        }
+        [_lastTV.mj_header endRefreshing];
+        [_lastTV reloadData];
+    }];
+    
+    //刷新tableview 移除数据
+    _lastTV.mj_footer=[MJRefreshAutoFooter footerWithRefreshingBlock:^{
+        NSLog(@"调用了 表格 头刷新");
+        
+        for (int i =0; i<1; i ++) {
+            [dataMuArr removeLastObject];
+            
+        }
+        [_lastTV.mj_footer endRefreshing];
+        [_lastTV reloadData];
+    }];
     return _lastTV;
 }
 
@@ -36,7 +74,7 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
     
-    return 5;
+    return dataMuArr.count;
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
@@ -59,16 +97,7 @@
 
     return cell;
 }
-- (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section{
-    UIImageView *imgv = [UIImageView alloc];
-    imgv.image = [UIImage imageNamed:@"club_mem_bg"];
-    UIView *view = [[UIView alloc]initWithFrame:CGRectMake(0, 0, APPWidth, 50)];
-    view.backgroundColor = [UIColor blueColor];
-    [view addSubview:imgv];
-    return view;
-    
-    
-}
+
 #pragma mark - Navigation
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

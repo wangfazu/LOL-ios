@@ -53,7 +53,9 @@
 
 - (void)InitNetWork{
     titleArr = [[NSArray alloc]initWithObjects:@"最 新",@"新版本",@"英雄圈",@"视频",@"赛事",@"专栏", nil];
+    
 }
+
 
 - (UIScrollView *)titleScr{
     if (!titleSrc) {
@@ -61,6 +63,7 @@
         titleSrc.delegate = self ;
         titleSrc.contentSize = CGSizeMake(100+ APPWidth, 0);
         titleSrc.backgroundColor = [UIColor whiteColor];
+        titleSrc.showsHorizontalScrollIndicator = FALSE;
     }
     return titleSrc;
 }
@@ -69,6 +72,12 @@
         mainScrV = [[UIScrollView alloc]initWithFrame:CGRectMake(0, 64 +45, APPWidth, APPHeight)];
         mainScrV.delegate = self;
         mainScrV.contentSize = CGSizeMake(6*APPWidth, 0);
+        /**
+         *  时scroll不在自由移动，会根据导航偏移
+         */
+        self.automaticallyAdjustsScrollViewInsets = NO;
+        
+
         //添加SCROLLview的滑动标记，检测当前滑动的位置
         for (int i = 0; i<6; i++) {
             UIButton *btttn = [[UIButton alloc]initWithFrame:CGRectMake(14+APPWidth*i, APPHeight-200, APPHeight/10, APPHeight/10)];
@@ -84,7 +93,7 @@
 - (void)addtitleBtnAndTabSelect{
     for (int i= 0; i<6; i++) {
         titleBtn = [UIButton buttonWithType:UIButtonTypeCustom];
-        titleBtn.frame = CGRectMake(15+ (10+APPWidth/6)*i, -21, 40, 45);
+        titleBtn.frame = CGRectMake(15+ (10+APPWidth/6)*i, 0, 40, 45);
         [titleBtn setTitle:titleArr[i] forState:UIControlStateNormal];
         [titleBtn setTitleColor:APPColor forState:UIControlStateNormal];
         titleBtn.titleLabel.font = [UIFont systemFontOfSize:12];
@@ -126,6 +135,7 @@
 
 
 - (void)didReceiveMemoryWarning {
+
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
