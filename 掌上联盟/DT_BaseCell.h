@@ -9,6 +9,11 @@
 #import <UIKit/UIKit.h>
 
 @interface DT_BaseCell : UITableViewCell
+@property (nonatomic,retain) UIImageView *imgV;
+@property (nonatomic,retain) UILabel *titLab;
+@property (nonatomic,retain) UILabel *detilLab;
+@property (nonatomic,retain) UILabel *readNum;
+
 
 - (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier;
 @end

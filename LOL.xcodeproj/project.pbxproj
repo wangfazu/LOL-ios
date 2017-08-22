@@ -4790,7 +4790,6 @@
 		045435D81F4AABB300FEEA40 /* MainScrollView */ = {
 			isa = PBXGroup;
 			children = (
-				045435DC1F4AD92500FEEA40 /* TableView-CELL */,
 				045435C61F4AAA8200FEEA40 /* DT_LastVC.h */,
 				045435C71F4AAA8200FEEA40 /* DT_LastVC.m */,
 				045435C91F4AAAAA00FEEA40 /* DT_NewVersionVC.h */,
@@ -4803,6 +4802,7 @@
 				045435D31F4AAB0100FEEA40 /* DT_GameVC.m */,
 				045435D51F4AAB3400FEEA40 /* DT_ColumnVC.h */,
 				045435D61F4AAB3400FEEA40 /* DT_ColumnVC.m */,
+				045435DC1F4AD92500FEEA40 /* TableView-CELL */,
 			);
 			name = MainScrollView;
 			sourceTree = "<group>";
@@ -4847,7 +4847,6 @@
 				0472AB791F46C87D00B654E0 /* SDK */,
 				0472AB5F1F46ACA300B654E0 /* Main */,
 				0472AB651F46ADB700B654E0 /* other */,
-				042818C51F46E35B0033413F /* LOLasset */,
 				0472AB251F46A74E00B654E0 /* Supporting Files */,
 			);
 			name = LOL;
@@ -4949,6 +4948,7 @@
 				0472AB291F46A74E00B654E0 /* AppDelegate.m */,
 				0472AB2E1F46A74E00B654E0 /* Main.storyboard */,
 				042824FB1F46E4170033413F /* Assets.xcassets */,
+				042818C51F46E35B0033413F /* LOLasset */,
 				0472AB331F46A74E00B654E0 /* LaunchScreen.storyboard */,
 				0472AB361F46A74E00B654E0 /* Info.plist */,
 			);

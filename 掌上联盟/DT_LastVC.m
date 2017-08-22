@@ -24,7 +24,7 @@
 
 - (UITableView *)lastTV{
     if (!_lastTV) {
-        _lastTV = [[UITableView alloc]initWithFrame:CGRectMake(0, 0, APPWidth, APPHeight) style:UITableViewStylePlain];
+        _lastTV = [[UITableView alloc]initWithFrame:CGRectMake(10, 0, APPWidth -20, APPHeight) style:UITableViewStylePlain];
         _lastTV.delegate = self;
         _lastTV.dataSource = self;
     }
@@ -40,18 +40,22 @@
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
-    return 100;
+    NSString *ID;
+    if ([tableView dequeueReusableCellWithIdentifier:ID]) {
+        return APPHeight /7.5;
+    }
+    return APPHeight /7.5;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     
-    NSString *ID = @"cell";
+    static NSString *ID = @"baseCell";
     DT_BaseCell *cell = [tableView dequeueReusableCellWithIdentifier:ID];
     if (!cell) {
         cell = [[DT_BaseCell new]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:ID];
     }
-    cell.textLabel.text = [NSString stringWithFormat:@"%ld",indexPath.row];
-    cell.imageView.image = [UIImage imageNamed:@"guide_center_icon"];
+    cell.textLabel.text = [NSString stringWithFormat:@"%ld1",indexPath.row];
+
 
     return cell;
 }
@@ -65,6 +69,7 @@
     
     
 }
+#pragma mark - Navigation
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
