@@ -15,6 +15,11 @@
 @implementation DT_LastVC
 {
     NSMutableArray *dataMuArr;
+    NSInteger cellTag,cellType;  /*
+                         1:baseCell
+                         2:videoCell
+                         3.PictureCell*/
+    
 }
 
 
@@ -39,7 +44,7 @@
         _lastTV.delegate = self;
         _lastTV.dataSource = self;
         _lastTV.tableHeaderView = [[DT_LastHeadView alloc]init];
-        _lastTV.tableFooterView = [[DT_LastHeadView alloc]init];
+//        _lastTV.tableFooterView = [[DT_LastHeadView alloc]init];
 
     }
     
@@ -47,8 +52,9 @@
     _lastTV.mj_header=[MJRefreshNormalHeader headerWithRefreshingBlock:^{
         NSLog(@"调用了 表格 头刷新");
         
-        for (int i =0; i<5; i ++) {
-            [dataMuArr addObject:[NSString stringWithFormat:@"%d",i]];
+
+        for (int i =0; i<1; i ++) {
+            [dataMuArr removeLastObject];
             
         }
         [_lastTV.mj_header endRefreshing];
@@ -58,9 +64,8 @@
     //刷新tableview 移除数据
     _lastTV.mj_footer=[MJRefreshAutoFooter footerWithRefreshingBlock:^{
         NSLog(@"调用了 表格 头刷新");
-        
-        for (int i =0; i<1; i ++) {
-            [dataMuArr removeLastObject];
+        for (int i =0; i<5; i ++) {
+            [dataMuArr addObject:[NSString stringWithFormat:@"%d",i]];
             
         }
         [_lastTV.mj_footer endRefreshing];
@@ -78,24 +83,64 @@
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
-    NSString *ID;
-    if ([tableView dequeueReusableCellWithIdentifier:ID]) {
+    if (indexPath.row %2 ==0) {
         return APPHeight /7.5;
+        
+    }else if (indexPath.row %3==0){
+    
+        return APPWidth *0.52;
+
     }
-    return APPHeight /7.5;
+    return APPWidth *0.68;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     
     static NSString *ID = @"baseCell";
-    DT_BaseCell *cell = [tableView dequeueReusableCellWithIdentifier:ID];
-    if (!cell) {
-        cell = [[DT_BaseCell new]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:ID];
+    static NSString *VideoID = @"videoCell";
+    static NSString *PictureID = @"pictureCell";
+
+    DT_BaseCell *baseCell = [tableView dequeueReusableCellWithIdentifier:ID];
+    DT_VideoCell *videoCell =[tableView dequeueReusableCellWithIdentifier:VideoID];
+    DT_PictureCell *pictureCell = [tableView dequeueReusableCellWithIdentifier:PictureID];
+    if (indexPath.row %2 ==0) {
+        if (!baseCell) {
+            baseCell = [[DT_BaseCell new]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:ID];
+
+        }
+        baseCell.textLabel.text = [NSString stringWithFormat:@"Base:%ld1",indexPath.row];
+        return baseCell;
+    }else if (indexPath.row %3==0){
+        if (!videoCell) {
+            videoCell = [[DT_VideoCell new]initWithStyle:(UITableViewCellStyleSubtitle) reuseIdentifier:VideoID];
+            
+        }
+        videoCell.textLabel.text = [NSString stringWithFormat:@"Video：%ld",indexPath.row];
+        return videoCell;
+        
+    }else{
+        if (!pictureCell) {
+            pictureCell = [[DT_PictureCell new]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:PictureID];
+        }
+//        pictureCell.imageView.image = [UIImage imageNamed:@"4.jpg" ];
+        
+
+        
     }
-    cell.textLabel.text = [NSString stringWithFormat:@"%ld1",indexPath.row];
+
+    return pictureCell;
 
 
-    return cell;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    if (indexPath.row %3!=0  &&indexPath.row %2!=0){
+        [DT_PictureCell new].bigImgV.image = [VideoDetialVC new].imageV.image;
+        [self.navigationController pushViewController:[VideoDetialVC new] animated:YES];
+        
+    }
+    
+    
 }
 
 #pragma mark - Navigation

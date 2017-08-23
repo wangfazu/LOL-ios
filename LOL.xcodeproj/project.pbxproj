@@ -1564,6 +1564,13 @@
 		04400AAC1F4C21BF0013F52E /* UIScrollView+MJExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 04400A961F4C21BF0013F52E /* UIScrollView+MJExtension.m */; };
 		04400AAD1F4C21BF0013F52E /* UIScrollView+MJRefresh.m in Sources */ = {isa = PBXBuildFile; fileRef = 04400A981F4C21BF0013F52E /* UIScrollView+MJRefresh.m */; };
 		04400AAE1F4C21BF0013F52E /* UIView+MJExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 04400A9A1F4C21BF0013F52E /* UIView+MJExtension.m */; };
+		044AA7121F4D18C600566590 /* DT_PictureCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 044AA7111F4D18C600566590 /* DT_PictureCell.m */; };
+		044AA7151F4D18F100566590 /* DT_VideoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 044AA7141F4D18F100566590 /* DT_VideoCell.m */; };
+		044AA71D1F4D68DC00566590 /* jiana.png in Resources */ = {isa = PBXBuildFile; fileRef = 044AA71B1F4D68DC00566590 /* jiana.png */; };
+		044AA71E1F4D68DC00566590 /* jiana2.png in Resources */ = {isa = PBXBuildFile; fileRef = 044AA71C1F4D68DC00566590 /* jiana2.png */; };
+		044AA7221F4D6D4400566590 /* VideoDetialVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 044AA7211F4D6D4400566590 /* VideoDetialVC.m */; };
+		044AA7241F4D6E9B00566590 /* MessageVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 044AA7231F4D6E9B00566590 /* MessageVC.m */; };
+		044AA7261F4D87FF00566590 /* jiana3.png in Resources */ = {isa = PBXBuildFile; fileRef = 044AA7251F4D87FF00566590 /* jiana3.png */; };
 		045435C11F4A8B9600FEEA40 /* DDMenuController.m in Sources */ = {isa = PBXBuildFile; fileRef = 045435C01F4A8B9600FEEA40 /* DDMenuController.m */; };
 		045435C41F4A8D1000FEEA40 /* PersonSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 045435C31F4A8D1000FEEA40 /* PersonSet.m */; };
 		045435C81F4AAA8200FEEA40 /* DT_LastVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 045435C71F4AAA8200FEEA40 /* DT_LastVC.m */; };
@@ -1581,7 +1588,6 @@
 		0472AB4B1F46A74E00B654E0 /* ____UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0472AB4A1F46A74E00B654E0 /* ____UITests.m */; };
 		0472AB5B1F46AA1500B654E0 /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = 0472AB5A1F46AA1500B654E0 /* UIView+Frame.m */; };
 		0472AB5E1F46AB8000B654E0 /* BaseForLOL.m in Sources */ = {isa = PBXBuildFile; fileRef = 0472AB5D1F46AB8000B654E0 /* BaseForLOL.m */; };
-		0472AB681F46AE0700B654E0 /* MessageVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0472AB671F46AE0700B654E0 /* MessageVC.m */; };
 		0472AB6B1F46AE2100B654E0 /* FrendsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0472AB6A1F46AE2100B654E0 /* FrendsVC.m */; };
 		0472AB6E1F46AE9E00B654E0 /* ShopVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0472AB6D1F46AE9E00B654E0 /* ShopVC.m */; };
 		0472AB711F46AEAD00B654E0 /* FindVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0472AB701F46AEAD00B654E0 /* FindVC.m */; };
@@ -3187,6 +3193,16 @@
 		04400A981F4C21BF0013F52E /* UIScrollView+MJRefresh.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+MJRefresh.m"; sourceTree = "<group>"; };
 		04400A991F4C21BF0013F52E /* UIView+MJExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+MJExtension.h"; sourceTree = "<group>"; };
 		04400A9A1F4C21BF0013F52E /* UIView+MJExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+MJExtension.m"; sourceTree = "<group>"; };
+		044AA7101F4D18C600566590 /* DT_PictureCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DT_PictureCell.h; sourceTree = "<group>"; };
+		044AA7111F4D18C600566590 /* DT_PictureCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DT_PictureCell.m; sourceTree = "<group>"; };
+		044AA7131F4D18F100566590 /* DT_VideoCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DT_VideoCell.h; sourceTree = "<group>"; };
+		044AA7141F4D18F100566590 /* DT_VideoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DT_VideoCell.m; sourceTree = "<group>"; };
+		044AA71B1F4D68DC00566590 /* jiana.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = jiana.png; sourceTree = "<group>"; };
+		044AA71C1F4D68DC00566590 /* jiana2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = jiana2.png; sourceTree = "<group>"; };
+		044AA7201F4D6D4400566590 /* VideoDetialVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoDetialVC.h; sourceTree = "<group>"; };
+		044AA7211F4D6D4400566590 /* VideoDetialVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoDetialVC.m; sourceTree = "<group>"; };
+		044AA7231F4D6E9B00566590 /* MessageVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MessageVC.m; sourceTree = "<group>"; };
+		044AA7251F4D87FF00566590 /* jiana3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = jiana3.png; sourceTree = "<group>"; };
 		045435BF1F4A8B9600FEEA40 /* DDMenuController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDMenuController.h; sourceTree = "<group>"; };
 		045435C01F4A8B9600FEEA40 /* DDMenuController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDMenuController.m; sourceTree = "<group>"; };
 		045435C21F4A8D1000FEEA40 /* PersonSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonSet.h; sourceTree = "<group>"; };
@@ -3224,7 +3240,6 @@
 		0472AB5C1F46AB8000B654E0 /* BaseForLOL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BaseForLOL.h; path = ../BaseForLOL.h; sourceTree = "<group>"; };
 		0472AB5D1F46AB8000B654E0 /* BaseForLOL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BaseForLOL.m; path = ../BaseForLOL.m; sourceTree = "<group>"; };
 		0472AB661F46AE0700B654E0 /* MessageVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessageVC.h; sourceTree = "<group>"; };
-		0472AB671F46AE0700B654E0 /* MessageVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MessageVC.m; sourceTree = "<group>"; };
 		0472AB691F46AE2100B654E0 /* FrendsVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FrendsVC.h; sourceTree = "<group>"; };
 		0472AB6A1F46AE2100B654E0 /* FrendsVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FrendsVC.m; sourceTree = "<group>"; };
 		0472AB6C1F46AE9E00B654E0 /* ShopVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShopVC.h; sourceTree = "<group>"; };
@@ -3284,8 +3299,11 @@
 		042760291F4C146800061222 /* 轮播图片 */ = {
 			isa = PBXGroup;
 			children = (
-				0427601F1F4C146300061222 /* 1.jpg */,
 				042760201F4C146300061222 /* 2.jpg */,
+				044AA7251F4D87FF00566590 /* jiana3.png */,
+				044AA71B1F4D68DC00566590 /* jiana.png */,
+				044AA71C1F4D68DC00566590 /* jiana2.png */,
+				0427601F1F4C146300061222 /* 1.jpg */,
 				042760211F4C146300061222 /* 3.jpg */,
 				042760221F4C146300061222 /* 4.jpg */,
 				042760231F4C146300061222 /* 5.jpg */,
@@ -4969,6 +4987,15 @@
 			path = Header;
 			sourceTree = "<group>";
 		};
+		044AA71F1F4D6CE100566590 /* detail-cell */ = {
+			isa = PBXGroup;
+			children = (
+				044AA7201F4D6D4400566590 /* VideoDetialVC.h */,
+				044AA7211F4D6D4400566590 /* VideoDetialVC.m */,
+			);
+			name = "detail-cell";
+			sourceTree = "<group>";
+		};
 		045435BE1F4A8B4600FEEA40 /* DDmenu(侧滑栏) */ = {
 			isa = PBXGroup;
 			children = (
@@ -4991,6 +5018,8 @@
 			isa = PBXGroup;
 			children = (
 				042760291F4C146800061222 /* 轮播图片 */,
+				045435DC1F4AD92500FEEA40 /* TableView-CELL */,
+				044AA71F1F4D6CE100566590 /* detail-cell */,
 				045435C61F4AAA8200FEEA40 /* DT_LastVC.h */,
 				045435C71F4AAA8200FEEA40 /* DT_LastVC.m */,
 				0427601C1F4BFFFB00061222 /* DT_LastHeadView.h */,
@@ -5005,7 +5034,6 @@
 				045435D31F4AAB0100FEEA40 /* DT_GameVC.m */,
 				045435D51F4AAB3400FEEA40 /* DT_ColumnVC.h */,
 				045435D61F4AAB3400FEEA40 /* DT_ColumnVC.m */,
-				045435DC1F4AD92500FEEA40 /* TableView-CELL */,
 			);
 			name = MainScrollView;
 			sourceTree = "<group>";
@@ -5015,6 +5043,10 @@
 			children = (
 				045435D91F4AD91B00FEEA40 /* DT_BaseCell.h */,
 				045435DA1F4AD91B00FEEA40 /* DT_BaseCell.m */,
+				044AA7101F4D18C600566590 /* DT_PictureCell.h */,
+				044AA7111F4D18C600566590 /* DT_PictureCell.m */,
+				044AA7131F4D18F100566590 /* DT_VideoCell.h */,
+				044AA7141F4D18F100566590 /* DT_VideoCell.m */,
 			);
 			name = "TableView-CELL";
 			sourceTree = "<group>";
@@ -5099,7 +5131,7 @@
 			isa = PBXGroup;
 			children = (
 				0472AB661F46AE0700B654E0 /* MessageVC.h */,
-				0472AB671F46AE0700B654E0 /* MessageVC.m */,
+				044AA7231F4D6E9B00566590 /* MessageVC.m */,
 				045435D81F4AABB300FEEA40 /* MainScrollView */,
 			);
 			name = message;
@@ -5678,6 +5710,7 @@
 				042820591F46E36A0033413F /* friend_sex_female@2x.png in Resources */,
 				042821071F46E36A0033413F /* Icon@2x.png in Resources */,
 				04281FDE1F46E36A0033413F /* competition_centre_unsubscribe_view@2x.png in Resources */,
+				044AA71E1F4D68DC00566590 /* jiana2.png in Resources */,
 				04281F7A1F46E36A0033413F /* card_honor_supergod@2x.png in Resources */,
 				042823BE1F46E36A0033413F /* subscribe_match_cell_bg@2x.png in Resources */,
 				04281F3A1F46E36A0033413F /* battle_kill_left_first_blood@2x.png in Resources */,
@@ -6065,6 +6098,7 @@
 				042823BA1F46E36A0033413F /* subscribe_match_btn_subscribe@2x.png in Resources */,
 				042821CB1F46E36A0033413F /* nearby_mark_view_mark@2x.png in Resources */,
 				042822001F46E36A0033413F /* news_comment_input_background@2x.png in Resources */,
+				044AA71D1F4D68DC00566590 /* jiana.png in Resources */,
 				042822B01F46E36A0033413F /* player_positon_submit@2x.png in Resources */,
 				042822B81F46E36A0033413F /* privilege_level_diamand_big@2x.png in Resources */,
 				04281F631F46E36A0033413F /* board_system@2x.png in Resources */,
@@ -6222,6 +6256,7 @@
 				04281FF21F46E36A0033413F /* default_hero_head@2x.png in Resources */,
 				042820BC1F46E36A0033413F /* hero_circle_up_arrow_dark@2x.png in Resources */,
 				042822B41F46E36A0033413F /* privilege_all_hero_big@2x.png in Resources */,
+				044AA7261F4D87FF00566590 /* jiana3.png in Resources */,
 				0428223A1F46E36A0033413F /* personal_ability_honor_4@2x.png in Resources */,
 				042821601F46E36A0033413F /* locate_view_body_default_icon@2x.png in Resources */,
 				0428247F1F46E36A0033413F /* video_download_view_arrow_mark@2x.png in Resources */,
@@ -6858,10 +6893,13 @@
 				045435DB1F4AD91B00FEEA40 /* DT_BaseCell.m in Sources */,
 				0472AB741F46AEC200B654E0 /* MineVC.m in Sources */,
 				04400A9D1F4C21BF0013F52E /* MJRefreshComponent.m in Sources */,
+				044AA7241F4D6E9B00566590 /* MessageVC.m in Sources */,
+				044AA7221F4D6D4400566590 /* VideoDetialVC.m in Sources */,
 				04400A9F1F4C21BF0013F52E /* MJRefreshHeader.m in Sources */,
 				045435C11F4A8B9600FEEA40 /* DDMenuController.m in Sources */,
 				04400AA01F4C21BF0013F52E /* MJRefreshAutoGifFooter.m in Sources */,
 				045435D71F4AAB3400FEEA40 /* DT_ColumnVC.m in Sources */,
+				044AA7121F4D18C600566590 /* DT_PictureCell.m in Sources */,
 				045435C41F4A8D1000FEEA40 /* PersonSet.m in Sources */,
 				0472AB2A1F46A74E00B654E0 /* AppDelegate.m in Sources */,
 				045435CE1F4AAABD00FEEA40 /* DT_HeroVC.m in Sources */,
@@ -6870,10 +6908,10 @@
 				04400AAD1F4C21BF0013F52E /* UIScrollView+MJRefresh.m in Sources */,
 				04400AA11F4C21BF0013F52E /* MJRefreshAutoNormalFooter.m in Sources */,
 				042818C11F46C9160033413F /* LLGifImageView.m in Sources */,
-				0472AB681F46AE0700B654E0 /* MessageVC.m in Sources */,
 				04400A9B1F4C21BF0013F52E /* MJRefreshAutoFooter.m in Sources */,
 				04400AAA1F4C21BF0013F52E /* MJRefreshConst.m in Sources */,
 				04400A9E1F4C21BF0013F52E /* MJRefreshFooter.m in Sources */,
+				044AA7151F4D18F100566590 /* DT_VideoCell.m in Sources */,
 				045435CB1F4AAAAA00FEEA40 /* DT_NewVersionVC.m in Sources */,
 				04400AA71F4C21BF0013F52E /* MJRefreshNormalHeader.m in Sources */,
 				0472AB711F46AEAD00B654E0 /* FindVC.m in Sources */,

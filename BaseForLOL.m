@@ -18,6 +18,8 @@
     [super viewWillAppear:YES];
     self.navigationController.navigationBarHidden = YES;
     [self preferredStatusBarStyle];//将状态栏，改变为白色
+    [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent animated:NO];
+//    [self preferredStatusBarStyle]=UIStatusBarStyleLightContent;
 }
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -42,13 +44,13 @@
 #pragma mark - 自定义，导航栏上面返回的，button
 
 - (void)setButtonForBackNavgation{
-    _backBtn = [[UIButton alloc]initWithFrame:CGRectMake(12, 30, 13, 23)];
-    [_backBtn addTarget:self action:@selector(backVCclick) forControlEvents:UIControlEventTouchUpInside];
-    [_backBtn setBackgroundImage:[UIImage imageNamed:@"return"] forState:UIControlStateNormal];
+    _backBtn = [[UIButton alloc]initWithFrame:CGRectMake(12, 30, 15, 22.1)];
+    [_backBtn addTarget:self action:@selector(backClick) forControlEvents:UIControlEventTouchUpInside];
+    [_backBtn setBackgroundImage:[UIImage imageNamed:@"nav_btn_back_tiny_normal"] forState:UIControlStateNormal];
     [_titleImgV addSubview:_backBtn];
     
 }
-- (void)backVCclick{
+- (void)backClick{
     [self.navigationController popViewControllerAnimated:YES];
     
 }

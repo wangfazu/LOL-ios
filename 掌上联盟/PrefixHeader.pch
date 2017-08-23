@@ -34,11 +34,17 @@
 #import "MineVC.h"
 //cell
 #import "DT_BaseCell.h"
+#import "DT_PictureCell.h"
+#import "DT_VideoCell.h"
+//cell详情页面
+#import "VideoDetialVC.h"
+
 ///SDK
 #import "LLGifView.h"
 #import "LLGifImageView.h"
 #import "DDMenuController.h"
 #import "MJRefresh.h"
+
 
 #define UIColorFromRGB(rgbValue) [UIColor colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 green:((float)((rgbValue & 0xFF00) >> 8))/255.0 blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0]
 #define  APPWidth [UIScreen mainScreen].bounds.size.width
