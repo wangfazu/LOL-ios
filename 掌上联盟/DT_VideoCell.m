@@ -8,22 +8,35 @@
 
 #import "DT_VideoCell.h"
 #import "ZXVideoPlayerController.h"
+#import "VideoPlayViewController.h"
 @implementation DT_VideoCell
+{
+    ZXVideo *video;
+    VideoPlayViewController *videoVc;
+    ZXVideoPlayerController *zxVideoControler;
+}
 - (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier{
     
     if (self = [super initWithStyle:style reuseIdentifier:reuseIdentifier ]) {
 //        [self setup];
-//        [self addVideo];
+        [self addVideo];
     }
     return self;
 }
 
 - (void)addVideo{
+    video = [[ZXVideo alloc] init];
+    video.playUrl = @"http://baobab.wdjcdn.com/1451897812703c.mp4";
+    video.title = @"Rollin'Wild 圆滚滚的";
     
+    videoVc = [[VideoPlayViewController alloc] init];
+    videoVc.video = video;
+    videoVc.hidesBottomBarWhenPushed = YES;
+    videoVc.view.frame = CGRectMake(0, 0, APPWidth-20, (APPWidth -20)*0.5265);
     
-    ZXVideoPlayerController *VideoVC = [[ZXVideoPlayerController alloc]init];
-    [[DT_LastVC new]addChildViewController:VideoVC];
-    [self addSubview:VideoVC.view];
+    [self addSubview:videoVc.view];
+
+    [[DT_LastVC new]addChildViewController:videoVc];
 
 }
 - (void)setup{

@@ -24,9 +24,7 @@
                          1:baseCell
                          2:videoCell
                          3.PictureCell*/
-    ZXVideo *video;
-    VideoPlayViewController *videoVc;
-    ZXVideoPlayerController *zxVideoControler;
+
 }
 
 
@@ -122,21 +120,7 @@
             videoCell = [[DT_VideoCell new]initWithStyle:(UITableViewCellStyleSubtitle) reuseIdentifier:VideoID];
             
         }
-//        UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(tapAction:)];
-//        videoCell.gifImageView.userInteractionEnabled = YES;
-//        [videoCell.gifImageView addGestureRecognizer:tap];
-//        videoCell.textLabel.text = [NSString stringWithFormat:@"Video：%ld",indexPath.row];
-        video = [[ZXVideo alloc] init];
-        video.playUrl = @"http://baobab.wdjcdn.com/1451897812703c.mp4";
-        video.title = @"Rollin'Wild 圆滚滚的";
-        
-        videoVc = [[VideoPlayViewController alloc] init];
-        videoVc.video = video;
-        videoVc.hidesBottomBarWhenPushed = YES;
-        videoVc.view.frame = CGRectMake(0, 0, APPWidth, APPWidth *0.5265);
-        [self addChildViewController:videoVc];
-        [videoCell addSubview:videoVc.view];
-        
+      
         return videoCell;
         
     }else{
@@ -155,20 +139,10 @@
 }
 
 - (void)tapAction:(UITapGestureRecognizer *)sender{
-    
-//            ZXVideo *video = [[ZXVideo alloc] init];
-//            video.playUrl = @"http://baobab.wdjcdn.com/1451897812703c.mp4";
-//            video.title = @"Rollin'Wild 圆滚滚的";
-//    
-//            VideoPlayViewController *vc = [[VideoPlayViewController alloc] init];
-//            vc.video = video;
-//            vc.hidesBottomBarWhenPushed = YES;
-//    [self.navigationController pushViewController:[VideoPlayViewController new] animated:YES];
-    
+  
 }
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     if (indexPath.row %3==0  ){
-        [zxVideoControler pause];
 
 
     }
