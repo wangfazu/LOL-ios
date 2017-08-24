@@ -120,6 +120,13 @@
     ViewController.view.frame = CGRectMake(0, 64, APPWidth * Multiple, APPHeight);
     [ViewController didMoveToParentViewController:self];
 }
+
+- (void)LOLaddChildViewControler:(UIViewController *)ViewController MultipleHeigh:(int)Multiple{
+    [self addChildViewController:ViewController];
+    [self.view addSubview:ViewController.view];
+    ViewController.view.frame = CGRectMake(0, 64, APPWidth , APPHeight* Multiple);
+    [ViewController didMoveToParentViewController:self];
+}
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.

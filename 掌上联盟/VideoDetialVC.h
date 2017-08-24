@@ -10,4 +10,5 @@
 
 @interface VideoDetialVC : BaseForLOL
 @property (nonatomic,retain) UIImageView *imageV;
+- (void)LOLsetPictureForjiana;
 @end

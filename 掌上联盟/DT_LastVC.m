@@ -7,8 +7,13 @@
 //
 
 #import "DT_LastVC.h"
+#import "ZXVideoPlayer/ZXVideo.h"
+#import "ZXVideoPlayerController.h"
 
+#import "VideoPlayViewController.h"
+#import <MediaPlayer/MediaPlayer.h>
 @interface DT_LastVC ()
+@property (nonatomic, strong) NSIndexPath *indexPath;
 
 @end
 
@@ -19,7 +24,9 @@
                          1:baseCell
                          2:videoCell
                          3.PictureCell*/
-    
+    ZXVideo *video;
+    VideoPlayViewController *videoVc;
+    ZXVideoPlayerController *zxVideoControler;
 }
 
 
@@ -88,7 +95,7 @@
         
     }else if (indexPath.row %3==0){
     
-        return APPWidth *0.52;
+        return APPWidth *0.65;
 
     }
     return APPWidth *0.68;
@@ -115,7 +122,21 @@
             videoCell = [[DT_VideoCell new]initWithStyle:(UITableViewCellStyleSubtitle) reuseIdentifier:VideoID];
             
         }
-        videoCell.textLabel.text = [NSString stringWithFormat:@"Video：%ld",indexPath.row];
+//        UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(tapAction:)];
+//        videoCell.gifImageView.userInteractionEnabled = YES;
+//        [videoCell.gifImageView addGestureRecognizer:tap];
+//        videoCell.textLabel.text = [NSString stringWithFormat:@"Video：%ld",indexPath.row];
+        video = [[ZXVideo alloc] init];
+        video.playUrl = @"http://baobab.wdjcdn.com/1451897812703c.mp4";
+        video.title = @"Rollin'Wild 圆滚滚的";
+        
+        videoVc = [[VideoPlayViewController alloc] init];
+        videoVc.video = video;
+        videoVc.hidesBottomBarWhenPushed = YES;
+        videoVc.view.frame = CGRectMake(0, 0, APPWidth, APPWidth *0.5265);
+        [self addChildViewController:videoVc];
+        [videoCell addSubview:videoVc.view];
+        
         return videoCell;
         
     }else{
@@ -133,11 +154,23 @@
 
 }
 
+- (void)tapAction:(UITapGestureRecognizer *)sender{
+    
+//            ZXVideo *video = [[ZXVideo alloc] init];
+//            video.playUrl = @"http://baobab.wdjcdn.com/1451897812703c.mp4";
+//            video.title = @"Rollin'Wild 圆滚滚的";
+//    
+//            VideoPlayViewController *vc = [[VideoPlayViewController alloc] init];
+//            vc.video = video;
+//            vc.hidesBottomBarWhenPushed = YES;
+//    [self.navigationController pushViewController:[VideoPlayViewController new] animated:YES];
+    
+}
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
-    if (indexPath.row %3!=0  &&indexPath.row %2!=0){
-        [DT_PictureCell new].bigImgV.image = [VideoDetialVC new].imageV.image;
-        [self.navigationController pushViewController:[VideoDetialVC new] animated:YES];
-        
+    if (indexPath.row %3==0  ){
+        [zxVideoControler pause];
+
+
     }
     
     

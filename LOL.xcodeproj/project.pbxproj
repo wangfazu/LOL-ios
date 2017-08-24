@@ -1571,6 +1571,42 @@
 		044AA7221F4D6D4400566590 /* VideoDetialVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 044AA7211F4D6D4400566590 /* VideoDetialVC.m */; };
 		044AA7241F4D6E9B00566590 /* MessageVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 044AA7231F4D6E9B00566590 /* MessageVC.m */; };
 		044AA7261F4D87FF00566590 /* jiana3.png in Resources */ = {isa = PBXBuildFile; fileRef = 044AA7251F4D87FF00566590 /* jiana3.png */; };
+		044D10C31F4E78B6008ACDD1 /* kr-video-player-close@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 044D10991F4E78B6008ACDD1 /* kr-video-player-close@2x.png */; };
+		044D10C41F4E78B6008ACDD1 /* kr-video-player-close@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 044D109A1F4E78B6008ACDD1 /* kr-video-player-close@3x.png */; };
+		044D10C51F4E78B6008ACDD1 /* kr-video-player-fullscreen@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 044D109B1F4E78B6008ACDD1 /* kr-video-player-fullscreen@2x.png */; };
+		044D10C61F4E78B6008ACDD1 /* kr-video-player-fullscreen@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 044D109C1F4E78B6008ACDD1 /* kr-video-player-fullscreen@3x.png */; };
+		044D10C71F4E78B6008ACDD1 /* kr-video-player-pause@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 044D109D1F4E78B6008ACDD1 /* kr-video-player-pause@2x.png */; };
+		044D10C81F4E78B6008ACDD1 /* kr-video-player-pause@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 044D109E1F4E78B6008ACDD1 /* kr-video-player-pause@3x.png */; };
+		044D10C91F4E78B6008ACDD1 /* kr-video-player-play@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 044D109F1F4E78B6008ACDD1 /* kr-video-player-play@2x.png */; };
+		044D10CA1F4E78B6008ACDD1 /* kr-video-player-play@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 044D10A01F4E78B6008ACDD1 /* kr-video-player-play@3x.png */; };
+		044D10CB1F4E78B6008ACDD1 /* kr-video-player-point@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 044D10A11F4E78B6008ACDD1 /* kr-video-player-point@2x.png */; };
+		044D10CC1F4E78B6008ACDD1 /* kr-video-player-point@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 044D10A21F4E78B6008ACDD1 /* kr-video-player-point@3x.png */; };
+		044D10CD1F4E78B6008ACDD1 /* kr-video-player-shrinkscreen@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 044D10A31F4E78B6008ACDD1 /* kr-video-player-shrinkscreen@2x.png */; };
+		044D10CE1F4E78B6008ACDD1 /* kr-video-player-shrinkscreen@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 044D10A41F4E78B6008ACDD1 /* kr-video-player-shrinkscreen@3x.png */; };
+		044D10CF1F4E78B6008ACDD1 /* zx-video-banner-back.png in Resources */ = {isa = PBXBuildFile; fileRef = 044D10A51F4E78B6008ACDD1 /* zx-video-banner-back.png */; };
+		044D10D01F4E78B6008ACDD1 /* zx-video-banner-back@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 044D10A61F4E78B6008ACDD1 /* zx-video-banner-back@2x.png */; };
+		044D10D11F4E78B6008ACDD1 /* zx-video-player-brightness@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 044D10A71F4E78B6008ACDD1 /* zx-video-player-brightness@2x.png */; };
+		044D10D21F4E78B6008ACDD1 /* zx-video-player-brightness@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 044D10A81F4E78B6008ACDD1 /* zx-video-player-brightness@3x.png */; };
+		044D10D31F4E78B6008ACDD1 /* zx-video-player-fastForward@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 044D10A91F4E78B6008ACDD1 /* zx-video-player-fastForward@2x.png */; };
+		044D10D41F4E78B6008ACDD1 /* zx-video-player-fastForward@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 044D10AA1F4E78B6008ACDD1 /* zx-video-player-fastForward@3x.png */; };
+		044D10D51F4E78B6008ACDD1 /* zx-video-player-lock@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 044D10AB1F4E78B6008ACDD1 /* zx-video-player-lock@2x.png */; };
+		044D10D61F4E78B6008ACDD1 /* zx-video-player-lock@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 044D10AC1F4E78B6008ACDD1 /* zx-video-player-lock@3x.png */; };
+		044D10D71F4E78B6008ACDD1 /* zx-video-player-rewind@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 044D10AD1F4E78B6008ACDD1 /* zx-video-player-rewind@2x.png */; };
+		044D10D81F4E78B6008ACDD1 /* zx-video-player-rewind@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 044D10AE1F4E78B6008ACDD1 /* zx-video-player-rewind@3x.png */; };
+		044D10D91F4E78B6008ACDD1 /* zx-video-player-unlock@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 044D10AF1F4E78B6008ACDD1 /* zx-video-player-unlock@2x.png */; };
+		044D10DA1F4E78B6008ACDD1 /* zx-video-player-unlock@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 044D10B01F4E78B6008ACDD1 /* zx-video-player-unlock@3x.png */; };
+		044D10DB1F4E78B6008ACDD1 /* zx-video-player-volume@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 044D10B11F4E78B6008ACDD1 /* zx-video-player-volume@2x.png */; };
+		044D10DC1F4E78B6008ACDD1 /* zx-video-player-volume@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 044D10B21F4E78B6008ACDD1 /* zx-video-player-volume@3x.png */; };
+		044D10DD1F4E78B6008ACDD1 /* zx-video-player-volumeMute@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 044D10B31F4E78B6008ACDD1 /* zx-video-player-volumeMute@2x.png */; };
+		044D10DE1F4E78B6008ACDD1 /* zx-video-player-volumeMute@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 044D10B41F4E78B6008ACDD1 /* zx-video-player-volumeMute@3x.png */; };
+		044D10DF1F4E78B6008ACDD1 /* ZXVideo.m in Sources */ = {isa = PBXBuildFile; fileRef = 044D10B61F4E78B6008ACDD1 /* ZXVideo.m */; };
+		044D10E01F4E78B6008ACDD1 /* ZXVideoPlayerBatteryView.m in Sources */ = {isa = PBXBuildFile; fileRef = 044D10B81F4E78B6008ACDD1 /* ZXVideoPlayerBatteryView.m */; };
+		044D10E11F4E78B6008ACDD1 /* ZXVideoPlayerBrightnessView.m in Sources */ = {isa = PBXBuildFile; fileRef = 044D10BA1F4E78B6008ACDD1 /* ZXVideoPlayerBrightnessView.m */; };
+		044D10E21F4E78B6008ACDD1 /* ZXVideoPlayerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 044D10BC1F4E78B6008ACDD1 /* ZXVideoPlayerController.m */; };
+		044D10E31F4E78B6008ACDD1 /* ZXVideoPlayerControlView.m in Sources */ = {isa = PBXBuildFile; fileRef = 044D10BE1F4E78B6008ACDD1 /* ZXVideoPlayerControlView.m */; };
+		044D10E41F4E78B6008ACDD1 /* ZXVideoPlayerTimeIndicatorView.m in Sources */ = {isa = PBXBuildFile; fileRef = 044D10C01F4E78B6008ACDD1 /* ZXVideoPlayerTimeIndicatorView.m */; };
+		044D10E51F4E78B6008ACDD1 /* ZXVideoPlayerVolumeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 044D10C21F4E78B6008ACDD1 /* ZXVideoPlayerVolumeView.m */; };
+		044D10E81F4E78C7008ACDD1 /* VideoPlayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 044D10E71F4E78C7008ACDD1 /* VideoPlayViewController.m */; };
 		045435C11F4A8B9600FEEA40 /* DDMenuController.m in Sources */ = {isa = PBXBuildFile; fileRef = 045435C01F4A8B9600FEEA40 /* DDMenuController.m */; };
 		045435C41F4A8D1000FEEA40 /* PersonSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 045435C31F4A8D1000FEEA40 /* PersonSet.m */; };
 		045435C81F4AAA8200FEEA40 /* DT_LastVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 045435C71F4AAA8200FEEA40 /* DT_LastVC.m */; };
@@ -3203,6 +3239,50 @@
 		044AA7211F4D6D4400566590 /* VideoDetialVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoDetialVC.m; sourceTree = "<group>"; };
 		044AA7231F4D6E9B00566590 /* MessageVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MessageVC.m; sourceTree = "<group>"; };
 		044AA7251F4D87FF00566590 /* jiana3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = jiana3.png; sourceTree = "<group>"; };
+		044D10991F4E78B6008ACDD1 /* kr-video-player-close@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "kr-video-player-close@2x.png"; sourceTree = "<group>"; };
+		044D109A1F4E78B6008ACDD1 /* kr-video-player-close@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "kr-video-player-close@3x.png"; sourceTree = "<group>"; };
+		044D109B1F4E78B6008ACDD1 /* kr-video-player-fullscreen@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "kr-video-player-fullscreen@2x.png"; sourceTree = "<group>"; };
+		044D109C1F4E78B6008ACDD1 /* kr-video-player-fullscreen@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "kr-video-player-fullscreen@3x.png"; sourceTree = "<group>"; };
+		044D109D1F4E78B6008ACDD1 /* kr-video-player-pause@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "kr-video-player-pause@2x.png"; sourceTree = "<group>"; };
+		044D109E1F4E78B6008ACDD1 /* kr-video-player-pause@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "kr-video-player-pause@3x.png"; sourceTree = "<group>"; };
+		044D109F1F4E78B6008ACDD1 /* kr-video-player-play@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "kr-video-player-play@2x.png"; sourceTree = "<group>"; };
+		044D10A01F4E78B6008ACDD1 /* kr-video-player-play@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "kr-video-player-play@3x.png"; sourceTree = "<group>"; };
+		044D10A11F4E78B6008ACDD1 /* kr-video-player-point@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "kr-video-player-point@2x.png"; sourceTree = "<group>"; };
+		044D10A21F4E78B6008ACDD1 /* kr-video-player-point@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "kr-video-player-point@3x.png"; sourceTree = "<group>"; };
+		044D10A31F4E78B6008ACDD1 /* kr-video-player-shrinkscreen@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "kr-video-player-shrinkscreen@2x.png"; sourceTree = "<group>"; };
+		044D10A41F4E78B6008ACDD1 /* kr-video-player-shrinkscreen@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "kr-video-player-shrinkscreen@3x.png"; sourceTree = "<group>"; };
+		044D10A51F4E78B6008ACDD1 /* zx-video-banner-back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "zx-video-banner-back.png"; sourceTree = "<group>"; };
+		044D10A61F4E78B6008ACDD1 /* zx-video-banner-back@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "zx-video-banner-back@2x.png"; sourceTree = "<group>"; };
+		044D10A71F4E78B6008ACDD1 /* zx-video-player-brightness@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "zx-video-player-brightness@2x.png"; sourceTree = "<group>"; };
+		044D10A81F4E78B6008ACDD1 /* zx-video-player-brightness@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "zx-video-player-brightness@3x.png"; sourceTree = "<group>"; };
+		044D10A91F4E78B6008ACDD1 /* zx-video-player-fastForward@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "zx-video-player-fastForward@2x.png"; sourceTree = "<group>"; };
+		044D10AA1F4E78B6008ACDD1 /* zx-video-player-fastForward@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "zx-video-player-fastForward@3x.png"; sourceTree = "<group>"; };
+		044D10AB1F4E78B6008ACDD1 /* zx-video-player-lock@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "zx-video-player-lock@2x.png"; sourceTree = "<group>"; };
+		044D10AC1F4E78B6008ACDD1 /* zx-video-player-lock@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "zx-video-player-lock@3x.png"; sourceTree = "<group>"; };
+		044D10AD1F4E78B6008ACDD1 /* zx-video-player-rewind@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "zx-video-player-rewind@2x.png"; sourceTree = "<group>"; };
+		044D10AE1F4E78B6008ACDD1 /* zx-video-player-rewind@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "zx-video-player-rewind@3x.png"; sourceTree = "<group>"; };
+		044D10AF1F4E78B6008ACDD1 /* zx-video-player-unlock@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "zx-video-player-unlock@2x.png"; sourceTree = "<group>"; };
+		044D10B01F4E78B6008ACDD1 /* zx-video-player-unlock@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "zx-video-player-unlock@3x.png"; sourceTree = "<group>"; };
+		044D10B11F4E78B6008ACDD1 /* zx-video-player-volume@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "zx-video-player-volume@2x.png"; sourceTree = "<group>"; };
+		044D10B21F4E78B6008ACDD1 /* zx-video-player-volume@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "zx-video-player-volume@3x.png"; sourceTree = "<group>"; };
+		044D10B31F4E78B6008ACDD1 /* zx-video-player-volumeMute@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "zx-video-player-volumeMute@2x.png"; sourceTree = "<group>"; };
+		044D10B41F4E78B6008ACDD1 /* zx-video-player-volumeMute@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "zx-video-player-volumeMute@3x.png"; sourceTree = "<group>"; };
+		044D10B51F4E78B6008ACDD1 /* ZXVideo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZXVideo.h; sourceTree = "<group>"; };
+		044D10B61F4E78B6008ACDD1 /* ZXVideo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZXVideo.m; sourceTree = "<group>"; };
+		044D10B71F4E78B6008ACDD1 /* ZXVideoPlayerBatteryView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZXVideoPlayerBatteryView.h; sourceTree = "<group>"; };
+		044D10B81F4E78B6008ACDD1 /* ZXVideoPlayerBatteryView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZXVideoPlayerBatteryView.m; sourceTree = "<group>"; };
+		044D10B91F4E78B6008ACDD1 /* ZXVideoPlayerBrightnessView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZXVideoPlayerBrightnessView.h; sourceTree = "<group>"; };
+		044D10BA1F4E78B6008ACDD1 /* ZXVideoPlayerBrightnessView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZXVideoPlayerBrightnessView.m; sourceTree = "<group>"; };
+		044D10BB1F4E78B6008ACDD1 /* ZXVideoPlayerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZXVideoPlayerController.h; sourceTree = "<group>"; };
+		044D10BC1F4E78B6008ACDD1 /* ZXVideoPlayerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZXVideoPlayerController.m; sourceTree = "<group>"; };
+		044D10BD1F4E78B6008ACDD1 /* ZXVideoPlayerControlView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZXVideoPlayerControlView.h; sourceTree = "<group>"; };
+		044D10BE1F4E78B6008ACDD1 /* ZXVideoPlayerControlView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZXVideoPlayerControlView.m; sourceTree = "<group>"; };
+		044D10BF1F4E78B6008ACDD1 /* ZXVideoPlayerTimeIndicatorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZXVideoPlayerTimeIndicatorView.h; sourceTree = "<group>"; };
+		044D10C01F4E78B6008ACDD1 /* ZXVideoPlayerTimeIndicatorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZXVideoPlayerTimeIndicatorView.m; sourceTree = "<group>"; };
+		044D10C11F4E78B6008ACDD1 /* ZXVideoPlayerVolumeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZXVideoPlayerVolumeView.h; sourceTree = "<group>"; };
+		044D10C21F4E78B6008ACDD1 /* ZXVideoPlayerVolumeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZXVideoPlayerVolumeView.m; sourceTree = "<group>"; };
+		044D10E61F4E78C7008ACDD1 /* VideoPlayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoPlayViewController.h; sourceTree = "<group>"; };
+		044D10E71F4E78C7008ACDD1 /* VideoPlayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoPlayViewController.m; sourceTree = "<group>"; };
 		045435BF1F4A8B9600FEEA40 /* DDMenuController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDMenuController.h; sourceTree = "<group>"; };
 		045435C01F4A8B9600FEEA40 /* DDMenuController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDMenuController.m; sourceTree = "<group>"; };
 		045435C21F4A8D1000FEEA40 /* PersonSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonSet.h; sourceTree = "<group>"; };
@@ -4992,8 +5072,67 @@
 			children = (
 				044AA7201F4D6D4400566590 /* VideoDetialVC.h */,
 				044AA7211F4D6D4400566590 /* VideoDetialVC.m */,
+				044D10E61F4E78C7008ACDD1 /* VideoPlayViewController.h */,
+				044D10E71F4E78C7008ACDD1 /* VideoPlayViewController.m */,
 			);
 			name = "detail-cell";
+			sourceTree = "<group>";
+		};
+		044D10971F4E78B6008ACDD1 /* ZXVideoPlayer */ = {
+			isa = PBXGroup;
+			children = (
+				044D10981F4E78B6008ACDD1 /* Assets */,
+				044D10B51F4E78B6008ACDD1 /* ZXVideo.h */,
+				044D10B61F4E78B6008ACDD1 /* ZXVideo.m */,
+				044D10B71F4E78B6008ACDD1 /* ZXVideoPlayerBatteryView.h */,
+				044D10B81F4E78B6008ACDD1 /* ZXVideoPlayerBatteryView.m */,
+				044D10B91F4E78B6008ACDD1 /* ZXVideoPlayerBrightnessView.h */,
+				044D10BA1F4E78B6008ACDD1 /* ZXVideoPlayerBrightnessView.m */,
+				044D10BB1F4E78B6008ACDD1 /* ZXVideoPlayerController.h */,
+				044D10BC1F4E78B6008ACDD1 /* ZXVideoPlayerController.m */,
+				044D10BD1F4E78B6008ACDD1 /* ZXVideoPlayerControlView.h */,
+				044D10BE1F4E78B6008ACDD1 /* ZXVideoPlayerControlView.m */,
+				044D10BF1F4E78B6008ACDD1 /* ZXVideoPlayerTimeIndicatorView.h */,
+				044D10C01F4E78B6008ACDD1 /* ZXVideoPlayerTimeIndicatorView.m */,
+				044D10C11F4E78B6008ACDD1 /* ZXVideoPlayerVolumeView.h */,
+				044D10C21F4E78B6008ACDD1 /* ZXVideoPlayerVolumeView.m */,
+			);
+			path = ZXVideoPlayer;
+			sourceTree = "<group>";
+		};
+		044D10981F4E78B6008ACDD1 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				044D10991F4E78B6008ACDD1 /* kr-video-player-close@2x.png */,
+				044D109A1F4E78B6008ACDD1 /* kr-video-player-close@3x.png */,
+				044D109B1F4E78B6008ACDD1 /* kr-video-player-fullscreen@2x.png */,
+				044D109C1F4E78B6008ACDD1 /* kr-video-player-fullscreen@3x.png */,
+				044D109D1F4E78B6008ACDD1 /* kr-video-player-pause@2x.png */,
+				044D109E1F4E78B6008ACDD1 /* kr-video-player-pause@3x.png */,
+				044D109F1F4E78B6008ACDD1 /* kr-video-player-play@2x.png */,
+				044D10A01F4E78B6008ACDD1 /* kr-video-player-play@3x.png */,
+				044D10A11F4E78B6008ACDD1 /* kr-video-player-point@2x.png */,
+				044D10A21F4E78B6008ACDD1 /* kr-video-player-point@3x.png */,
+				044D10A31F4E78B6008ACDD1 /* kr-video-player-shrinkscreen@2x.png */,
+				044D10A41F4E78B6008ACDD1 /* kr-video-player-shrinkscreen@3x.png */,
+				044D10A51F4E78B6008ACDD1 /* zx-video-banner-back.png */,
+				044D10A61F4E78B6008ACDD1 /* zx-video-banner-back@2x.png */,
+				044D10A71F4E78B6008ACDD1 /* zx-video-player-brightness@2x.png */,
+				044D10A81F4E78B6008ACDD1 /* zx-video-player-brightness@3x.png */,
+				044D10A91F4E78B6008ACDD1 /* zx-video-player-fastForward@2x.png */,
+				044D10AA1F4E78B6008ACDD1 /* zx-video-player-fastForward@3x.png */,
+				044D10AB1F4E78B6008ACDD1 /* zx-video-player-lock@2x.png */,
+				044D10AC1F4E78B6008ACDD1 /* zx-video-player-lock@3x.png */,
+				044D10AD1F4E78B6008ACDD1 /* zx-video-player-rewind@2x.png */,
+				044D10AE1F4E78B6008ACDD1 /* zx-video-player-rewind@3x.png */,
+				044D10AF1F4E78B6008ACDD1 /* zx-video-player-unlock@2x.png */,
+				044D10B01F4E78B6008ACDD1 /* zx-video-player-unlock@3x.png */,
+				044D10B11F4E78B6008ACDD1 /* zx-video-player-volume@2x.png */,
+				044D10B21F4E78B6008ACDD1 /* zx-video-player-volume@3x.png */,
+				044D10B31F4E78B6008ACDD1 /* zx-video-player-volumeMute@2x.png */,
+				044D10B41F4E78B6008ACDD1 /* zx-video-player-volumeMute@3x.png */,
+			);
+			path = Assets;
 			sourceTree = "<group>";
 		};
 		045435BE1F4A8B4600FEEA40 /* DDmenu(侧滑栏) */ = {
@@ -5199,6 +5338,7 @@
 		0472AB791F46C87D00B654E0 /* SDK */ = {
 			isa = PBXGroup;
 			children = (
+				044D10971F4E78B6008ACDD1 /* ZXVideoPlayer */,
 				04400A6C1F4C21BF0013F52E /* MJRefresh(TV刷新) */,
 				042818BC1F46C9160033413F /* LLGifView(GIF) */,
 				045435BE1F4A8B4600FEEA40 /* DDmenu(侧滑栏) */,
@@ -5356,6 +5496,7 @@
 				04281F151F46E36A0033413F /* battle_detail_my_team_lose@2x.png in Resources */,
 				042820BF1F46E36A0033413F /* hero_delete_unselected@2x.png in Resources */,
 				0428206B1F46E36A0033413F /* fullplayer_icon_setting@2x.png in Resources */,
+				044D10D61F4E78B6008ACDD1 /* zx-video-player-lock@3x.png in Resources */,
 				042820711F46E36A0033413F /* fullplayer_light_low@2x.png in Resources */,
 				042821DA1F46E36A0033413F /* netbar_default_1@2x.png in Resources */,
 				04281FEF1F46E36A0033413F /* Default.png in Resources */,
@@ -5420,6 +5561,7 @@
 				042822BC1F46E36A0033413F /* progress_bg01@2x.png in Resources */,
 				042824981F46E36A0033413F /* wall_paper_main_screen_top_lol_mark@2x.png in Resources */,
 				042823DF1F46E36A0033413F /* tab_news_plus_hl@2x.png in Resources */,
+				044D10CA1F4E78B6008ACDD1 /* kr-video-player-play@3x.png in Resources */,
 				04281F261F46E36A0033413F /* battle_detail_tower_lose@2x.png in Resources */,
 				042822431F46E36A0033413F /* personal_guest_bottom_add_friend@2x.png in Resources */,
 				042823B71F46E36A0033413F /* subscribe_match_btn_live_hover@2x.png in Resources */,
@@ -5427,6 +5569,7 @@
 				04281FFA1F46E36A0033413F /* InfoPlist.strings in Resources */,
 				042820BE1F46E36A0033413F /* hero_delete_selected@2x.png in Resources */,
 				042823461F46E36A0033413F /* smiley_103@2x.png in Resources */,
+				044D10DA1F4E78B6008ACDD1 /* zx-video-player-unlock@3x.png in Resources */,
 				042821841F46E36A0033413F /* mobile_store_friend_list_tag_bg@2x.png in Resources */,
 				0428235B1F46E36A0033413F /* smiley_22@2x.png in Resources */,
 				042821381F46E36A0033413F /* left_activity@2x.png in Resources */,
@@ -5499,6 +5642,7 @@
 				042824851F46E36A0033413F /* video_play_custom_control_bg@2x.png in Resources */,
 				042822891F46E36A0033413F /* personal_social_male_mark_unselect@2x.png in Resources */,
 				042820AA1F46E36A0033413F /* hero_circle_detail_tips_right@2x.png in Resources */,
+				044D10C61F4E78B6008ACDD1 /* kr-video-player-fullscreen@3x.png in Resources */,
 				04281EEF1F46E36A0033413F /* battle_detail_big_dragon_win@2x.png in Resources */,
 				042820041F46E36A0033413F /* first_win_calendar_activity@2x.png in Resources */,
 				0428240A1F46E36A0033413F /* talent_simulator_scheme_arrow_down@2x.png in Resources */,
@@ -5510,6 +5654,7 @@
 				04281F181F46E36A0033413F /* battle_detail_old_dragon_solo@2x.png in Resources */,
 				042822231F46E36A0033413F /* news_special_column_subscribe_guide_image@2x.png in Resources */,
 				042823AE1F46E36A0033413F /* smiley_97@2x.png in Resources */,
+				044D10DE1F4E78B6008ACDD1 /* zx-video-player-volumeMute@3x.png in Resources */,
 				042821541F46E36A0033413F /* list_special_type_btn_normal@2x.png in Resources */,
 				042820181F46E36A0033413F /* friend_chat_btn_bg_press@2x.png in Resources */,
 				042823481F46E36A0033413F /* smiley_10@2x.png in Resources */,
@@ -5601,6 +5746,7 @@
 				042820FC1F46E36A0033413F /* Icon-72.png in Resources */,
 				0428214B1F46E36A0033413F /* list_news_play_media_mark@2x.png in Resources */,
 				0428232B1F46E36A0033413F /* share_btn_qq_img_icon_normal@2x.png in Resources */,
+				044D10D81F4E78B6008ACDD1 /* zx-video-player-rewind@3x.png in Resources */,
 				042823B01F46E36A0033413F /* smiley_99@2x.png in Resources */,
 				04281EF21F46E36A0033413F /* battle_detail_default_kill_icon@2x.png in Resources */,
 				0428229D1F46E36A0033413F /* personal_win_5@2x.png in Resources */,
@@ -5651,6 +5797,7 @@
 				042823251F46E36A0033413F /* share_btn_friend_cycle_icon_normal@2x.png in Resources */,
 				04281F5A1F46E36A0033413F /* battle_win_death@2x.png in Resources */,
 				042824BA1F46E36A0033413F /* WsjPaySDKResources.bundle in Resources */,
+				044D10CE1F4E78B6008ACDD1 /* kr-video-player-shrinkscreen@3x.png in Resources */,
 				04281FB31F46E36A0033413F /* club_main_right_item_has_noticed_normal@2x.png in Resources */,
 				0428202A1F46E36A0033413F /* friend_cycle_main_mark_view@2x.png in Resources */,
 				04281F511F46E36A0033413F /* battle_rank_3@2x.png in Resources */,
@@ -5723,12 +5870,14 @@
 				042823AC1F46E36A0033413F /* smiley_95@2x.png in Resources */,
 				042822C31F46E36A0033413F /* progress_button@3x.png in Resources */,
 				0428201A1F46E36A0033413F /* friend_chat_btn_pre@2x.png in Resources */,
+				044D10D01F4E78B6008ACDD1 /* zx-video-banner-back@2x.png in Resources */,
 				0428233B1F46E36A0033413F /* skill_fold_icon@2x.png in Resources */,
 				042822D21F46E36A0033413F /* qr_code_share_icon_view3@2x.png in Resources */,
 				042820501F46E36A0033413F /* friend_item_bg_nor@2x.png in Resources */,
 				042823261F46E36A0033413F /* share_btn_friend_cycle_icon_press@2x.png in Resources */,
 				042821451F46E36A0033413F /* list_news_item_activity_mark@2x.png in Resources */,
 				0428245F1F46E36A0033413F /* video_bottom_contain_bg@2x.png in Resources */,
+				044D10D41F4E78B6008ACDD1 /* zx-video-player-fastForward@3x.png in Resources */,
 				042820341F46E36A0033413F /* friend_cycle_send_trend_mark_normal@2x.png in Resources */,
 				042820CE1F46E36A0033413F /* hero_next_skin@2x.png in Resources */,
 				04281F4C1F46E36A0033413F /* battle_overview_golden_point_lose@2x.png in Resources */,
@@ -5736,10 +5885,12 @@
 				0428208A1F46E36A0033413F /* hero_btn_update_right_bar_press@2x.png in Resources */,
 				042821001F46E36A0033413F /* Icon-Share.png in Resources */,
 				04281FD71F46E36A0033413F /* competition_centre_subscribe_vs_mark@2x.png in Resources */,
+				044D10C91F4E78B6008ACDD1 /* kr-video-player-play@2x.png in Resources */,
 				04281F2C1F46E36A0033413F /* battle_few_defeat_many_background@2x.png in Resources */,
 				04281F781F46E36A0033413F /* card_honor_killer_uninterruped_5@2x.png in Resources */,
 				0428203F1F46E36A0033413F /* friend_cycle_trend_mark_platinum@2x.png in Resources */,
 				04400AA91F4C21BF0013F52E /* MJRefresh.bundle in Resources */,
+				044D10C31F4E78B6008ACDD1 /* kr-video-player-close@2x.png in Resources */,
 				042820881F46E36A0033413F /* hero_blue_icon@2x.png in Resources */,
 				042822E21F46E36A0033413F /* QTLModel12.mom in Resources */,
 				042820461F46E36A0033413F /* friend_cycle_trend_type_news@2x.png in Resources */,
@@ -5810,6 +5961,7 @@
 				0428219D1F46E36A0033413F /* mobile_store_order_tag_bg@2x.png in Resources */,
 				0428207A1F46E36A0033413F /* gold_search_icon_normal@2x.png in Resources */,
 				042820EC1F46E36A0033413F /* hero_time_tree_line@2x.png in Resources */,
+				044D10D21F4E78B6008ACDD1 /* zx-video-player-brightness@3x.png in Resources */,
 				04281EF51F46E36A0033413F /* battle_detail_enemy_team_win@2x.png in Resources */,
 				04281EC91F46E36A0033413F /* add_friend_search_clock@2x.png in Resources */,
 				0428219E1F46E36A0033413F /* mobile_store_pay_success_prompt@2x.png in Resources */,
@@ -5826,6 +5978,7 @@
 				04281F7D1F46E36A0033413F /* card_honor_win_uninterruped@2x.png in Resources */,
 				042820B21F46E36A0033413F /* hero_circle_mine_head_herounit_icon@2x.png in Resources */,
 				042820DC1F46E36A0033413F /* hero_skin_logo@2x.png in Resources */,
+				044D10DC1F4E78B6008ACDD1 /* zx-video-player-volume@3x.png in Resources */,
 				0428246B1F46E36A0033413F /* video_center_mark_narrate_list@2x.png in Resources */,
 				04281EDC1F46E36A0033413F /* batch_cancel_wallpaper_selected@2x.png in Resources */,
 				042823C81F46E36A0033413F /* subscribe_match_state_about_to_begin@2x.png in Resources */,
@@ -5895,6 +6048,7 @@
 				0428241E1F46E36A0033413F /* topic_attentioned_pre@2x.png in Resources */,
 				042820AC1F46E36A0033413F /* hero_circle_down_arrow_noraml@2x.png in Resources */,
 				042821BA1F46E36A0033413F /* more_logo@2x.png in Resources */,
+				044D10CC1F4E78B6008ACDD1 /* kr-video-player-point@3x.png in Resources */,
 				0428222E1F46E36A0033413F /* notice_pic_cancel_normal@2x.png in Resources */,
 				042820A31F46E36A0033413F /* hero_circle_detail_section_mark@2x.png in Resources */,
 				042824961F46E36A0033413F /* wall_paper_main_screen_bottom_phone_mark@2x.png in Resources */,
@@ -6028,6 +6182,7 @@
 				04281FB51F46E36A0033413F /* club_main_right_item_notice_normal@2x.png in Resources */,
 				04281F141F46E36A0033413F /* battle_detail_map_win_killed_press@2x.png in Resources */,
 				042820491F46E36A0033413F /* friend_cycle_trend_type_wallpaper@2x.png in Resources */,
+				044D10CB1F4E78B6008ACDD1 /* kr-video-player-point@2x.png in Resources */,
 				04281FEE1F46E36A0033413F /* Default-667h@2x.png in Resources */,
 				0428201C1F46E36A0033413F /* friend_cycle_assistant_mark@2x.png in Resources */,
 				042822E81F46E36A0033413F /* QTLModel19.mom in Resources */,
@@ -6039,6 +6194,7 @@
 				042820C61F46E36A0033413F /* hero_expiry_bg@2x.png in Resources */,
 				042820FF1F46E36A0033413F /* Icon-76@2x.png in Resources */,
 				04281FAE1F46E36A0033413F /* club_fans_circle_control_arrow_down@2x.png in Resources */,
+				044D10D31F4E78B6008ACDD1 /* zx-video-player-fastForward@2x.png in Resources */,
 				042822FC1F46E36A0033413F /* VersionInfo.plist in Resources */,
 				042821771F46E36A0033413F /* mark_slot_bg@2x.png in Resources */,
 				042820401F46E36A0033413F /* friend_cycle_trend_mark_silver@2x.png in Resources */,
@@ -6137,6 +6293,7 @@
 				042821BF1F46E36A0033413F /* nav_btn_back_normal@2x.png in Resources */,
 				042823411F46E36A0033413F /* small_tag_bg_light_grey@2x.png in Resources */,
 				04281EF71F46E36A0033413F /* battle_detail_header_defualt@2x.png in Resources */,
+				044D10C51F4E78B6008ACDD1 /* kr-video-player-fullscreen@2x.png in Resources */,
 				0428248D1F46E36A0033413F /* video_play_share_normal@2x.png in Resources */,
 				042822531F46E36A0033413F /* personal_honor_type_assist_num@2x.png in Resources */,
 				042820011F46E36A0033413F /* fav_hero_selected@2x.png in Resources */,
@@ -6189,6 +6346,7 @@
 				042824181F46E36A0033413F /* title_tab_right_pressed@2x.png in Resources */,
 				042822911F46E36A0033413F /* personal_stage_7@2x.png in Resources */,
 				04281FBA1F46E36A0033413F /* club_related_video_hot_mark_view@2x.png in Resources */,
+				044D10CD1F4E78B6008ACDD1 /* kr-video-player-shrinkscreen@2x.png in Resources */,
 				0428211E1F46E36A0033413F /* icon_kill_5_big@2x.png in Resources */,
 				042823E21F46E36A0033413F /* TADAdVideo.bundle in Resources */,
 				042822711F46E36A0033413F /* personal_info_share_back_ground@2x.png in Resources */,
@@ -6230,6 +6388,7 @@
 				042823D61F46E36A0033413F /* tab_icon_more_normal@2x.png in Resources */,
 				042824411F46E36A0033413F /* trophy_item_frame_miss@2x.png in Resources */,
 				042822C01F46E36A0033413F /* progress_bg02@3x.png in Resources */,
+				044D10C71F4E78B6008ACDD1 /* kr-video-player-pause@2x.png in Resources */,
 				042821D01F46E36A0033413F /* nearby_view_popover_add_friend_normal@2x.png in Resources */,
 				0428204C1F46E36A0033413F /* friend_game_mark_white@2x.png in Resources */,
 				042823541F46E36A0033413F /* smiley_196.png in Resources */,
@@ -6242,6 +6401,7 @@
 				042822361F46E36A0033413F /* personal_ability_description_mark@2x.png in Resources */,
 				04281F191F46E36A0033413F /* battle_detail_old_dragon_solo_big@2x.png in Resources */,
 				04281FCB1F46E36A0033413F /* competition_centre_main_live_room_mark@2x.png in Resources */,
+				044D10DD1F4E78B6008ACDD1 /* zx-video-player-volumeMute@2x.png in Resources */,
 				042820C71F46E36A0033413F /* hero_mine@2x.png in Resources */,
 				042820271F46E36A0033413F /* friend_cycle_guide_content_view@2x.png in Resources */,
 				0428218A1F46E36A0033413F /* mobile_store_gold_low_gray@2x.png in Resources */,
@@ -6260,6 +6420,7 @@
 				0428223A1F46E36A0033413F /* personal_ability_honor_4@2x.png in Resources */,
 				042821601F46E36A0033413F /* locate_view_body_default_icon@2x.png in Resources */,
 				0428247F1F46E36A0033413F /* video_download_view_arrow_mark@2x.png in Resources */,
+				044D10C41F4E78B6008ACDD1 /* kr-video-player-close@3x.png in Resources */,
 				042824871F46E36A0033413F /* video_play_custom_pasue_press@2x.png in Resources */,
 				0428248E1F46E36A0033413F /* video_play_share_press@2x.png in Resources */,
 				042821271F46E36A0033413F /* icon_tank@2x.png in Resources */,
@@ -6307,6 +6468,7 @@
 				042823621F46E36A0033413F /* smiley_29@2x.png in Resources */,
 				042821361F46E36A0033413F /* LaunchImage.png in Resources */,
 				04281F8F1F46E36A0033413F /* chat_room_add_v@2x.png in Resources */,
+				044D10D51F4E78B6008ACDD1 /* zx-video-player-lock@2x.png in Resources */,
 				042824461F46E36A0033413F /* tvk_player_ui_point@2x.png in Resources */,
 				0428243B1F46E36A0033413F /* tourists_friend@2x.png in Resources */,
 				0428220F1F46E36A0033413F /* news_enshrine_search_icon_video_press@2x.png in Resources */,
@@ -6329,6 +6491,7 @@
 				04281FC81F46E36A0033413F /* competition_centre_image_default_mark@2x.png in Resources */,
 				04281EE21F46E36A0033413F /* battle_data_arrow_winner_left@2x.png in Resources */,
 				0428239A1F46E36A0033413F /* smiley_79@2x.png in Resources */,
+				044D10DB1F4E78B6008ACDD1 /* zx-video-player-volume@2x.png in Resources */,
 				042824611F46E36A0033413F /* video_center_bigImage_play@2x.png in Resources */,
 				042820801F46E36A0033413F /* guide_center_icon@2x.png in Resources */,
 				042822541F46E36A0033413F /* personal_honor_type_assist_num_gray@2x.png in Resources */,
@@ -6404,6 +6567,7 @@
 				042821761F46E36A0033413F /* luaTest.lua in Resources */,
 				04281FE81F46E36A0033413F /* current_martch_scroll_arrow_up_view@2x.png in Resources */,
 				042823B31F46E36A0033413F /* subscribe_match_btn_cancel_subscribe_hover@2x.png in Resources */,
+				044D10D71F4E78B6008ACDD1 /* zx-video-player-rewind@2x.png in Resources */,
 				042824B41F46E36A0033413F /* writer_video_wait_view_3@2x.png in Resources */,
 				04281F941F46E36A0033413F /* chat_room_expand_normal@2x.png in Resources */,
 				042824AA1F46E36A0033413F /* write_video_open_light_normal@2x.png in Resources */,
@@ -6428,6 +6592,7 @@
 				042821F41F46E36A0033413F /* new_version_yellow_down_arrow@2x.png in Resources */,
 				04281F951F46E36A0033413F /* chat_room_expand_press@2x.png in Resources */,
 				042824471F46E36A0033413F /* tvk_player_ui_voice_big@2x.png in Resources */,
+				044D10CF1F4E78B6008ACDD1 /* zx-video-banner-back.png in Resources */,
 				042822A51F46E36A0033413F /* player_asset_view_all_arrow@2x.png in Resources */,
 				042820C91F46E36A0033413F /* hero_more_skin_lock@2x.png in Resources */,
 				04281F8A1F46E36A0033413F /* chat_mobile_online@2x.png in Resources */,
@@ -6620,6 +6785,7 @@
 				04281FF71F46E36A0033413F /* drop_down_normal@2x.png in Resources */,
 				042821061F46E36A0033413F /* Icon.png in Resources */,
 				042821F91F46E36A0033413F /* news_card_play@2x.png in Resources */,
+				044D10D91F4E78B6008ACDD1 /* zx-video-player-unlock@2x.png in Resources */,
 				04281F1F1F46E36A0033413F /* battle_detail_score_we_win@2x.png in Resources */,
 				042820691F46E36A0033413F /* fullplayer_icon_play@3x.png in Resources */,
 				042822F21F46E36A0033413F /* QTLModel29.mom in Resources */,
@@ -6658,6 +6824,7 @@
 				04281EC61F46E36A0033413F /* add_friend_nearby@2x.png in Resources */,
 				042822631F46E36A0033413F /* personal_honor_type_ultra_kill@2x.png in Resources */,
 				042823A71F46E36A0033413F /* smiley_90@2x.png in Resources */,
+				044D10D11F4E78B6008ACDD1 /* zx-video-player-brightness@2x.png in Resources */,
 				0428215C1F46E36A0033413F /* locate_top_right_bar_lol_qrcode_mark@2x.png in Resources */,
 				04281ED71F46E36A0033413F /* ballte_overview_right_win@2x.png in Resources */,
 				04281F7C1F46E36A0033413F /* card_honor_ward@2x.png in Resources */,
@@ -6684,6 +6851,7 @@
 				04281F741F46E36A0033413F /* card_honor_hero_use_max@2x.png in Resources */,
 				042820941F46E36A0033413F /* hero_circle_card_recommend_strategy@2x.png in Resources */,
 				0428208C1F46E36A0033413F /* hero_circle_card_expert_fight@2x.png in Resources */,
+				044D10C81F4E78B6008ACDD1 /* kr-video-player-pause@3x.png in Resources */,
 				042820771F46E36A0033413F /* fullplayer_voice_low@2x.png in Resources */,
 				0428239E1F46E36A0033413F /* smiley_82@2x.png in Resources */,
 				042821511F46E36A0033413F /* list_news_top_arrow_lastest@2x.png in Resources */,
@@ -6877,6 +7045,7 @@
 				04400AAB1F4C21BF0013F52E /* NSBundle+MJRefresh.m in Sources */,
 				045435D11F4AAAD100FEEA40 /* DT_VideoVC.m in Sources */,
 				0472AB6B1F46AE2100B654E0 /* FrendsVC.m in Sources */,
+				044D10E81F4E78C7008ACDD1 /* VideoPlayViewController.m in Sources */,
 				04400AA21F4C21BF0013F52E /* MJRefreshAutoStateFooter.m in Sources */,
 				0472AB6E1F46AE9E00B654E0 /* ShopVC.m in Sources */,
 				0472AB781F46AF3B00B654E0 /* LoginVC.m in Sources */,
@@ -6885,14 +7054,20 @@
 				045435C81F4AAA8200FEEA40 /* DT_LastVC.m in Sources */,
 				04400A9C1F4C21BF0013F52E /* MJRefreshBackFooter.m in Sources */,
 				045435D41F4AAB0100FEEA40 /* DT_GameVC.m in Sources */,
+				044D10DF1F4E78B6008ACDD1 /* ZXVideo.m in Sources */,
 				04400AAE1F4C21BF0013F52E /* UIView+MJExtension.m in Sources */,
+				044D10E21F4E78B6008ACDD1 /* ZXVideoPlayerController.m in Sources */,
 				04400AA31F4C21BF0013F52E /* MJRefreshBackGifFooter.m in Sources */,
 				0472AB5B1F46AA1500B654E0 /* UIView+Frame.m in Sources */,
+				044D10E51F4E78B6008ACDD1 /* ZXVideoPlayerVolumeView.m in Sources */,
 				04400AA81F4C21BF0013F52E /* MJRefreshStateHeader.m in Sources */,
 				0427601E1F4BFFFB00061222 /* DT_LastHeadView.m in Sources */,
 				045435DB1F4AD91B00FEEA40 /* DT_BaseCell.m in Sources */,
+				044D10E11F4E78B6008ACDD1 /* ZXVideoPlayerBrightnessView.m in Sources */,
 				0472AB741F46AEC200B654E0 /* MineVC.m in Sources */,
+				044D10E41F4E78B6008ACDD1 /* ZXVideoPlayerTimeIndicatorView.m in Sources */,
 				04400A9D1F4C21BF0013F52E /* MJRefreshComponent.m in Sources */,
+				044D10E01F4E78B6008ACDD1 /* ZXVideoPlayerBatteryView.m in Sources */,
 				044AA7241F4D6E9B00566590 /* MessageVC.m in Sources */,
 				044AA7221F4D6D4400566590 /* VideoDetialVC.m in Sources */,
 				04400A9F1F4C21BF0013F52E /* MJRefreshHeader.m in Sources */,
@@ -6911,6 +7086,7 @@
 				04400A9B1F4C21BF0013F52E /* MJRefreshAutoFooter.m in Sources */,
 				04400AAA1F4C21BF0013F52E /* MJRefreshConst.m in Sources */,
 				04400A9E1F4C21BF0013F52E /* MJRefreshFooter.m in Sources */,
+				044D10E31F4E78B6008ACDD1 /* ZXVideoPlayerControlView.m in Sources */,
 				044AA7151F4D18F100566590 /* DT_VideoCell.m in Sources */,
 				045435CB1F4AAAAA00FEEA40 /* DT_NewVersionVC.m in Sources */,
 				04400AA71F4C21BF0013F52E /* MJRefreshNormalHeader.m in Sources */,

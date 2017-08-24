@@ -18,4 +18,6 @@
 - (void)setRightBtnForNavgationWithTitle:(NSString *)btnName btnImage:(NSString *)btnImageName;
 - (void)setTabBarWithImgNomal:(NSString *)img1 imgSelected:(NSString *)img2 tabBarItem:(NSString *) item;
 - (void)LOLaddChildViewControler:(UIViewController *)ViewController MultipleWidth:(int)Multiple;
+- (void)LOLaddChildViewControler:(UIViewController *)ViewController MultipleHeigh:(int)Multiple;
+
 @end
