@@ -9,5 +9,25 @@
 #import "BaseForLOL.h"
 
 @interface PersonSet : BaseForLOL
+@property (nonatomic,retain) UIButton *headBtn,
+                                      *myCardBtn,
+                                      *aboutBtn,
+                                      *actBtn,
+                                      *orderBtn,
+                                      *myLifeBtn,
+                                      *myBookBtn,
+                                      *myCollectionBtn,
+                                      *setBtn;
+@property (nonatomic,retain) UILabel *nameLab,
+                                     *myCardLab,
+                                     *aboutLab,
+                                     *actLab,
+                                     *orderLab,
+                                     *myLifeLab,
+                                     *myBookLab,
+                                     *myCollectionLab,
+                                     *setLab;
+
+
 
 @end

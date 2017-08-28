@@ -8,6 +8,6 @@
 
 #import "BaseForLOL.h"
 
-@interface FrendsVC : BaseForLOL
+@interface FrendsVC : BaseForLOL<UISearchBarDelegate>
 
 @end

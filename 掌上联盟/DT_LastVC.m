@@ -93,7 +93,7 @@
         
     }else if (indexPath.row %3==0){
     
-        return APPWidth *0.65;
+        return (APPWidth -20)*0.5265 +60;
 
     }
     return APPWidth *0.68;

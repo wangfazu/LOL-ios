@@ -17,11 +17,38 @@
 
 - (void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];
+//    self.navigationController.navigationBarHidden = NO;
+
 
 }
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    //加上 搜索栏
+    UIView *titleView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 200, 35)];//allocate titleView
+    UIColor *color =  self.navigationController.navigationBar.barTintColor;
+    
+    [titleView setBackgroundColor:color];
+
+//    titleView.backgroundColor = [UIColor redColor];
+    UISearchBar *searchBar = [[UISearchBar alloc] init];
+    
+    searchBar.delegate = self;
+    searchBar.frame = CGRectMake(0, 0, 200, 35);
+    searchBar.backgroundColor = color;
+    searchBar.layer.cornerRadius = 18;
+    searchBar.layer.masksToBounds = YES;
+    [searchBar.layer setBorderWidth:8];
+    [searchBar.layer setBorderColor:[UIColor whiteColor].CGColor];  //设置边框为白色
+    
+    searchBar.placeholder = @"搜索你想要的";
+    [titleView addSubview:searchBar];
+    
+    //Set to titleView
+    [self.navigationItem.titleView sizeToFit];
+    [self.view addSubview:titleView];
+//    self.navigationItem.titleView = titleView;
+
 
 }
 
