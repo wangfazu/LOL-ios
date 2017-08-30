@@ -89,21 +89,20 @@
     [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
     [self.navigationController setNavigationBarHidden:YES animated:YES];
     
-    self.view.backgroundColor = [UIColor whiteColor];
-    
+    self.view.backgroundColor = [UIColor clearColor];
     [self playVideo];
 }
 
 - (void)playVideo
 {
     if (!self.videoController) {
-        self.videoController = [[ZXVideoPlayerController alloc] initWithFrame:CGRectMake(0, 0, kZXVideoPlayerOriginalWidth, kZXVideoPlayerOriginalHeight)];
+        self.videoController = [[ZXVideoPlayerController alloc] initWithFrame:CGRectMake(0, 0, kZXVideoPlayerOriginalWidth, APPWidth*0.68)];
         
         __weak typeof(self) weakSelf = self;
         self.videoController.videoPlayerGoBackBlock = ^{
             __strong typeof(self) strongSelf = weakSelf;
             
-            [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleDefault];
+
             
             [strongSelf.navigationController popViewControllerAnimated:YES];
             [strongSelf.navigationController setNavigationBarHidden:NO animated:YES];

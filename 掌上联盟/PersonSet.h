@@ -19,6 +19,7 @@
                                       *myCollectionBtn,
                                       *setBtn;
 @property (nonatomic,retain) UILabel *nameLab,
+*underLine,
                                      *myCardLab,
                                      *aboutLab,
                                      *actLab,

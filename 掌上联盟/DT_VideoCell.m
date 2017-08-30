@@ -31,12 +31,13 @@
     video.title = @"Rollin'Wild 圆滚滚的";
     
     videoVc = [[VideoPlayViewController alloc] init];
-    [[DT_LastVC new]addChildViewController:videoVc];
+//    DT_LastVC *lastVc = [[DT_LastVC alloc]init];
+//    [lastVc addChildViewController:videoVc];
     videoVc.video = video;
     videoVc.hidesBottomBarWhenPushed = YES;
-    videoVc.view.frame = CGRectMake(0, 0, APPWidth-20, (APPWidth -20)*0.5265 +40);
+    videoVc.view.frame = CGRectMake(0, 0, APPWidth-20, videoVc.view.height);
     [self addSubview:videoVc.view];
-    [videoVc didMoveToParentViewController:[DT_LastVC new]];
+//    [videoVc didMoveToParentViewController:lastVc];
 
 
 }

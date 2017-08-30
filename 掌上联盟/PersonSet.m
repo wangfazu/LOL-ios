@@ -15,29 +15,21 @@
 @implementation PersonSet
 {
     UIImageView *bgImgV ;
+    UIButton *btn,*undBtn;
+    UILabel *myLab,*undLab;
 }
 - (void)viewDidLoad {
     [super viewDidLoad];
     //添加背景图片
     [self.view addSubview:[self bgView]];
     [self.view addSubview:self.headBtn];
-    [self.view addSubview:self.myCardBtn];
-    [self.view addSubview:self.aboutBtn];
-    [self.view addSubview:self.actBtn];
-    [self.view addSubview:self.orderBtn];
-    [self.view addSubview:self.myLifeBtn];
-    [self.view addSubview:self.myBookBtn];
-    [self.view addSubview:self.myCollectionBtn];
-    [self.view addSubview:self.setBtn];
-    
     [self.view addSubview:self.nameLab];
+    [self.view addSubview:self.myCardBtn];
     [self.view addSubview:self.myCardLab];
-    [self.view addSubview:self.aboutLab];
-    [self.view addSubview:self.actLab];
-    [self.view addSubview:self.orderLab];
-    [self.view addSubview:self.myLifeLab];
-    [self.view addSubview:self.myBookLab];
-    [self.view addSubview:self.myCollectionLab];
+    [self.view addSubview:self.underLine];
+
+    [self setUPBtnAndLabForOrder];
+    [self.view addSubview:self.setBtn];
     [self.view addSubview:self.setLab];
    
 }
@@ -54,119 +46,100 @@
 - (UIButton *)headBtn{
     if (!_headBtn) {
         _headBtn = [UIButton buttonWithType:UIButtonTypeCustom];
-        _headBtn.frame = CGRectMake(25, 50, 50, 45);
-        _headBtn.backgroundColor= [UIColor redColor];
+        _headBtn.frame = CGRectMake(25, 50, 50, 50);
+        _headBtn.backgroundColor= [UIColor whiteColor];
+        _headBtn.layer.cornerRadius = 25;
+        _headBtn.clipsToBounds = YES;
     }
     return _headBtn;
 }
 
+- (UILabel *)nameLab{
+    if (!_nameLab) {
+        _nameLab = [[UILabel alloc]initWithFrame:CGRectMake(15, _headBtn.marginY+17, 70, 17)];
+        _nameLab.text = @"无尽之人";
+        _nameLab.textColor = [UIColor whiteColor];
+    }
+    return _nameLab;
+}
 - (UIButton *)myCardBtn{
     if (!_myCardBtn) {
+        _myCardBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+        _myCardBtn.frame = CGRectMake(_headBtn.marginX+150, _headBtn.orginY, 35, 25);
+        [_myCardBtn setImage:[UIImage imageNamed:@"cardBtn"] forState:UIControlStateNormal];
+        _myCardBtn.backgroundColor = [UIColor grayColor];
         
     }
     return _myCardBtn;
 }
 
-- (UIButton *)aboutBtn{
-    if (!_aboutBtn) {
-        
+- (UILabel *)myCardLab{
+    if (!_myCardLab) {
+        _myCardLab = [[UILabel alloc]initWithFrame:CGRectMake(_myCardBtn.orginX-6, _myCardBtn.marginY+10, 50, 15)];
+        _myCardLab.text = @"我的卡片";
+        _myCardLab.font= [UIFont systemFontOfSize:12];
+        _myCardLab.textColor = [UIColor grayColor];
     }
-    return _aboutBtn;
-}
-- (UIButton *)actBtn{
-    if (!_actBtn) {
-        
-    }
-    return _actBtn;
+    return _myCardLab;
+    
 }
 
-- (UIButton *)orderBtn{
-    if (!_orderBtn) {
+- (void)setUPBtnAndLabForOrder{
+    for (int i=0; i<3; i++) {
+        /* i-> 与我相关 活动中心 我的订单*/
+        btn = [UIButton buttonWithType:UIButtonTypeCustom];
+        btn.frame = CGRectMake(48+(22+60)*(i%3), _nameLab.marginY+66, 22, 16);
+        btn.backgroundColor = [UIColor grayColor];
+        btn.tag = 100+i;
+        [self.view addSubview:btn];
         
-    }
-    return _orderBtn;
-}
-- (UIButton *)myLifeBtn{
-    if (!_myLifeBtn) {
+        myLab = [[UILabel alloc]init];
+        myLab.frame = CGRectMake(22.5+(65+22.5)*(i%3), btn.marginY+14, 70, 16);
         
-    }
-    return _myLifeBtn;
-}
-- (UIButton *)myBookBtn{
-    if (!_myBookBtn) {
+        myLab.text = [[NSArray alloc]initWithObjects:@"与我相关",@"活动中心",@"我的订单", nil][i];
+        myLab.textColor = [UIColor grayColor];
+        [self.view addSubview:myLab];
         
-    }
-    return _myBookBtn;
-}
-- (UIButton *)myCollectionBtn{
-    if (!_myCollectionBtn) {
+        /* i-> 我的动态 我的订阅 我的收藏*/
+        undBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+        undBtn.frame = CGRectMake(22.5, _underLine.marginY+32+(26+32)*i, 26, 26);
+        undBtn.backgroundColor = [UIColor whiteColor];
+        undBtn.tag =200+i;
+        [self.view addSubview:undBtn];
         
+        undLab = [[UILabel alloc]init];
+        undLab.frame = CGRectMake(undBtn.marginX+22, _underLine.marginY+32+(26+32)*i, 70, 20);
+        undLab.text = [[NSArray alloc]initWithObjects:@"我的动态",@"我的订阅",@"我的收藏", nil][i];
+        undLab.textColor = [UIColor grayColor];
+        [self.view addSubview:undLab];
     }
-    return _myCollectionBtn;
 }
+
+- (UILabel *)underLine{
+    if (!_underLine) {
+        _underLine = [[UILabel alloc]initWithFrame:CGRectMake(0, APPHeight *0.43, APPWidth, 1)];
+        _underLine.backgroundColor =[UIColor grayColor];
+    }
+    return _underLine;
+}
+
 - (UIButton *)setBtn{
     if (!_setBtn) {
-        
+        _setBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+        _setBtn.frame = CGRectMake(24, undBtn.marginY+150, 26, 26);
+        _setBtn.backgroundColor = [UIColor grayColor];
     }
     return _setBtn;
 }
 
-- (UILabel *)nameLab{
-    if (!_nameLab) {
-        
-    }
-    return _nameLab;
-}
 
-- (UILabel *)myCardLab{
-    if (!_myCardLab) {
-        
-    }
-    return _myCardLab;
-}
-
-
-
-- (UILabel *)aboutLab{
-    if (!_aboutLab) {
-        
-    }
-    return _aboutLab;
-}
-- (UILabel *)actLab{
-    if (!_actLab) {
-        
-    }
-    return _actLab;
-}
-
-- (UILabel *)orderLab{
-    if (!_orderLab) {
-        
-    }
-    return _orderLab;
-}
-- (UILabel *)myLifeLab{
-    if (!_myLifeLab) {
-        
-    }
-    return _myLifeLab;
-}
-- (UILabel *)myBookLab{
-    if (!_myBookLab) {
-        
-    }
-    return _myBookLab;
-}
-- (UILabel *)myCollectionLab{
-    if (!_myCollectionLab) {
-        
-    }
-    return _myCollectionLab;
-}
 - (UILabel *)setLab{
     if (!_setLab) {
-        
+        _setLab = [UILabel new];
+        _setLab.frame = CGRectMake(_setBtn.marginX+10, undBtn.marginY+150, 35, 24);
+        _setLab.text = @"设置";
+        _setLab.font = [UIFont systemFontOfSize:12];
+        _setLab.textColor = [UIColor grayColor];
     }
     return _setLab;
 }

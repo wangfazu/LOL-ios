@@ -24,6 +24,7 @@
                          1:baseCell
                          2:videoCell
                          3.PictureCell*/
+    NSMutableDictionary *cellTagDic;
 
 }
 
@@ -38,9 +39,20 @@
 - (void)initDataSourse{
     
     dataMuArr = [[NSMutableArray alloc]init];
-    [dataMuArr addObject:@"666"];
-    [dataMuArr addObject:@"666"];
-    [dataMuArr addObject:@"666"];
+    cellTagDic = [[NSMutableDictionary alloc]init];
+    
+//    [cellTagDic setObject:@"0" forKey:@"cellkey"];
+//    [cellTagDic setObject:@"1" forKey:@"cellkey"];
+//    [cellTagDic setObject:@"2" forKey:@"cellkey"];
+//
+//    [dataMuArr addObject:cellTagDic];
+//    [dataMuArr addObject:cellTagDic];
+//    [dataMuArr addObject:cellTagDic];
+    [dataMuArr addObject:@"0"];
+    [dataMuArr addObject:@"1"];
+    [dataMuArr addObject:@"2"];
+
+    
     
 }
 - (UITableView *)lastTV{
@@ -69,7 +81,7 @@
     //刷新tableview 移除数据
     _lastTV.mj_footer=[MJRefreshAutoFooter footerWithRefreshingBlock:^{
         NSLog(@"调用了 表格 头刷新");
-        for (int i =0; i<5; i ++) {
+        for (int i =0; i<3; i ++) {
             [dataMuArr addObject:[NSString stringWithFormat:@"%d",i]];
             
         }
@@ -88,15 +100,17 @@
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
-    if (indexPath.row %2 ==0) {
-        return APPHeight /7.5;
-        
-    }else if (indexPath.row %3==0){
-    
-        return (APPWidth -20)*0.5265 +60;
+
+    if ([dataMuArr[indexPath.row]isEqualToString:@"0"]) {
+        return APPHeight /7.5;//BaseCell
+    }else if ([dataMuArr[indexPath.row]isEqualToString:@"1"]){
+        return APPWidth *0.68;//VideoCell
+
+    }else{
+        return (APPWidth -20)*0.5265 +60;//PicCell
 
     }
-    return APPWidth *0.68;
+
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
@@ -108,35 +122,34 @@
     DT_BaseCell *baseCell = [tableView dequeueReusableCellWithIdentifier:ID];
     DT_VideoCell *videoCell =[tableView dequeueReusableCellWithIdentifier:VideoID];
     DT_PictureCell *pictureCell = [tableView dequeueReusableCellWithIdentifier:PictureID];
-    if (indexPath.row %2 ==0) {
+    
+    if ([dataMuArr[indexPath.row]isEqualToString:@"0"]) {
         if (!baseCell) {
             baseCell = [[DT_BaseCell new]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:ID];
-
+            
         }
         baseCell.textLabel.text = [NSString stringWithFormat:@"Base:%ld1",indexPath.row];
-        return baseCell;
-    }else if (indexPath.row %3==0){
+        return baseCell;//BaseCell
+        
+    }else if ([dataMuArr[indexPath.row]isEqualToString:@"1"]){
         if (!videoCell) {
             videoCell = [[DT_VideoCell new]initWithStyle:(UITableViewCellStyleSubtitle) reuseIdentifier:VideoID];
             
         }
-      
-        return videoCell;
+        return videoCell;//VideoCell
         
     }else{
         if (!pictureCell) {
             pictureCell = [[DT_PictureCell new]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:PictureID];
         }
-//        pictureCell.imageView.image = [UIImage imageNamed:@"4.jpg" ];
         
-
+        //        pictureCell.imageView.image = [UIImage imageNamed:@"4.jpg" ];
+        
+        return pictureCell;//PicCell
         
     }
-
-    return pictureCell;
-
-
-}
+    
+    }
 
 - (void)tapAction:(UITapGestureRecognizer *)sender{
   
