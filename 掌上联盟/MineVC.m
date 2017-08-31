@@ -8,11 +8,13 @@
 
 #import "MineVC.h"
 
-@interface MineVC ()
+@interface MineVC ()<yourDelegate>
 
 @end
 
-@implementation MineVC
+@implementation MineVC{
+    UIButton *bnt;
+}
 - (void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];
 
@@ -22,9 +24,32 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    YourVC *yvc = [[YourVC alloc]init];
+    [self returnChooseDay:@"1"];
+
+    yvc.delegate = self;
+
+
 }
 
+- (void)returnChooseDay:(id)myChooseDayView{
+    bnt = [[UIButton alloc]initWithFrame:CGRectMake(0, 0, APPWidth, APPHeight)];
+    bnt.backgroundColor = [UIColor grayColor];
+    [self.view addSubview:bnt];
+    [bnt addTarget:self action:@selector(fzGoToNewWord) forControlEvents:UIControlEventTouchUpInside];
+    
+}
+
+- (void)fzGoToNewWord{
+    
+    [self.navigationController pushViewController:[YourVC new] animated:YES];
+}
+
+- (void)fzCreatView{
+    
+    bnt.backgroundColor = [UIColor redColor];
+    
+}
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.

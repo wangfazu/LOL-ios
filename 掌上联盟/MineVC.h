@@ -7,7 +7,6 @@
 //
 
 #import "BaseForLOL.h"
-
-@interface MineVC : BaseForLOL
-
+#import "Summoner_skill_protocol.h"
+@interface MineVC : BaseForLOL<Summoner_skill_protocol>
 @end

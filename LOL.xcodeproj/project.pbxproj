@@ -1544,6 +1544,8 @@
 		042824BA1F46E36A0033413F /* WsjPaySDKResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 04281EC21F46E36A0033413F /* WsjPaySDKResources.bundle */; };
 		042824BB1F46E36A0033413F /* yellow_clock_icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 04281EC31F46E36A0033413F /* yellow_clock_icon@2x.png */; };
 		042824FC1F46E4170033413F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 042824FB1F46E4170033413F /* Assets.xcassets */; };
+		043465691F57B8C400E7D0C4 /* yourSelfVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 043465681F57B8C400E7D0C4 /* yourSelfVC.m */; };
+		043465711F57E75800E7D0C4 /* YourVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 043465701F57E75800E7D0C4 /* YourVC.m */; };
 		04400A9B1F4C21BF0013F52E /* MJRefreshAutoFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = 04400A6F1F4C21BF0013F52E /* MJRefreshAutoFooter.m */; };
 		04400A9C1F4C21BF0013F52E /* MJRefreshBackFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = 04400A711F4C21BF0013F52E /* MJRefreshBackFooter.m */; };
 		04400A9D1F4C21BF0013F52E /* MJRefreshComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = 04400A731F4C21BF0013F52E /* MJRefreshComponent.m */; };
@@ -3189,6 +3191,11 @@
 		04281EC21F46E36A0033413F /* WsjPaySDKResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = WsjPaySDKResources.bundle; sourceTree = "<group>"; };
 		04281EC31F46E36A0033413F /* yellow_clock_icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "yellow_clock_icon@2x.png"; sourceTree = "<group>"; };
 		042824FB1F46E4170033413F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		043465671F57B8C400E7D0C4 /* yourSelfVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = yourSelfVC.h; sourceTree = "<group>"; };
+		043465681F57B8C400E7D0C4 /* yourSelfVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = yourSelfVC.m; sourceTree = "<group>"; };
+		0434656B1F57BDBA00E7D0C4 /* Summoner_skill_protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Summoner_skill_protocol.h; sourceTree = "<group>"; };
+		0434656F1F57E75800E7D0C4 /* YourVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YourVC.h; sourceTree = "<group>"; };
+		043465701F57E75800E7D0C4 /* YourVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YourVC.m; sourceTree = "<group>"; };
 		04400A6E1F4C21BF0013F52E /* MJRefreshAutoFooter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJRefreshAutoFooter.h; sourceTree = "<group>"; };
 		04400A6F1F4C21BF0013F52E /* MJRefreshAutoFooter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJRefreshAutoFooter.m; sourceTree = "<group>"; };
 		04400A701F4C21BF0013F52E /* MJRefreshBackFooter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJRefreshBackFooter.h; sourceTree = "<group>"; };
@@ -5149,6 +5156,8 @@
 			children = (
 				045435C21F4A8D1000FEEA40 /* PersonSet.h */,
 				045435C31F4A8D1000FEEA40 /* PersonSet.m */,
+				043465671F57B8C400E7D0C4 /* yourSelfVC.h */,
+				043465681F57B8C400E7D0C4 /* yourSelfVC.m */,
 			);
 			name = PersonSet;
 			sourceTree = "<group>";
@@ -5308,6 +5317,9 @@
 			children = (
 				0472AB721F46AEC200B654E0 /* MineVC.h */,
 				0472AB731F46AEC200B654E0 /* MineVC.m */,
+				0434656F1F57E75800E7D0C4 /* YourVC.h */,
+				043465701F57E75800E7D0C4 /* YourVC.m */,
+				0434656B1F57BDBA00E7D0C4 /* Summoner_skill_protocol.h */,
 			);
 			name = my;
 			sourceTree = "<group>";
@@ -7062,6 +7074,7 @@
 				044D10E51F4E78B6008ACDD1 /* ZXVideoPlayerVolumeView.m in Sources */,
 				04400AA81F4C21BF0013F52E /* MJRefreshStateHeader.m in Sources */,
 				0427601E1F4BFFFB00061222 /* DT_LastHeadView.m in Sources */,
+				043465711F57E75800E7D0C4 /* YourVC.m in Sources */,
 				045435DB1F4AD91B00FEEA40 /* DT_BaseCell.m in Sources */,
 				044D10E11F4E78B6008ACDD1 /* ZXVideoPlayerBrightnessView.m in Sources */,
 				0472AB741F46AEC200B654E0 /* MineVC.m in Sources */,
@@ -7075,6 +7088,7 @@
 				04400AA01F4C21BF0013F52E /* MJRefreshAutoGifFooter.m in Sources */,
 				045435D71F4AAB3400FEEA40 /* DT_ColumnVC.m in Sources */,
 				044AA7121F4D18C600566590 /* DT_PictureCell.m in Sources */,
+				043465691F57B8C400E7D0C4 /* yourSelfVC.m in Sources */,
 				045435C41F4A8D1000FEEA40 /* PersonSet.m in Sources */,
 				0472AB2A1F46A74E00B654E0 /* AppDelegate.m in Sources */,
 				045435CE1F4AAABD00FEEA40 /* DT_HeroVC.m in Sources */,

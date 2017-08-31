@@ -31,6 +31,7 @@
     [self setUPBtnAndLabForOrder];
     [self.view addSubview:self.setBtn];
     [self.view addSubview:self.setLab];
+    [self fzTouchEvent];
    
 }
 
@@ -142,6 +143,19 @@
         _setLab.textColor = [UIColor grayColor];
     }
     return _setLab;
+}
+
+#pragma mark - 点击事件
+- (void)fzTouchEvent{
+    /*设置按钮的点击事件，进入设置页面*/
+    [_setBtn addTarget:self action:@selector(yourSelfSetClick) forControlEvents:UIControlEventTouchUpInside];
+    
+    
+}
+
+- (void)yourSelfSetClick{
+    NSLog(@"go to new world!");
+    [self presentViewController:[yourSelfVC new] animated:YES completion:nil];
 }
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
