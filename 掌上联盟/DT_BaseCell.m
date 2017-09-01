@@ -65,7 +65,7 @@
         _readNum = [UILabel new];
         _readNum.frame = CGRectMake(_imgV.marginX +10, _detilLab.marginY, APPWidth -_imgV.marginY-10, 20);
         NSInteger aint = 10;
-        _readNum.text = [NSString stringWithFormat:@"%ld阅",aint];
+        _readNum.text = [NSString stringWithFormat:@"%ld阅",(long)aint];
         _readNum.textColor = APPColor;
         _readNum.font = [UIFont systemFontOfSize:11];
 //        _readNum.backgroundColor = [UIColor redColor];

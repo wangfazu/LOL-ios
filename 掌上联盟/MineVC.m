@@ -7,7 +7,7 @@
 //
 
 #import "MineVC.h"
-
+#import "MineCell.h"
 @interface MineVC ()<yourDelegate>
 
 @end
@@ -24,13 +24,52 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    YourVC *yvc = [[YourVC alloc]init];
-    [self returnChooseDay:@"1"];
-
-    yvc.delegate = self;
+//    YourVC *yvc = [[YourVC alloc]init];
+//    [self returnChooseDay:@"1"];
+//
+//    yvc.delegate = self;
+    [self.view addSubview:self.lastTV];
 
 
 }
+
+
+- (UITableView *)lastTV{
+    if (!_lastTV) {
+        _lastTV = [[UITableView alloc]initWithFrame:CGRectMake(10, 0, APPWidth -20, APPHeight) style:UITableViewStylePlain];
+        _lastTV.delegate = self;
+        _lastTV.dataSource = self;
+        _lastTV.tableHeaderView = [[DT_LastHeadView alloc]init];
+    }
+    return _lastTV;
+}
+
+
+
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
+    
+    return 5;
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
+    
+    return APPHeight *0.391;
+//    return APPHeight/6;
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
+    MineCell *cell = [MineCell TableViewCellWith:tableView indexPath:indexPath];
+
+    
+    return cell;
+}
+
+
+
+
+
+
 
 - (void)returnChooseDay:(id)myChooseDayView{
     bnt = [[UIButton alloc]initWithFrame:CGRectMake(0, 0, APPWidth, APPHeight)];

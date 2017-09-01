@@ -1566,6 +1566,12 @@
 		04400AAC1F4C21BF0013F52E /* UIScrollView+MJExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 04400A961F4C21BF0013F52E /* UIScrollView+MJExtension.m */; };
 		04400AAD1F4C21BF0013F52E /* UIScrollView+MJRefresh.m in Sources */ = {isa = PBXBuildFile; fileRef = 04400A981F4C21BF0013F52E /* UIScrollView+MJRefresh.m */; };
 		04400AAE1F4C21BF0013F52E /* UIView+MJExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 04400A9A1F4C21BF0013F52E /* UIView+MJExtension.m */; };
+		044557871F5912350033021E /* shopCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 044557851F5912350033021E /* shopCell.m */; };
+		044557881F5912350033021E /* shopCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 044557861F5912350033021E /* shopCell.xib */; };
+		0445578D1F591B6C0033021E /* findCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0445578B1F591B6C0033021E /* findCell.m */; };
+		0445578E1F591B6C0033021E /* findCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0445578C1F591B6C0033021E /* findCell.xib */; };
+		044557931F5952F90033021E /* MineCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 044557911F5952F90033021E /* MineCell.m */; };
+		044557941F5952F90033021E /* MineCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 044557921F5952F90033021E /* MineCell.xib */; };
 		044AA7121F4D18C600566590 /* DT_PictureCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 044AA7111F4D18C600566590 /* DT_PictureCell.m */; };
 		044AA7151F4D18F100566590 /* DT_VideoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 044AA7141F4D18F100566590 /* DT_VideoCell.m */; };
 		044AA71D1F4D68DC00566590 /* jiana.png in Resources */ = {isa = PBXBuildFile; fileRef = 044AA71B1F4D68DC00566590 /* jiana.png */; };
@@ -3236,6 +3242,15 @@
 		04400A981F4C21BF0013F52E /* UIScrollView+MJRefresh.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+MJRefresh.m"; sourceTree = "<group>"; };
 		04400A991F4C21BF0013F52E /* UIView+MJExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+MJExtension.h"; sourceTree = "<group>"; };
 		04400A9A1F4C21BF0013F52E /* UIView+MJExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+MJExtension.m"; sourceTree = "<group>"; };
+		044557841F5912350033021E /* shopCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = shopCell.h; sourceTree = "<group>"; };
+		044557851F5912350033021E /* shopCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = shopCell.m; sourceTree = "<group>"; };
+		044557861F5912350033021E /* shopCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = shopCell.xib; sourceTree = "<group>"; };
+		0445578A1F591B6C0033021E /* findCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = findCell.h; sourceTree = "<group>"; };
+		0445578B1F591B6C0033021E /* findCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = findCell.m; sourceTree = "<group>"; };
+		0445578C1F591B6C0033021E /* findCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = findCell.xib; sourceTree = "<group>"; };
+		044557901F5952F90033021E /* MineCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MineCell.h; sourceTree = "<group>"; };
+		044557911F5952F90033021E /* MineCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MineCell.m; sourceTree = "<group>"; };
+		044557921F5952F90033021E /* MineCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MineCell.xib; sourceTree = "<group>"; };
 		044AA7101F4D18C600566590 /* DT_PictureCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DT_PictureCell.h; sourceTree = "<group>"; };
 		044AA7111F4D18C600566590 /* DT_PictureCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DT_PictureCell.m; sourceTree = "<group>"; };
 		044AA7131F4D18F100566590 /* DT_VideoCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DT_VideoCell.h; sourceTree = "<group>"; };
@@ -5074,6 +5089,36 @@
 			path = Header;
 			sourceTree = "<group>";
 		};
+		044557831F59121D0033021E /* ShopCell */ = {
+			isa = PBXGroup;
+			children = (
+				044557841F5912350033021E /* shopCell.h */,
+				044557851F5912350033021E /* shopCell.m */,
+				044557861F5912350033021E /* shopCell.xib */,
+			);
+			name = ShopCell;
+			sourceTree = "<group>";
+		};
+		044557891F591B540033021E /* findCell */ = {
+			isa = PBXGroup;
+			children = (
+				0445578A1F591B6C0033021E /* findCell.h */,
+				0445578B1F591B6C0033021E /* findCell.m */,
+				0445578C1F591B6C0033021E /* findCell.xib */,
+			);
+			name = findCell;
+			sourceTree = "<group>";
+		};
+		0445578F1F5952E20033021E /* mineCell */ = {
+			isa = PBXGroup;
+			children = (
+				044557901F5952F90033021E /* MineCell.h */,
+				044557911F5952F90033021E /* MineCell.m */,
+				044557921F5952F90033021E /* MineCell.xib */,
+			);
+			name = mineCell;
+			sourceTree = "<group>";
+		};
 		044AA71F1F4D6CE100566590 /* detail-cell */ = {
 			isa = PBXGroup;
 			children = (
@@ -5299,6 +5344,7 @@
 			children = (
 				0472AB6C1F46AE9E00B654E0 /* ShopVC.h */,
 				0472AB6D1F46AE9E00B654E0 /* ShopVC.m */,
+				044557831F59121D0033021E /* ShopCell */,
 			);
 			name = shop;
 			sourceTree = "<group>";
@@ -5308,6 +5354,7 @@
 			children = (
 				0472AB6F1F46AEAD00B654E0 /* FindVC.h */,
 				0472AB701F46AEAD00B654E0 /* FindVC.m */,
+				044557891F591B540033021E /* findCell */,
 			);
 			name = find;
 			sourceTree = "<group>";
@@ -5317,6 +5364,7 @@
 			children = (
 				0472AB721F46AEC200B654E0 /* MineVC.h */,
 				0472AB731F46AEC200B654E0 /* MineVC.m */,
+				0445578F1F5952E20033021E /* mineCell */,
 				0434656F1F57E75800E7D0C4 /* YourVC.h */,
 				043465701F57E75800E7D0C4 /* YourVC.m */,
 				0434656B1F57BDBA00E7D0C4 /* Summoner_skill_protocol.h */,
@@ -6067,6 +6115,7 @@
 				04281FF91F46E36A0033413F /* editing@2x.png in Resources */,
 				042821531F46E36A0033413F /* list_news_top_arrow_press@2x.png in Resources */,
 				042821891F46E36A0033413F /* mobile_store_gold_gray@2x.png in Resources */,
+				044557941F5952F90033021E /* MineCell.xib in Resources */,
 				042823E91F46E36A0033413F /* talent_choose_right@2x.png in Resources */,
 				042822021F46E36A0033413F /* news_comment_send_normal@2x.png in Resources */,
 				042821A21F46E36A0033413F /* mobile_store_price_white@2x.png in Resources */,
@@ -6516,6 +6565,7 @@
 				042820791F46E36A0033413F /* gold_search_icon_highlight@2x.png in Resources */,
 				04281EE01F46E36A0033413F /* battle_data_arrow_loser_left@2x.png in Resources */,
 				042824051F46E36A0033413F /* talent_simulator_offense_bg@2x.jpg in Resources */,
+				044557881F5912350033021E /* shopCell.xib in Resources */,
 				042821751F46E36A0033413F /* login_tourists_btn_arrow_press@2x.png in Resources */,
 				04281F811F46E36A0033413F /* chat_add_to_black_list_pre@2x.png in Resources */,
 				042824861F46E36A0033413F /* video_play_custom_pasue_normal@2x.png in Resources */,
@@ -6580,6 +6630,7 @@
 				04281FE81F46E36A0033413F /* current_martch_scroll_arrow_up_view@2x.png in Resources */,
 				042823B31F46E36A0033413F /* subscribe_match_btn_cancel_subscribe_hover@2x.png in Resources */,
 				044D10D71F4E78B6008ACDD1 /* zx-video-player-rewind@2x.png in Resources */,
+				0445578E1F591B6C0033021E /* findCell.xib in Resources */,
 				042824B41F46E36A0033413F /* writer_video_wait_view_3@2x.png in Resources */,
 				04281F941F46E36A0033413F /* chat_room_expand_normal@2x.png in Resources */,
 				042824AA1F46E36A0033413F /* write_video_open_light_normal@2x.png in Resources */,
@@ -7067,6 +7118,7 @@
 				04400A9C1F4C21BF0013F52E /* MJRefreshBackFooter.m in Sources */,
 				045435D41F4AAB0100FEEA40 /* DT_GameVC.m in Sources */,
 				044D10DF1F4E78B6008ACDD1 /* ZXVideo.m in Sources */,
+				0445578D1F591B6C0033021E /* findCell.m in Sources */,
 				04400AAE1F4C21BF0013F52E /* UIView+MJExtension.m in Sources */,
 				044D10E21F4E78B6008ACDD1 /* ZXVideoPlayerController.m in Sources */,
 				04400AA31F4C21BF0013F52E /* MJRefreshBackGifFooter.m in Sources */,
@@ -7098,9 +7150,11 @@
 				04400AA11F4C21BF0013F52E /* MJRefreshAutoNormalFooter.m in Sources */,
 				042818C11F46C9160033413F /* LLGifImageView.m in Sources */,
 				04400A9B1F4C21BF0013F52E /* MJRefreshAutoFooter.m in Sources */,
+				044557871F5912350033021E /* shopCell.m in Sources */,
 				04400AAA1F4C21BF0013F52E /* MJRefreshConst.m in Sources */,
 				04400A9E1F4C21BF0013F52E /* MJRefreshFooter.m in Sources */,
 				044D10E31F4E78B6008ACDD1 /* ZXVideoPlayerControlView.m in Sources */,
+				044557931F5952F90033021E /* MineCell.m in Sources */,
 				044AA7151F4D18F100566590 /* DT_VideoCell.m in Sources */,
 				045435CB1F4AAAAA00FEEA40 /* DT_NewVersionVC.m in Sources */,
 				04400AA71F4C21BF0013F52E /* MJRefreshNormalHeader.m in Sources */,

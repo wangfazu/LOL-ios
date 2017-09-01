@@ -8,7 +8,7 @@
 
 #import "ShopVC.h"
 
-@interface ShopVC ()
+@interface ShopVC ()<UITableViewDelegate,UITableViewDataSource>
 
 @end
 
@@ -22,7 +22,37 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    [self.view addSubview:self.shopTV];
+    
+}
+- (UITableView *)shopTV{
+    if (!_shopTV) {
+        _shopTV = [[UITableView alloc]initWithFrame:CGRectMake(10, 0, APPWidth -20, APPHeight) style:UITableViewStylePlain];
+        _shopTV.delegate = self;
+        _shopTV.dataSource = self;
+        _shopTV.tableHeaderView = [[DT_LastHeadView alloc]init];
+    }
+    return _shopTV;
+}
+
+
+
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
+    
+    return 5;
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
+
+    return APPWidth *0.68+60+10;
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
+    
+    shopCell *cell = [shopCell shopTableViewCellWith:tableView indexPath:indexPath];
+    
+    return cell;
 }
 
 - (void)didReceiveMemoryWarning {

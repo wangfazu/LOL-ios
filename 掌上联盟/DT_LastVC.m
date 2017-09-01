@@ -128,7 +128,7 @@
             baseCell = [[DT_BaseCell new]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:ID];
             
         }
-        baseCell.textLabel.text = [NSString stringWithFormat:@"Base:%ld1",indexPath.row];
+        baseCell.textLabel.text = [NSString stringWithFormat:@"Base:%ld1",(long)indexPath.row];
         return baseCell;//BaseCell
         
     }else if ([dataMuArr[indexPath.row]isEqualToString:@"1"]){

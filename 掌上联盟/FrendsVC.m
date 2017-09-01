@@ -25,7 +25,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     //加上 搜索栏
-    UIView *titleView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 200, 35)];//allocate titleView
+    UIView *titleView = [[UIView alloc] initWithFrame:CGRectMake(0, 64, APPWidth, 35)];//allocate titleView
     UIColor *color =  self.navigationController.navigationBar.barTintColor;
     
     [titleView setBackgroundColor:color];

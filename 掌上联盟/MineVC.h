@@ -8,5 +8,6 @@
 
 #import "BaseForLOL.h"
 #import "Summoner_skill_protocol.h"
-@interface MineVC : BaseForLOL<Summoner_skill_protocol>
+@interface MineVC : BaseForLOL<Summoner_skill_protocol,UITableViewDataSource,UITableViewDelegate>
+@property (nonatomic,retain) UITableView *lastTV;
 @end

@@ -9,5 +9,7 @@
 #import "BaseForLOL.h"
 
 @interface ShopVC : BaseForLOL
+@property (nonatomic,retain) UITableView *shopTV;
+
 
 @end
