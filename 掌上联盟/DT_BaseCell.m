@@ -19,17 +19,20 @@
 }
 
 - (void)setup{
-    /*  在 cell 上面添加 图片，标题，简要说明*/
+    /*  在 cell 上面添加 图片，标题，简要说明,作者*/
     [self addSubview:self.imgV];
     [self addSubview:self.titLab];
     [self addSubview:self.detilLab];
     [self addSubview:self.readNum];
+    [self addSubview:self.author];
     
 }
 - (UIImageView *)imgV{
     if (!_imgV) {
         _imgV = [[UIImageView alloc]initWithFrame:CGRectMake(7.5, 10, (APPHeight /7.5 - 20) *1.26, APPHeight /7.5 - 20)];
         _imgV.image = [UIImage imageNamed:@"guide_center_icon"];
+        _imgV.layer.cornerRadius = 5;
+        _imgV.clipsToBounds = YES;
 //        _imgV.backgroundColor =[UIColor redColor];
     }
     return _imgV;
@@ -38,9 +41,11 @@
 - (UILabel *)titLab{
     if (!_titLab) {
         _titLab = [UILabel new];
-        _titLab.frame = CGRectMake(_imgV.marginX +10, 10, APPWidth -_imgV.marginX, 16);
+        _titLab.frame = CGRectMake(_imgV.marginX +10, 10, APPWidth -_imgV.marginX-30, 20);
         _titLab.text = @"无限活力再次来袭";
-        _titLab.font = [UIFont systemFontOfSize:15 weight:1];
+        _titLab.font = [UIFont systemFontOfSize:12 weight:1];
+        _titLab.numberOfLines = 0;
+//        _titLab.backgroundColor = [UIColor redColor];
     }
     
     return _titLab;
@@ -74,7 +79,15 @@
     return _readNum;
 }
 
-
+- (UILabel *)author{
+    if (!_author) {
+        _author = [[UILabel alloc]initWithFrame:CGRectMake(APPWidth -100-20, _readNum.orginY, 100, 20)];
+        _author.textAlignment = NSTextAlignmentRight;
+        _author.font = [UIFont systemFontOfSize:11];
+        _author.textColor = APPColor;
+    }
+    return _author;
+}
 
 - (void)awakeFromNib {
     // Initialization code

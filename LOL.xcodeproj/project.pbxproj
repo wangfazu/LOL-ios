@@ -1546,6 +1546,7 @@
 		042824FC1F46E4170033413F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 042824FB1F46E4170033413F /* Assets.xcassets */; };
 		043465691F57B8C400E7D0C4 /* yourSelfVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 043465681F57B8C400E7D0C4 /* yourSelfVC.m */; };
 		043465711F57E75800E7D0C4 /* YourVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 043465701F57E75800E7D0C4 /* YourVC.m */; };
+		04365E321F5E593600903B16 /* BaseDetialVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 04365E311F5E593600903B16 /* BaseDetialVC.m */; };
 		04400A9B1F4C21BF0013F52E /* MJRefreshAutoFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = 04400A6F1F4C21BF0013F52E /* MJRefreshAutoFooter.m */; };
 		04400A9C1F4C21BF0013F52E /* MJRefreshBackFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = 04400A711F4C21BF0013F52E /* MJRefreshBackFooter.m */; };
 		04400A9D1F4C21BF0013F52E /* MJRefreshComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = 04400A731F4C21BF0013F52E /* MJRefreshComponent.m */; };
@@ -3219,6 +3220,8 @@
 		0434656B1F57BDBA00E7D0C4 /* Summoner_skill_protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Summoner_skill_protocol.h; sourceTree = "<group>"; };
 		0434656F1F57E75800E7D0C4 /* YourVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YourVC.h; sourceTree = "<group>"; };
 		043465701F57E75800E7D0C4 /* YourVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YourVC.m; sourceTree = "<group>"; };
+		04365E301F5E593600903B16 /* BaseDetialVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseDetialVC.h; sourceTree = "<group>"; };
+		04365E311F5E593600903B16 /* BaseDetialVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseDetialVC.m; sourceTree = "<group>"; };
 		04400A6E1F4C21BF0013F52E /* MJRefreshAutoFooter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJRefreshAutoFooter.h; sourceTree = "<group>"; };
 		04400A6F1F4C21BF0013F52E /* MJRefreshAutoFooter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJRefreshAutoFooter.m; sourceTree = "<group>"; };
 		04400A701F4C21BF0013F52E /* MJRefreshBackFooter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJRefreshBackFooter.h; sourceTree = "<group>"; };
@@ -5171,15 +5174,17 @@
 			name = mineCell;
 			sourceTree = "<group>";
 		};
-		044AA71F1F4D6CE100566590 /* detail-cell */ = {
+		044AA71F1F4D6CE100566590 /* detail-Cell */ = {
 			isa = PBXGroup;
 			children = (
 				044AA7201F4D6D4400566590 /* VideoDetialVC.h */,
 				044AA7211F4D6D4400566590 /* VideoDetialVC.m */,
 				044D10E61F4E78C7008ACDD1 /* VideoPlayViewController.h */,
 				044D10E71F4E78C7008ACDD1 /* VideoPlayViewController.m */,
+				04365E301F5E593600903B16 /* BaseDetialVC.h */,
+				04365E311F5E593600903B16 /* BaseDetialVC.m */,
 			);
-			name = "detail-cell";
+			name = "detail-Cell";
 			sourceTree = "<group>";
 		};
 		044D10971F4E78B6008ACDD1 /* ZXVideoPlayer */ = {
@@ -5264,7 +5269,7 @@
 			children = (
 				042760291F4C146800061222 /* 轮播图片 */,
 				045435DC1F4AD92500FEEA40 /* TableView-CELL */,
-				044AA71F1F4D6CE100566590 /* detail-cell */,
+				044AA71F1F4D6CE100566590 /* detail-Cell */,
 				045435C61F4AAA8200FEEA40 /* DT_LastVC.h */,
 				045435C71F4AAA8200FEEA40 /* DT_LastVC.m */,
 				0427601C1F4BFFFB00061222 /* DT_LastHeadView.h */,
@@ -7209,6 +7214,7 @@
 			files = (
 				04E1E3EC1F5D56E2006A7AE2 /* SDImageCache.m in Sources */,
 				04E1E3F31F5D56E3006A7AE2 /* UIButton+WebCache.m in Sources */,
+				04365E321F5E593600903B16 /* BaseDetialVC.m in Sources */,
 				04400AA61F4C21BF0013F52E /* MJRefreshGifHeader.m in Sources */,
 				04400AAB1F4C21BF0013F52E /* NSBundle+MJRefresh.m in Sources */,
 				045435D11F4AAAD100FEEA40 /* DT_VideoVC.m in Sources */,

@@ -26,6 +26,8 @@
                          3.PictureCell*/
     NSMutableDictionary *cellTagDic;
 
+    NSArray *jsonObject;
+
 }
 
 
@@ -33,11 +35,11 @@
     [super viewDidLoad];
     [self preferredStatusBarStyle];
     [self initDataSourse];
-    [self.view addSubview:self.lastTV];
 }
 
 - (void)initDataSourse{
     
+    [self initNetWork];
     dataMuArr = [[NSMutableArray alloc]init];
     cellTagDic = [[NSMutableDictionary alloc]init];
     
@@ -71,7 +73,7 @@
         
 
         for (int i =0; i<1; i ++) {
-            [dataMuArr removeLastObject];
+//            [dataMuArr removeLastObject];
             
         }
         [_lastTV.mj_header endRefreshing];
@@ -82,7 +84,7 @@
     _lastTV.mj_footer=[MJRefreshAutoFooter footerWithRefreshingBlock:^{
         NSLog(@"调用了 表格 头刷新");
         for (int i =0; i<3; i ++) {
-            [dataMuArr addObject:[NSString stringWithFormat:@"%d",i]];
+//            [dataMuArr addObject:[NSString stringWithFormat:@"%d",i]];
             
         }
         [_lastTV.mj_footer endRefreshing];
@@ -96,11 +98,11 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
     
-    return dataMuArr.count;
+    return jsonObject.count;
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
-
+/*
     if ([dataMuArr[indexPath.row]isEqualToString:@"0"]) {
         return APPHeight /7.5;//BaseCell
     }else if ([dataMuArr[indexPath.row]isEqualToString:@"1"]){
@@ -110,7 +112,9 @@
         return (APPWidth -20)*0.5265 +60;//PicCell
 
     }
-
+*/
+    return APPHeight /7.5;//BaseCell
+ 
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
@@ -122,16 +126,21 @@
     DT_BaseCell *baseCell = [tableView dequeueReusableCellWithIdentifier:ID];
     DT_VideoCell *videoCell =[tableView dequeueReusableCellWithIdentifier:VideoID];
     DT_PictureCell *pictureCell = [tableView dequeueReusableCellWithIdentifier:PictureID];
-    
-    if ([dataMuArr[indexPath.row]isEqualToString:@"0"]) {
+
+    if ([[jsonObject[indexPath.row] objectForKey:@"newstypeid"]isEqualToString:@"ordinary"]) {
         if (!baseCell) {
             baseCell = [[DT_BaseCell new]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:ID];
             
         }
-        baseCell.textLabel.text = [NSString stringWithFormat:@"Base:%ld1",(long)indexPath.row];
-        return baseCell;//BaseCell
-        
-    }else if ([dataMuArr[indexPath.row]isEqualToString:@"1"]){
+
+        baseCell.titLab.text  = [jsonObject[indexPath.row] objectForKey:@"title"];
+        baseCell.detilLab.text = [jsonObject[indexPath.row] objectForKey:@"summary"];
+        [baseCell.imgV sd_setImageWithURL:[NSURL URLWithString:[jsonObject[indexPath.row] objectForKey:@"image_url_big"]]
+                                      placeholderImage:[UIImage imageNamed:@"placeholder"]];
+        baseCell.readNum.text = [NSString stringWithFormat:@"%@阅",[jsonObject[indexPath.row] objectForKey:@"pv"]];
+        baseCell.author.text = [jsonObject[indexPath.row] objectForKey:@"author"];
+
+    }/*else if ([dataMuArr[indexPath.row]isEqualToString:@"1"]){
         if (!videoCell) {
             videoCell = [[DT_VideoCell new]initWithStyle:(UITableViewCellStyleSubtitle) reuseIdentifier:VideoID];
             
@@ -147,22 +156,51 @@
         
         return pictureCell;//PicCell
         
-    }
-    
+    }*/
+    return baseCell;//BaseCell
+
     }
 
 - (void)tapAction:(UITapGestureRecognizer *)sender{
   
 }
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
-    if (indexPath.row %3==0  ){
+    
+    [self.navigationController pushViewController:[BaseDetialVC new] animated:YES];
 
-
-    }
+    
     
     
 }
 
+
+- (void)initNetWork{
+    
+    NSString *urlString = @"http://qt.qq.com/php_cgi/news/php/varcache_getnews.php?id=12&page=0&plat=android&version=9750";
+    /**
+     *  对网址转码
+     *
+     *  @param NSString 。
+     *   转换完毕后在发送网络请求
+     *  @return 。
+     */
+    [[MyHttpRequesr alloc]getHttpRequest:urlString key:@"baseCell"];
+    [[NSNotificationCenter defaultCenter]addObserver:self selector:@selector(getJsonObjectForNetWork4:) name:@"baseCell" object:nil];
+    
+}
+
+- (void)getJsonObjectForNetWork4:(NSNotification *)notification{
+    NSLog(@"%@",notification.userInfo[@"list"]);
+    jsonObject = notification.userInfo[@"list"];
+    //在这里初始化洁面
+    [self.view addSubview:self.lastTV];
+
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
+    
+    
+    //    [mytableView reloadData];
+    
+}
 #pragma mark - Navigation
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

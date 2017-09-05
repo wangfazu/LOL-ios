@@ -13,7 +13,7 @@
 @property (nonatomic,retain) UILabel *titLab;
 @property (nonatomic,retain) UILabel *detilLab;
 @property (nonatomic,retain) UILabel *readNum;
-
+@property (nonatomic,retain) UILabel *author;
 
 - (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier;
 @end
