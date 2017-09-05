@@ -9,5 +9,6 @@
 #import "BaseForLOL.h"
 
 @interface BaseDetialVC : BaseForLOL
-
+@property (nonatomic,retain) UIButton *bkBtn;
+@property (nonatomic,retain) NSString *urlStr;
 @end

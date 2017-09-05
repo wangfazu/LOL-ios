@@ -17,12 +17,13 @@
     
     [super viewWillAppear:YES];
     self.navigationController.navigationBarHidden = YES;
-    [self preferredStatusBarStyle];//将状态栏，改变为白色
-    [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent animated:NO];
-//    [self preferredStatusBarStyle]=UIStatusBarStyleLightContent;
+
 }
 - (void)viewDidLoad {
     [super viewDidLoad];
+    [self preferredStatusBarStyle];//将状态栏，改变为白色
+    self.view.backgroundColor= [UIColor whiteColor];
+
     // Do any additional setup after loading the view.
 }
 
@@ -45,12 +46,12 @@
 
 - (void)setButtonForBackNavgation{
     _backBtn = [[UIButton alloc]initWithFrame:CGRectMake(12, 30, 15, 22.1)];
-    [_backBtn addTarget:self action:@selector(backClick) forControlEvents:UIControlEventTouchUpInside];
+    [_backBtn addTarget:self action:@selector(backClick:) forControlEvents:UIControlEventTouchUpInside];
     [_backBtn setBackgroundImage:[UIImage imageNamed:@"nav_btn_back_tiny_normal"] forState:UIControlStateNormal];
     [_titleImgV addSubview:_backBtn];
     
 }
-- (void)backClick{
+- (void)backClick:(UIButton *)btn{
     [self.navigationController popViewControllerAnimated:YES];
     
 }

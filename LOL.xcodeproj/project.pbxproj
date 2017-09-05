@@ -1547,6 +1547,8 @@
 		043465691F57B8C400E7D0C4 /* yourSelfVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 043465681F57B8C400E7D0C4 /* yourSelfVC.m */; };
 		043465711F57E75800E7D0C4 /* YourVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 043465701F57E75800E7D0C4 /* YourVC.m */; };
 		04365E321F5E593600903B16 /* BaseDetialVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 04365E311F5E593600903B16 /* BaseDetialVC.m */; };
+		04365E3B1F5E9F8000903B16 /* MoveCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 04365E391F5E9F8000903B16 /* MoveCell.m */; };
+		04365E3C1F5E9F8000903B16 /* MoveCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04365E3A1F5E9F8000903B16 /* MoveCell.xib */; };
 		04400A9B1F4C21BF0013F52E /* MJRefreshAutoFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = 04400A6F1F4C21BF0013F52E /* MJRefreshAutoFooter.m */; };
 		04400A9C1F4C21BF0013F52E /* MJRefreshBackFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = 04400A711F4C21BF0013F52E /* MJRefreshBackFooter.m */; };
 		04400A9D1F4C21BF0013F52E /* MJRefreshComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = 04400A731F4C21BF0013F52E /* MJRefreshComponent.m */; };
@@ -3222,6 +3224,9 @@
 		043465701F57E75800E7D0C4 /* YourVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YourVC.m; sourceTree = "<group>"; };
 		04365E301F5E593600903B16 /* BaseDetialVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseDetialVC.h; sourceTree = "<group>"; };
 		04365E311F5E593600903B16 /* BaseDetialVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseDetialVC.m; sourceTree = "<group>"; };
+		04365E381F5E9F8000903B16 /* MoveCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoveCell.h; sourceTree = "<group>"; };
+		04365E391F5E9F8000903B16 /* MoveCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MoveCell.m; sourceTree = "<group>"; };
+		04365E3A1F5E9F8000903B16 /* MoveCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MoveCell.xib; sourceTree = "<group>"; };
 		04400A6E1F4C21BF0013F52E /* MJRefreshAutoFooter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJRefreshAutoFooter.h; sourceTree = "<group>"; };
 		04400A6F1F4C21BF0013F52E /* MJRefreshAutoFooter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJRefreshAutoFooter.m; sourceTree = "<group>"; };
 		04400A701F4C21BF0013F52E /* MJRefreshBackFooter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJRefreshBackFooter.h; sourceTree = "<group>"; };
@@ -5048,6 +5053,30 @@
 			path = SC_Info;
 			sourceTree = "<group>";
 		};
+		04365E331F5E9CE600903B16 /* Last */ = {
+			isa = PBXGroup;
+			children = (
+				045435C61F4AAA8200FEEA40 /* DT_LastVC.h */,
+				045435C71F4AAA8200FEEA40 /* DT_LastVC.m */,
+				0427601C1F4BFFFB00061222 /* DT_LastHeadView.h */,
+				0427601D1F4BFFFB00061222 /* DT_LastHeadView.m */,
+				044AA71F1F4D6CE100566590 /* detail-Display */,
+			);
+			name = Last;
+			sourceTree = "<group>";
+		};
+		04365E341F5E9D1400903B16 /* NewVersion */ = {
+			isa = PBXGroup;
+			children = (
+				045435C91F4AAAAA00FEEA40 /* DT_NewVersionVC.h */,
+				045435CA1F4AAAAA00FEEA40 /* DT_NewVersionVC.m */,
+				04365E381F5E9F8000903B16 /* MoveCell.h */,
+				04365E391F5E9F8000903B16 /* MoveCell.m */,
+				04365E3A1F5E9F8000903B16 /* MoveCell.xib */,
+			);
+			name = NewVersion;
+			sourceTree = "<group>";
+		};
 		04400A6C1F4C21BF0013F52E /* MJRefresh(TV刷新) */ = {
 			isa = PBXGroup;
 			children = (
@@ -5174,7 +5203,7 @@
 			name = mineCell;
 			sourceTree = "<group>";
 		};
-		044AA71F1F4D6CE100566590 /* detail-Cell */ = {
+		044AA71F1F4D6CE100566590 /* detail-Display */ = {
 			isa = PBXGroup;
 			children = (
 				044AA7201F4D6D4400566590 /* VideoDetialVC.h */,
@@ -5184,7 +5213,7 @@
 				04365E301F5E593600903B16 /* BaseDetialVC.h */,
 				04365E311F5E593600903B16 /* BaseDetialVC.m */,
 			);
-			name = "detail-Cell";
+			name = "detail-Display";
 			sourceTree = "<group>";
 		};
 		044D10971F4E78B6008ACDD1 /* ZXVideoPlayer */ = {
@@ -5269,13 +5298,8 @@
 			children = (
 				042760291F4C146800061222 /* 轮播图片 */,
 				045435DC1F4AD92500FEEA40 /* TableView-CELL */,
-				044AA71F1F4D6CE100566590 /* detail-Cell */,
-				045435C61F4AAA8200FEEA40 /* DT_LastVC.h */,
-				045435C71F4AAA8200FEEA40 /* DT_LastVC.m */,
-				0427601C1F4BFFFB00061222 /* DT_LastHeadView.h */,
-				0427601D1F4BFFFB00061222 /* DT_LastHeadView.m */,
-				045435C91F4AAAAA00FEEA40 /* DT_NewVersionVC.h */,
-				045435CA1F4AAAAA00FEEA40 /* DT_NewVersionVC.m */,
+				04365E331F5E9CE600903B16 /* Last */,
+				04365E341F5E9D1400903B16 /* NewVersion */,
 				045435CC1F4AAABD00FEEA40 /* DT_HeroVC.h */,
 				045435CD1F4AAABD00FEEA40 /* DT_HeroVC.m */,
 				045435CF1F4AAAD100FEEA40 /* DT_VideoVC.h */,
@@ -5889,6 +5913,7 @@
 				0428240D1F46E36A0033413F /* talent_simulator_scheme_del_view@2x.png in Resources */,
 				042821861F46E36A0033413F /* mobile_store_func_guard_mark@2x.png in Resources */,
 				042823D01F46E36A0033413F /* summoner_lock@2x.png in Resources */,
+				04365E3C1F5E9F8000903B16 /* MoveCell.xib in Resources */,
 				04281FFB1F46E36A0033413F /* Main.storyboardc in Resources */,
 				0428208E1F46E36A0033413F /* hero_circle_card_hero_data@2x.png in Resources */,
 				0428232C1F46E36A0033413F /* share_btn_qq_img_icon_press@2x.png in Resources */,
@@ -7268,6 +7293,7 @@
 				0472AB2A1F46A74E00B654E0 /* AppDelegate.m in Sources */,
 				045435CE1F4AAABD00FEEA40 /* DT_HeroVC.m in Sources */,
 				04E1E3F61F5D56E3006A7AE2 /* UIImage+WebP.m in Sources */,
+				04365E3B1F5E9F8000903B16 /* MoveCell.m in Sources */,
 				04400AA51F4C21BF0013F52E /* MJRefreshBackStateFooter.m in Sources */,
 				04E1E3F51F5D56E3006A7AE2 /* UIImage+MultiFormat.m in Sources */,
 				04400AAC1F4C21BF0013F52E /* UIScrollView+MJExtension.m in Sources */,

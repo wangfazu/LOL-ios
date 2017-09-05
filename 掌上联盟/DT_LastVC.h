@@ -10,4 +10,7 @@
 
 @interface DT_LastVC : BaseForLOL<UITableViewDelegate,UITableViewDataSource>
 @property (nonatomic,retain) UITableView *lastTV;
+@property (nonatomic,retain) NSArray *jsonObject;
+@property (nonatomic,retain) NSString *urlStr;
+
 @end

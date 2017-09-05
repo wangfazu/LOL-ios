@@ -9,5 +9,5 @@
 #import "BaseForLOL.h"
 
 @interface DT_NewVersionVC : BaseForLOL
-
+@property (nonatomic,retain) UITableView *versionTV;
 @end

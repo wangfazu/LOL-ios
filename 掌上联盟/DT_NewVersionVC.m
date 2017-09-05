@@ -7,8 +7,8 @@
 //
 
 #import "DT_NewVersionVC.h"
-
-@interface DT_NewVersionVC ()
+#import "MoveCell.h"
+@interface DT_NewVersionVC ()<UITableViewDataSource,UITableViewDelegate>
 
 @end
 
@@ -16,7 +16,51 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    [self.view addSubview:self.versionTV];
+
+}
+
+- (UITableView *)versionTV{
+    if (!_versionTV) {
+        _versionTV = [[UITableView alloc]initWithFrame:CGRectMake(10, 0, APPWidth -20, APPHeight-64-49) style:UITableViewStylePlain];
+        _versionTV.delegate = self;
+        _versionTV.dataSource = self;
+//        _versionTV.tableHeaderView = [[DT_LastHeadView alloc]init];
+        
+    }
+    return _versionTV;
+}
+
+
+
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
+    
+    return 5;
+}
+
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
+    return 3;
+}
+
+
+
+
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
+    NSString *ID;
+    if ([tableView dequeueReusableCellWithIdentifier:ID]) {
+        return APPHeight /7.5;
+    }
+    return APPHeight *0.2734;
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
+
+    MoveCell *cell = [MoveCell VersionTableViewCellWith:tableView indexPath:indexPath];
+    
+    
+    return cell;
 }
 
 - (void)didReceiveMemoryWarning {

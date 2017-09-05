@@ -26,7 +26,6 @@
                          3.PictureCell*/
     NSMutableDictionary *cellTagDic;
 
-    NSArray *jsonObject;
 
 }
 
@@ -98,7 +97,7 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
     
-    return jsonObject.count;
+    return _jsonObject.count;
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
@@ -127,18 +126,18 @@
     DT_VideoCell *videoCell =[tableView dequeueReusableCellWithIdentifier:VideoID];
     DT_PictureCell *pictureCell = [tableView dequeueReusableCellWithIdentifier:PictureID];
 
-    if ([[jsonObject[indexPath.row] objectForKey:@"newstypeid"]isEqualToString:@"ordinary"]) {
+    if ([[_jsonObject[indexPath.row] objectForKey:@"newstypeid"]isEqualToString:@"ordinary"]) {
         if (!baseCell) {
             baseCell = [[DT_BaseCell new]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:ID];
             
         }
 
-        baseCell.titLab.text  = [jsonObject[indexPath.row] objectForKey:@"title"];
-        baseCell.detilLab.text = [jsonObject[indexPath.row] objectForKey:@"summary"];
-        [baseCell.imgV sd_setImageWithURL:[NSURL URLWithString:[jsonObject[indexPath.row] objectForKey:@"image_url_big"]]
+        baseCell.titLab.text  = [_jsonObject[indexPath.row] objectForKey:@"title"];
+        baseCell.detilLab.text = [_jsonObject[indexPath.row] objectForKey:@"summary"];
+        [baseCell.imgV sd_setImageWithURL:[NSURL URLWithString:[_jsonObject[indexPath.row] objectForKey:@"image_url_big"]]
                                       placeholderImage:[UIImage imageNamed:@"placeholder"]];
-        baseCell.readNum.text = [NSString stringWithFormat:@"%@阅",[jsonObject[indexPath.row] objectForKey:@"pv"]];
-        baseCell.author.text = [jsonObject[indexPath.row] objectForKey:@"author"];
+        baseCell.readNum.text = [NSString stringWithFormat:@"%@阅",[_jsonObject[indexPath.row] objectForKey:@"pv"]];
+        baseCell.author.text = [_jsonObject[indexPath.row] objectForKey:@"author"];
 
     }/*else if ([dataMuArr[indexPath.row]isEqualToString:@"1"]){
         if (!videoCell) {
@@ -166,7 +165,12 @@
 }
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     
-    [self.navigationController pushViewController:[BaseDetialVC new] animated:YES];
+    
+    BaseDetialVC *baseVc = [[BaseDetialVC alloc]init];
+    //把网址穿到下一个细节界面
+    _urlStr = [_jsonObject[indexPath.row] objectForKey:@"article_url"];
+    baseVc.urlStr = _urlStr;
+    [self.navigationController pushViewController:baseVc animated:YES];
 
     
     
@@ -191,7 +195,7 @@
 
 - (void)getJsonObjectForNetWork4:(NSNotification *)notification{
     NSLog(@"%@",notification.userInfo[@"list"]);
-    jsonObject = notification.userInfo[@"list"];
+    _jsonObject = notification.userInfo[@"list"];
     //在这里初始化洁面
     [self.view addSubview:self.lastTV];
 
