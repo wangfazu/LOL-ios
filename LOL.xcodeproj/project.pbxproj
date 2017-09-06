@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0411E94B1F5F88D00020857C /* CardCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0411E9491F5F88D00020857C /* CardCell.m */; };
+		0411E94C1F5F88D00020857C /* CardCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0411E94A1F5F88D00020857C /* CardCell.xib */; };
 		0427601E1F4BFFFB00061222 /* DT_LastHeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0427601D1F4BFFFB00061222 /* DT_LastHeadView.m */; };
 		042760241F4C146300061222 /* 1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0427601F1F4C146300061222 /* 1.jpg */; };
 		042760251F4C146300061222 /* 2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 042760201F4C146300061222 /* 2.jpg */; };
@@ -1547,8 +1549,6 @@
 		043465691F57B8C400E7D0C4 /* yourSelfVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 043465681F57B8C400E7D0C4 /* yourSelfVC.m */; };
 		043465711F57E75800E7D0C4 /* YourVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 043465701F57E75800E7D0C4 /* YourVC.m */; };
 		04365E321F5E593600903B16 /* BaseDetialVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 04365E311F5E593600903B16 /* BaseDetialVC.m */; };
-		04365E3B1F5E9F8000903B16 /* MoveCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 04365E391F5E9F8000903B16 /* MoveCell.m */; };
-		04365E3C1F5E9F8000903B16 /* MoveCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04365E3A1F5E9F8000903B16 /* MoveCell.xib */; };
 		04400A9B1F4C21BF0013F52E /* MJRefreshAutoFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = 04400A6F1F4C21BF0013F52E /* MJRefreshAutoFooter.m */; };
 		04400A9C1F4C21BF0013F52E /* MJRefreshBackFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = 04400A711F4C21BF0013F52E /* MJRefreshBackFooter.m */; };
 		04400A9D1F4C21BF0013F52E /* MJRefreshComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = 04400A731F4C21BF0013F52E /* MJRefreshComponent.m */; };
@@ -1677,6 +1677,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0411E9481F5F88D00020857C /* CardCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardCell.h; sourceTree = "<group>"; };
+		0411E9491F5F88D00020857C /* CardCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CardCell.m; sourceTree = "<group>"; };
+		0411E94A1F5F88D00020857C /* CardCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CardCell.xib; sourceTree = "<group>"; };
 		0427601C1F4BFFFB00061222 /* DT_LastHeadView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DT_LastHeadView.h; sourceTree = "<group>"; };
 		0427601D1F4BFFFB00061222 /* DT_LastHeadView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DT_LastHeadView.m; sourceTree = "<group>"; };
 		0427601F1F4C146300061222 /* 1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 1.jpg; sourceTree = "<group>"; };
@@ -3224,9 +3227,6 @@
 		043465701F57E75800E7D0C4 /* YourVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YourVC.m; sourceTree = "<group>"; };
 		04365E301F5E593600903B16 /* BaseDetialVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseDetialVC.h; sourceTree = "<group>"; };
 		04365E311F5E593600903B16 /* BaseDetialVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseDetialVC.m; sourceTree = "<group>"; };
-		04365E381F5E9F8000903B16 /* MoveCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoveCell.h; sourceTree = "<group>"; };
-		04365E391F5E9F8000903B16 /* MoveCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MoveCell.m; sourceTree = "<group>"; };
-		04365E3A1F5E9F8000903B16 /* MoveCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MoveCell.xib; sourceTree = "<group>"; };
 		04400A6E1F4C21BF0013F52E /* MJRefreshAutoFooter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJRefreshAutoFooter.h; sourceTree = "<group>"; };
 		04400A6F1F4C21BF0013F52E /* MJRefreshAutoFooter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJRefreshAutoFooter.m; sourceTree = "<group>"; };
 		04400A701F4C21BF0013F52E /* MJRefreshBackFooter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJRefreshBackFooter.h; sourceTree = "<group>"; };
@@ -5070,9 +5070,6 @@
 			children = (
 				045435C91F4AAAAA00FEEA40 /* DT_NewVersionVC.h */,
 				045435CA1F4AAAAA00FEEA40 /* DT_NewVersionVC.m */,
-				04365E381F5E9F8000903B16 /* MoveCell.h */,
-				04365E391F5E9F8000903B16 /* MoveCell.m */,
-				04365E3A1F5E9F8000903B16 /* MoveCell.xib */,
 			);
 			name = NewVersion;
 			sourceTree = "<group>";
@@ -5321,6 +5318,9 @@
 				044AA7111F4D18C600566590 /* DT_PictureCell.m */,
 				044AA7131F4D18F100566590 /* DT_VideoCell.h */,
 				044AA7141F4D18F100566590 /* DT_VideoCell.m */,
+				0411E9481F5F88D00020857C /* CardCell.h */,
+				0411E9491F5F88D00020857C /* CardCell.m */,
+				0411E94A1F5F88D00020857C /* CardCell.xib */,
 			);
 			name = "TableView-CELL";
 			sourceTree = "<group>";
@@ -5817,6 +5817,7 @@
 				042823CF1F46E36A0033413F /* subscribe_match_win_bg@2x.png in Resources */,
 				0428214F1F46E36A0033413F /* list_news_tab_image_select@2x.png in Resources */,
 				042824A41F46E36A0033413F /* write_video_close_light_press@2x.png in Resources */,
+				0411E94C1F5F88D00020857C /* CardCell.xib in Resources */,
 				042822031F46E36A0033413F /* news_comment_send_press@2x.png in Resources */,
 				04281FC41F46E36A0033413F /* competition_centre_detail_club_list_btn_arrow@2x.png in Resources */,
 				042820051F46E36A0033413F /* first_win_calendar_arrow@2x.png in Resources */,
@@ -5913,7 +5914,6 @@
 				0428240D1F46E36A0033413F /* talent_simulator_scheme_del_view@2x.png in Resources */,
 				042821861F46E36A0033413F /* mobile_store_func_guard_mark@2x.png in Resources */,
 				042823D01F46E36A0033413F /* summoner_lock@2x.png in Resources */,
-				04365E3C1F5E9F8000903B16 /* MoveCell.xib in Resources */,
 				04281FFB1F46E36A0033413F /* Main.storyboardc in Resources */,
 				0428208E1F46E36A0033413F /* hero_circle_card_hero_data@2x.png in Resources */,
 				0428232C1F46E36A0033413F /* share_btn_qq_img_icon_press@2x.png in Resources */,
@@ -7293,7 +7293,6 @@
 				0472AB2A1F46A74E00B654E0 /* AppDelegate.m in Sources */,
 				045435CE1F4AAABD00FEEA40 /* DT_HeroVC.m in Sources */,
 				04E1E3F61F5D56E3006A7AE2 /* UIImage+WebP.m in Sources */,
-				04365E3B1F5E9F8000903B16 /* MoveCell.m in Sources */,
 				04400AA51F4C21BF0013F52E /* MJRefreshBackStateFooter.m in Sources */,
 				04E1E3F51F5D56E3006A7AE2 /* UIImage+MultiFormat.m in Sources */,
 				04400AAC1F4C21BF0013F52E /* UIScrollView+MJExtension.m in Sources */,
@@ -7301,6 +7300,7 @@
 				04400AA11F4C21BF0013F52E /* MJRefreshAutoNormalFooter.m in Sources */,
 				042818C11F46C9160033413F /* LLGifImageView.m in Sources */,
 				04400A9B1F4C21BF0013F52E /* MJRefreshAutoFooter.m in Sources */,
+				0411E94B1F5F88D00020857C /* CardCell.m in Sources */,
 				044557871F5912350033021E /* shopCell.m in Sources */,
 				04400AAA1F4C21BF0013F52E /* MJRefreshConst.m in Sources */,
 				04400A9E1F4C21BF0013F52E /* MJRefreshFooter.m in Sources */,

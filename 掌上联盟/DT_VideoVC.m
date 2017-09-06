@@ -9,7 +9,7 @@
 #import "DT_VideoVC.h"
 
 @interface DT_VideoVC ()
-
+@property (nonatomic,retain) UIImageView *heroImgV;
 @end
 
 @implementation DT_VideoVC
@@ -17,6 +17,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    _heroImgV = [[UIImageView alloc]initWithFrame:CGRectMake(APPWidth/2-28.5, 100, 57, 57)];
+    _heroImgV.image = [UIImage imageNamed:@"personal_head_background"];
+//    _heroImgV.backgroundColor =[UIColor grayColor];
+    [self.view addSubview:_heroImgV];
 }
 
 - (void)didReceiveMemoryWarning {

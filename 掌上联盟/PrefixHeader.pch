@@ -44,7 +44,7 @@
 //cell详情页面
 #import "VideoDetialVC.h"
 #import "BaseDetialVC.h"
-
+#import "CardCell.h"
 ///SDK
 #import "LLGifView.h"
 #import "LLGifImageView.h"
