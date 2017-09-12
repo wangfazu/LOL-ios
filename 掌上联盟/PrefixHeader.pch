@@ -40,11 +40,13 @@
 #import "DT_PictureCell.h"
 #import "DT_VideoCell.h"
 #import "shopCell.h"
+#import "SkinCell.h"
+#import "CardCell.h"
 
 //cell详情页面
 #import "VideoDetialVC.h"
 #import "BaseDetialVC.h"
-#import "CardCell.h"
+
 ///SDK
 #import "LLGifView.h"
 #import "LLGifImageView.h"

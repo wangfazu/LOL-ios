@@ -1,15 +1,14 @@
 //
-//  CardCell.h
+//  SkinCell.h
 //  LOL
 //
-//  Created by mac on 17/9/6.
+//  Created by mac on 17/9/7.
 //  Copyright © 2017年 mac. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
 
-@interface CardCell : UITableViewCell<UIScrollViewDelegate>
-
+@interface SkinCell : UITableViewCell<UIScrollViewDelegate>
 
 @property (nonatomic,retain) UILabel *titleLab;
 @property (nonatomic,retain) UILabel *deciptionLab;
@@ -21,8 +20,7 @@
 @property (nonatomic,retain) UILabel *tagLab;
 @property (nonatomic,retain) UIImageView  *heroBGImgV;
 @property (nonatomic,retain) UIImageView  *heroKuangImgV;
-- (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier;
 
-- (void)fzGetData:(NSIndexPath*)indexPath cardCell:(CardCell *)cell;
+- (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier;
 
 @end

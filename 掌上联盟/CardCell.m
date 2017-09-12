@@ -9,7 +9,11 @@
 #import "CardCell.h"
 
 @implementation CardCell
+{
+    
+    NSArray *jsonObject;
 
+}
 //- (void)awakeFromNib {
 //    // Initialization code
 //}
@@ -32,7 +36,7 @@
 
 - (UILabel *)titleLab{
     if (!_titleLab) {
-        _titleLab = [[UILabel alloc]initWithFrame:CGRectMake(10, 10, APPWidth*2/5, 20)];
+        _titleLab = [[UILabel alloc]initWithFrame:CGRectMake(0, 0, 0, 0)];
         _titleLab.text = @"7.17版本改动：";
         _titleLab.font = [UIFont systemFontOfSize:14];
     }
@@ -42,7 +46,7 @@
 
 - (UILabel *)deciptionLab{
     if (!_deciptionLab) {
-        _deciptionLab = [[UILabel alloc]initWithFrame:CGRectMake(_titleLab.marginX +10, 10, APPWidth*2.5/5-10, 20)];
+        _deciptionLab = [[UILabel alloc]initWithFrame:CGRectMake(0, 0, 0, 0)];
         
     }
     _deciptionLab.textAlignment = NSTextAlignmentRight;
@@ -81,16 +85,32 @@
         [_cardImgV addSubview:_leftLab];
         _leftLab.tag = 300+i;
         
+        //头像白色背景
+        _heroBGImgV = [[UIImageView alloc]initWithFrame:CGRectMake(10-2 +_cardImgV.width/2-_cardImgV.width *0.33/2+(0.37*APPWidth +15)*i, 15-2, _cardImgV.width *0.33+4,  _cardImgV.width *0.33+4)];
+        
+        _heroBGImgV.backgroundColor =[UIColor whiteColor];
+        _heroBGImgV.layer.cornerRadius = _cardImgV.width *0.33/2;
+        _heroBGImgV.clipsToBounds = YES;
+//        _heroBGImgV.layer.shadowColor = [UIColor whiteColor].CGColor;//阴影颜色
+//        _heroBGImgV.layer.shadowRadius = 2;
+        [_cardScroV addSubview:_heroBGImgV];
+        _heroBGImgV.tag = 600+i;
         
         //头像边框
+        _heroKuangImgV = [[UIImageView alloc]initWithFrame:CGRectMake(10-1.5 +_cardImgV.width/2-_cardImgV.width *0.33/2+(0.37*APPWidth +15)*i, 15-1.5, _cardImgV.width *0.33+3,  _cardImgV.width *0.33+3)];
+        _heroKuangImgV.image = [UIImage imageNamed:@"personal_head_background"];
+        _heroKuangImgV.backgroundColor =[UIColor whiteColor];
+        _heroKuangImgV.layer.cornerRadius = _cardImgV.width *0.33/2;
+        _heroKuangImgV.clipsToBounds = YES;
+        [_cardScroV addSubview:_heroKuangImgV];
+        
+        //头像
         _heroImgV = [[UIImageView alloc]initWithFrame:CGRectMake(10 +_cardImgV.width/2-_cardImgV.width *0.33/2+(0.37*APPWidth +15)*i, 15, _cardImgV.width *0.33,  _cardImgV.width *0.33)];
         
-        _heroImgV.image = [UIImage imageNamed:@"personal_head_background"];
                 _heroImgV.backgroundColor =[UIColor redColor];
         _heroImgV.layer.cornerRadius = _cardImgV.width *0.33/2;
         _heroImgV.clipsToBounds = YES;
-        _heroImgV.layer.shadowColor = [UIColor whiteColor].CGColor;//阴影颜色
-        _heroImgV.layer.shadowRadius = 2;
+
         [_cardScroV addSubview:_heroImgV];
         _heroImgV.tag = 200+i;
         
@@ -119,6 +139,79 @@
 
     
 }
+
+
+- (void)fzGetData:(NSIndexPath*)indexPath cardCell:(CardCell *)cell{
+
+    for ( int i = 0; i<5; i++) {
+        //整体卡片
+        UIImageView *cardImgv = [cell viewWithTag:100+i];
+        [cardImgv sd_setImageWithURL:[NSURL URLWithString: [[jsonObject[indexPath.row] objectForKey:@"cardlist"][i] objectForKey:@"hero_bg_img_url"]]
+                    placeholderImage:[UIImage imageNamed:@"placeholder"]];
+        
+        //卡片左上角
+        cell.leftLab = [cell viewWithTag:300+i];
+        NSString *hero_tag = [[jsonObject[0] objectForKey:@"cardlist"][0] objectForKey:@"hero_tag"];
+        if ([hero_tag isEqualToString:@" "]) {
+            cell.leftLab.text = @"已拥有";
+            
+            
+            NSLog(@"%@",hero_tag);
+        }
+        
+        //头像
+        cell.heroImgV = [cell viewWithTag:200+i];
+        [cell.heroImgV sd_setImageWithURL:[NSURL URLWithString: [[jsonObject[indexPath.row] objectForKey:@"cardlist"][i] objectForKey:@"hero_head_img_url"]]
+                         placeholderImage:[UIImage imageNamed:@"placeholder"]];
+        
+        //hero
+        cell.heroLab = [cell viewWithTag:400+i];//hero_name   hero_nick
+        NSString *hero_name = [[jsonObject[indexPath.row] objectForKey:@"cardlist"][i] objectForKey:@"hero_name"];
+        NSString *hero_nick = [[jsonObject[indexPath.row] objectForKey:@"cardlist"][i] objectForKey:@"hero_nick"];
+        cell.heroLab.text = [NSString stringWithFormat:@"%@ %@",hero_nick,hero_name];
+        
+        //hero_desc
+        cell.tagLab = [cell viewWithTag:500+i];
+        cell.tagLab.text = [[jsonObject[indexPath.row] objectForKey:@"cardlist"][i] objectForKey:@"hero_desc"];
+        NSLog(@"%@",cell.tagLab.text);
+        
+    }
+}
+
+- (void)initDataSourse{
+    
+    NSString *urlString = @"http://qt.qq.com/lua/lol_news/recommend?cid=367&areaid=4&plat=android&version=9750";
+    /**
+     *  对网址转码
+     *
+     *  @param NSString 。
+     *   转换完毕后在发送网络请求
+     *  @return 。
+     */
+    [[MyHttpRequesr alloc]getHttpRequest:urlString key:@"card"];
+    [[NSNotificationCenter defaultCenter]addObserver:self selector:@selector(getJsonObjectForNetWorkCard:) name:@"card" object:nil];
+    
+}
+
+- (void)getJsonObjectForNetWorkCard:(NSNotification *)notification{
+    NSLog(@"%@",notification.userInfo[@"list"]);
+    jsonObject = notification.userInfo[@"list"];
+    /*数据加载完成，开始加载UI*/
+//    [self.view addSubview:self.versionTV];
+    
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
+    
+    
+    //    [mytableView reloadData];
+    
+}
+
+
+
+
+
+
+
 
 
 

@@ -1640,6 +1640,8 @@
 		0472AB711F46AEAD00B654E0 /* FindVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0472AB701F46AEAD00B654E0 /* FindVC.m */; };
 		0472AB741F46AEC200B654E0 /* MineVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0472AB731F46AEC200B654E0 /* MineVC.m */; };
 		0472AB781F46AF3B00B654E0 /* LoginVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0472AB771F46AF3B00B654E0 /* LoginVC.m */; };
+		04D6E1C91F60F930004F8C74 /* SkinCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D6E1C71F60F930004F8C74 /* SkinCell.m */; };
+		04D6E1CA1F60F930004F8C74 /* SkinCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04D6E1C81F60F930004F8C74 /* SkinCell.xib */; };
 		04E1E3C71F5D55CC006A7AE2 /* MyHttpRequesr.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E1E3C61F5D55CC006A7AE2 /* MyHttpRequesr.m */; };
 		04E1E3EA1F5D56E2006A7AE2 /* MKAnnotationView+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E1E3CA1F5D56E2006A7AE2 /* MKAnnotationView+WebCache.m */; };
 		04E1E3EB1F5D56E2006A7AE2 /* NSData+ImageContentType.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E1E3CC1F5D56E2006A7AE2 /* NSData+ImageContentType.m */; };
@@ -3377,6 +3379,9 @@
 		0472AB731F46AEC200B654E0 /* MineVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MineVC.m; sourceTree = "<group>"; };
 		0472AB761F46AF3B00B654E0 /* LoginVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginVC.h; sourceTree = "<group>"; };
 		0472AB771F46AF3B00B654E0 /* LoginVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginVC.m; sourceTree = "<group>"; };
+		04D6E1C61F60F930004F8C74 /* SkinCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SkinCell.h; sourceTree = "<group>"; };
+		04D6E1C71F60F930004F8C74 /* SkinCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SkinCell.m; sourceTree = "<group>"; };
+		04D6E1C81F60F930004F8C74 /* SkinCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SkinCell.xib; sourceTree = "<group>"; };
 		04E1E3C51F5D55CC006A7AE2 /* MyHttpRequesr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyHttpRequesr.h; sourceTree = "<group>"; };
 		04E1E3C61F5D55CC006A7AE2 /* MyHttpRequesr.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyHttpRequesr.m; sourceTree = "<group>"; };
 		04E1E3C91F5D56E2006A7AE2 /* MKAnnotationView+WebCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MKAnnotationView+WebCache.h"; sourceTree = "<group>"; };
@@ -5321,6 +5326,9 @@
 				0411E9481F5F88D00020857C /* CardCell.h */,
 				0411E9491F5F88D00020857C /* CardCell.m */,
 				0411E94A1F5F88D00020857C /* CardCell.xib */,
+				04D6E1C61F60F930004F8C74 /* SkinCell.h */,
+				04D6E1C71F60F930004F8C74 /* SkinCell.m */,
+				04D6E1C81F60F930004F8C74 /* SkinCell.xib */,
 			);
 			name = "TableView-CELL";
 			sourceTree = "<group>";
@@ -7125,6 +7133,7 @@
 				042824091F46E36A0033413F /* talent_simulator_reduce_btn_press@2x.png in Resources */,
 				0428246E1F46E36A0033413F /* video_center_midImage_play@2x.png in Resources */,
 				0428226A1F46E36A0033413F /* personal_honor_type_win_streak_5_gray@2x.png in Resources */,
+				04D6E1CA1F60F930004F8C74 /* SkinCell.xib in Resources */,
 				04281EFB1F46E36A0033413F /* battle_detail_herotime_icon@2x.png in Resources */,
 				042760271F4C146300061222 /* 4.jpg in Resources */,
 				042823F61F46E36A0033413F /* talent_ferocity_square_choosed@2x.png in Resources */,
@@ -7258,6 +7267,7 @@
 				04400A9C1F4C21BF0013F52E /* MJRefreshBackFooter.m in Sources */,
 				04E1E3F71F5D56E3006A7AE2 /* UIImageView+HighlightedWebCache.m in Sources */,
 				045435D41F4AAB0100FEEA40 /* DT_GameVC.m in Sources */,
+				04D6E1C91F60F930004F8C74 /* SkinCell.m in Sources */,
 				044D10DF1F4E78B6008ACDD1 /* ZXVideo.m in Sources */,
 				0445578D1F591B6C0033021E /* findCell.m in Sources */,
 				04400AAE1F4C21BF0013F52E /* UIView+MJExtension.m in Sources */,

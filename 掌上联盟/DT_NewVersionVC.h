@@ -10,4 +10,7 @@
 
 @interface DT_NewVersionVC : BaseForLOL
 @property (nonatomic,retain) UITableView *versionTV;
+
+@property (nonatomic,retain) UILabel *titleLab;
+@property (nonatomic,retain) UILabel *deciptionLab;
 @end

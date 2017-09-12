@@ -160,6 +160,7 @@
 
     }
 
+
 - (void)tapAction:(UITapGestureRecognizer *)sender{
   
 }
