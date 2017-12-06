@@ -66,29 +66,29 @@
 
     }
     
-    //刷新tableview 增加数据 或者请求数据
-    _lastTV.mj_header=[MJRefreshNormalHeader headerWithRefreshingBlock:^{
-        NSLog(@"调用了 表格 头刷新");
-        
-
-        for (int i =0; i<1; i ++) {
-//            [dataMuArr removeLastObject];
-            
-        }
-        [_lastTV.mj_header endRefreshing];
-        [_lastTV reloadData];
-    }];
-    
-    //刷新tableview 移除数据
-    _lastTV.mj_footer=[MJRefreshAutoFooter footerWithRefreshingBlock:^{
-        NSLog(@"调用了 表格 头刷新");
-        for (int i =0; i<3; i ++) {
-//            [dataMuArr addObject:[NSString stringWithFormat:@"%d",i]];
-            
-        }
-        [_lastTV.mj_footer endRefreshing];
-        [_lastTV reloadData];
-    }];
+//    //刷新tableview 增加数据 或者请求数据
+//    _lastTV.mj_header=[MJRefreshNormalHeader headerWithRefreshingBlock:^{
+//        NSLog(@"调用了 表格 头刷新");
+//
+//
+//        for (int i =0; i<1; i ++) {
+////            [dataMuArr removeLastObject];
+//
+//        }
+//        [_lastTV.mj_header endRefreshing];
+//        [_lastTV reloadData];
+//    }];
+//
+//    //刷新tableview 移除数据
+//    _lastTV.mj_footer=[MJRefreshAutoFooter footerWithRefreshingBlock:^{
+//        NSLog(@"调用了 表格 头刷新");
+//        for (int i =0; i<3; i ++) {
+////            [dataMuArr addObject:[NSString stringWithFormat:@"%d",i]];
+//
+//        }
+//        [_lastTV.mj_footer endRefreshing];
+//        [_lastTV reloadData];
+//    }];
     return _lastTV;
 }
 
