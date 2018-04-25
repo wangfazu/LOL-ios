@@ -155,7 +155,6 @@
 
 - (void)yourSelfSetClick{
     NSLog(@"go to new world!");
-//    [self.navigationController pushViewController:[yourSelfVC new] animated:YES];
     [self presentViewController:[yourSelfVC new] animated:YES completion:nil];
 }
 - (void)didReceiveMemoryWarning {
