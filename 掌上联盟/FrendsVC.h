@@ -8,6 +8,6 @@
 
 #import "BaseForLOL.h"
 
-@interface FrendsVC : BaseForLOL<UISearchBarDelegate>
-
+@interface FrendsVC : BaseForLOL<UISearchBarDelegate,UITableViewDelegate,UITableViewDataSource>
+@property (nonatomic,retain) UITableView *friendsTV;
 @end

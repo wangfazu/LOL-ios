@@ -1638,6 +1638,7 @@
 		04E1E3F71F5D56E3006A7AE2 /* UIImageView+HighlightedWebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E1E3E51F5D56E2006A7AE2 /* UIImageView+HighlightedWebCache.m */; };
 		04E1E3F81F5D56E3006A7AE2 /* UIImageView+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E1E3E71F5D56E2006A7AE2 /* UIImageView+WebCache.m */; };
 		04E1E3F91F5D56E3006A7AE2 /* UIView+WebCacheOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E1E3E91F5D56E2006A7AE2 /* UIView+WebCacheOperation.m */; };
+		97DE00A720909E29000FA918 /* DT_friendsHeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = 97DE00A620909E29000FA918 /* DT_friendsHeadView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -3355,6 +3356,8 @@
 		04E1E3E71F5D56E2006A7AE2 /* UIImageView+WebCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+WebCache.m"; sourceTree = "<group>"; };
 		04E1E3E81F5D56E2006A7AE2 /* UIView+WebCacheOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+WebCacheOperation.h"; sourceTree = "<group>"; };
 		04E1E3E91F5D56E2006A7AE2 /* UIView+WebCacheOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+WebCacheOperation.m"; sourceTree = "<group>"; };
+		97DE00A520909E29000FA918 /* DT_friendsHeadView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DT_friendsHeadView.h; sourceTree = "<group>"; };
+		97DE00A620909E29000FA918 /* DT_friendsHeadView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DT_friendsHeadView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -5267,6 +5270,7 @@
 			children = (
 				0472AB691F46AE2100B654E0 /* FrendsVC.h */,
 				0472AB6A1F46AE2100B654E0 /* FrendsVC.m */,
+				97DE00A420909DE0000FA918 /* friendsTableView */,
 			);
 			name = frends;
 			sourceTree = "<group>";
@@ -5384,6 +5388,15 @@
 				04E1E3E91F5D56E2006A7AE2 /* UIView+WebCacheOperation.m */,
 			);
 			path = SDWebImage;
+			sourceTree = "<group>";
+		};
+		97DE00A420909DE0000FA918 /* friendsTableView */ = {
+			isa = PBXGroup;
+			children = (
+				97DE00A520909E29000FA918 /* DT_friendsHeadView.h */,
+				97DE00A620909E29000FA918 /* DT_friendsHeadView.m */,
+			);
+			name = friendsTableView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -7091,6 +7104,7 @@
 				045435D11F4AAAD100FEEA40 /* DT_VideoVC.m in Sources */,
 				0472AB6B1F46AE2100B654E0 /* FrendsVC.m in Sources */,
 				044D10E81F4E78C7008ACDD1 /* VideoPlayViewController.m in Sources */,
+				97DE00A720909E29000FA918 /* DT_friendsHeadView.m in Sources */,
 				04E1E3EE1F5D56E3006A7AE2 /* SDWebImageDecoder.m in Sources */,
 				0472AB6E1F46AE9E00B654E0 /* ShopVC.m in Sources */,
 				04E1E3F21F5D56E3006A7AE2 /* SDWebImagePrefetcher.m in Sources */,
