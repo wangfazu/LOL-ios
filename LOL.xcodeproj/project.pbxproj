@@ -1609,7 +1609,6 @@
 		045435DB1F4AD91B00FEEA40 /* DT_BaseCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 045435DA1F4AD91B00FEEA40 /* DT_BaseCell.m */; };
 		0472AB271F46A74E00B654E0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0472AB261F46A74E00B654E0 /* main.m */; };
 		0472AB2A1F46A74E00B654E0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0472AB291F46A74E00B654E0 /* AppDelegate.m */; };
-		0472AB301F46A74E00B654E0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0472AB2E1F46A74E00B654E0 /* Main.storyboard */; };
 		0472AB351F46A74E00B654E0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0472AB331F46A74E00B654E0 /* LaunchScreen.storyboard */; };
 		0472AB401F46A74E00B654E0 /* ____Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0472AB3F1F46A74E00B654E0 /* ____Tests.m */; };
 		0472AB4B1F46A74E00B654E0 /* ____UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0472AB4A1F46A74E00B654E0 /* ____UITests.m */; };
@@ -3294,7 +3293,6 @@
 		0472AB261F46A74E00B654E0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		0472AB281F46A74E00B654E0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		0472AB291F46A74E00B654E0 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		0472AB2F1F46A74E00B654E0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0472AB341F46A74E00B654E0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0472AB361F46A74E00B654E0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0472AB3B1F46A74E00B654E0 /* LOL.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LOL.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -5311,7 +5309,6 @@
 			children = (
 				0472AB281F46A74E00B654E0 /* AppDelegate.h */,
 				0472AB291F46A74E00B654E0 /* AppDelegate.m */,
-				0472AB2E1F46A74E00B654E0 /* Main.storyboard */,
 				042824FB1F46E4170033413F /* Assets.xcassets */,
 				042818C51F46E35B0033413F /* LOLasset */,
 				0472AB331F46A74E00B654E0 /* LaunchScreen.storyboard */,
@@ -6506,7 +6503,6 @@
 				04281F6D1F46E36A0033413F /* businesscard_close@2x.png in Resources */,
 				042820971F46E36A0033413F /* hero_circle_detail_bear_mark@2x.png in Resources */,
 				0428219B1F46E36A0033413F /* mobile_store_main_right_nav_gift_normal@2x.png in Resources */,
-				0472AB301F46A74E00B654E0 /* Main.storyboard in Resources */,
 				042823691F46E36A0033413F /* smiley_35@2x.png in Resources */,
 				0428243A1F46E36A0033413F /* tourists_enter_hover@2x.png in Resources */,
 				042821171F46E36A0033413F /* icon_honor_screenshot_big@2x.png in Resources */,
@@ -7198,14 +7194,6 @@
 			name = Main.storyboardc;
 			sourceTree = "<group>";
 		};
-		0472AB2E1F46A74E00B654E0 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				0472AB2F1F46A74E00B654E0 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		0472AB331F46A74E00B654E0 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -7302,7 +7290,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 8J7XRPA7AU;
-				GCC_PREFIX_HEADER = "/Users/mac/Desktop/LOL-ios/掌上联盟/PrefixHeader.pch";
+				GCC_PREFIX_HEADER = "/Users/wangfazu/Desktop/LOL-ios 2/掌上联盟/PrefixHeader.pch";
 				INFOPLIST_FILE = "掌上联盟/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -7317,7 +7305,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 8J7XRPA7AU;
-				GCC_PREFIX_HEADER = "/Users/mac/Desktop/LOL-ios/掌上联盟/PrefixHeader.pch";
+				GCC_PREFIX_HEADER = "/Users/wangfazu/Desktop/LOL-ios 2/掌上联盟/PrefixHeader.pch";
 				INFOPLIST_FILE = "掌上联盟/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

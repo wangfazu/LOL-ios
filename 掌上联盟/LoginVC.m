@@ -24,11 +24,17 @@
     
 }
 
+- (void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
+    
+    
+}
 - (void)viewDidLoad {
     [super viewDidLoad];
     //添加背景图片，和登录的按钮；
     [self.view addSubview:[self backImgView]];
     [self.view addSubview:[self loginBtn]];
+    
 
 
 }
@@ -52,7 +58,7 @@
         loginBtn = [UIButton buttonWithType:UIButtonTypeCustom];
         loginBtn.frame = CGRectMake(70, APPHeight - 86-40, APPWidth -140, 40);
         [loginBtn addTarget:self action:@selector(enterMianClick:) forControlEvents:UIControlEventTouchUpInside];
-        [loginBtn setTitle:@"QQ登录" forState:UIControlStateNormal];
+        [loginBtn setTitle:@"登录" forState:UIControlStateNormal];
         [loginBtn setTitleColor:UIColorFromRGB(0xf5d387) forState:UIControlStateNormal];
         
 
@@ -62,7 +68,7 @@
 - (void)enterMianClick:(UIButton *)Btn{
     
     [Btn setImage:[UIImage imageNamed:@"login_quick_btn_press"] forState:UIControlStateHighlighted];
-    [Btn setTitle:@"QQ登录" forState:UIControlStateHighlighted];
+    [Btn setTitle:@"登录" forState:UIControlStateHighlighted];
     
     [self setUpMainView];
 }

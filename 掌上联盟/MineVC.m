@@ -54,12 +54,13 @@
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
     
-    return APPHeight *0.391;
+    return 222;
 //    return APPHeight/6;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     MineCell *cell = [MineCell TableViewCellWith:tableView indexPath:indexPath];
+    
 
     
     return cell;

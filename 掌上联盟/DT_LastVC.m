@@ -32,23 +32,25 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self preferredStatusBarStyle];
+//    [self preferredStatusBarStyle];
     [self initDataSourse];
 }
 
 - (void)initDataSourse{
     
     [self initNetWork];
-    dataMuArr = [[NSMutableArray alloc]init];
+//    dataMuArr = [[NSMutableArray alloc]init];
     cellTagDic = [[NSMutableDictionary alloc]init];
     
-//    [cellTagDic setObject:@"0" forKey:@"cellkey"];
-//    [cellTagDic setObject:@"1" forKey:@"cellkey"];
-//    [cellTagDic setObject:@"2" forKey:@"cellkey"];
-//
-//    [dataMuArr addObject:cellTagDic];
-//    [dataMuArr addObject:cellTagDic];
-//    [dataMuArr addObject:cellTagDic];
+    [cellTagDic setObject:@"0" forKey:@"cellkey"];
+    [cellTagDic setObject:@"1" forKey:@"cellkey"];
+    [cellTagDic setObject:@"2" forKey:@"cellkey"];
+
+    [dataMuArr addObject:cellTagDic];
+    [dataMuArr addObject:cellTagDic];
+    [dataMuArr addObject:cellTagDic];
+    
+    
     [dataMuArr addObject:@"0"];
     [dataMuArr addObject:@"1"];
     [dataMuArr addObject:@"2"];
@@ -98,20 +100,21 @@
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
     
     return _jsonObject.count;
+//    return 1;
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
-/*
-    if ([dataMuArr[indexPath.row]isEqualToString:@"0"]) {
-        return APPHeight /7.5;//BaseCell
-    }else if ([dataMuArr[indexPath.row]isEqualToString:@"1"]){
-        return APPWidth *0.68;//VideoCell
 
-    }else{
-        return (APPWidth -20)*0.5265 +60;//PicCell
+//    if ([dataMuArr[indexPath.row]isEqualToString:@"0"]) {
+//        return APPHeight /7.5;//BaseCell
+//    }else if ([dataMuArr[indexPath.row]isEqualToString:@"1"]){
+//        return APPWidth *0.68;//VideoCell
+//
+//    }else{
+//        return (APPWidth -20)*0.5265 +60;//PicCell
+//
+//    }
 
-    }
-*/
     return APPHeight /7.5;//BaseCell
  
 }
@@ -138,8 +141,10 @@
                                       placeholderImage:[UIImage imageNamed:@"placeholder"]];
         baseCell.readNum.text = [NSString stringWithFormat:@"%@阅",[_jsonObject[indexPath.row] objectForKey:@"pv"]];
         baseCell.author.text = [_jsonObject[indexPath.row] objectForKey:@"author"];
+        return baseCell;//BaseCell
 
-    }/*else if ([dataMuArr[indexPath.row]isEqualToString:@"1"]){
+
+    }else if ([dataMuArr[indexPath.row]isEqualToString:@"1"]){
         if (!videoCell) {
             videoCell = [[DT_VideoCell new]initWithStyle:(UITableViewCellStyleSubtitle) reuseIdentifier:VideoID];
             
@@ -155,8 +160,9 @@
         
         return pictureCell;//PicCell
         
-    }*/
-    return baseCell;//BaseCell
+    }
+    
+
 
     }
 
@@ -197,7 +203,7 @@
 - (void)getJsonObjectForNetWork4:(NSNotification *)notification{
     NSLog(@"%@",notification.userInfo[@"list"]);
     _jsonObject = notification.userInfo[@"list"];
-    //在这里初始化洁面
+    //在这里初始化界面
     [self.view addSubview:self.lastTV];
 
     [[NSNotificationCenter defaultCenter] removeObserver:self];

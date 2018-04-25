@@ -25,7 +25,7 @@
 
 - (void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];
-    [self preferredStatusBarStyle];
+//    [self preferredStatusBarStyle];
     [self  setNavgationBarItemName:@"英雄联盟"];
     mainScrV.backgroundColor = [UIColor whiteColor];
 

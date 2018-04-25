@@ -40,7 +40,7 @@
     if (!_scrolV) {
         _scrolV =[[UIScrollView alloc]initWithFrame:CGRectMake(0, 5, APPWidth, APPWidth* 0.42)];
         _scrolV.backgroundColor =[UIColor clearColor];
-        _scrolV.contentSize =CGSizeMake(APPWidth*5, 0);
+        _scrolV.contentSize =CGSizeMake(APPWidth*4, 0);
         _scrolV.pagingEnabled =YES;
         _scrolV.showsHorizontalScrollIndicator = FALSE;
         
@@ -51,10 +51,12 @@
 
 - (void)creatPicBtn{
 
-        for (int i=0; i<5; i++) {
+        for (int i=0; i<4; i++) {
             _picBtn = [[UIButton alloc]init];
-            _picBtn.frame =CGRectMake(APPWidth*i, 0, APPWidth, APPWidth * 0.42);
+            _picBtn.frame =CGRectMake(APPWidth*i, 0, APPWidth -20, APPWidth * 0.42);
 //            [_picBtn setImage:[UIImage imageNamed:[NSString stringWithFormat:@"%d.jpg",i+1]] forState:UIControlStateNormal];
+            _picBtn.layer.cornerRadius = 10;
+            _picBtn.clipsToBounds = YES;
             [_picBtn sd_setBackgroundImageWithURL:[NSURL URLWithString:[jsonObject[i] objectForKey:@"image_url_big"]] forState:UIControlStateNormal];
             [_scrolV addSubview:_picBtn];
         }
@@ -68,12 +70,12 @@
 }
 -(void)Click{
     _scrolV.contentOffset =CGPointMake(APPWidth*count, 0);
-    if (count<5) {
+    if (count<4) {
         count++;
         NSLog(@"%d",count);
         
     }
-    if (count==5) {
+    if (count==4) {
         count=0;
         
     }

@@ -18,13 +18,44 @@
     [super viewWillAppear:YES];
     self.navigationController.navigationBarHidden = YES;
 
+    [super viewWillAppear:animated];
+    
+    //设置导航条透明度
+    self.navigationController.navigationBar.translucent = NO;//不透明
+    [[[self.navigationController.navigationBar subviews] objectAtIndex:0] setAlpha:1];
+    //图标颜色为黑色
+    [self.navigationController.navigationBar setTintColor:[UIColor blackColor]];
+    //导航栏背景颜色
+    [self.navigationController.navigationBar setBarTintColor:[UIColor whiteColor]];
+    //导航条下面的黑线
+    self.navigationController.navigationBar.clipsToBounds = NO;
+    
+    //刷新状态栏背景颜色
+    // [self setNeedsStatusBarAppearanceUpdate];
+    
+    //设置状态栏颜色
+    [self setStatusBarBackgroundColor:[UIColor clearColor]];
 }
+
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self preferredStatusBarStyle];//将状态栏，改变为白色
+//    [self MyPreferredStatusBarStyle];//将状态栏，改变为白色
     self.view.backgroundColor= [UIColor whiteColor];
 
     // Do any additional setup after loading the view.
+}
+//设置状态栏颜色
+- (void)setStatusBarBackgroundColor:(UIColor *)color {
+    
+    UIView *statusBar = [[[UIApplication sharedApplication] valueForKey:@"statusBarWindow"] valueForKey:@"statusBar"];
+    NSLog(@"statusBar.backgroundColor--->%@",statusBar.backgroundColor);
+    if ([statusBar respondsToSelector:@selector(setBackgroundColor:)]) {
+        statusBar.backgroundColor = color;
+    }
+}
+
+- (UIStatusBarStyle)preferredStatusBarStyle{
+    return UIStatusBarStyleLightContent;//白色
 }
 
 #pragma mark - 自定义导航栏
@@ -88,7 +119,7 @@
 
 #pragma mark - 自定义状态栏的颜色为黑色，改变为白色
 
--(UIStatusBarStyle)preferredStatusBarStyle
+-(UIStatusBarStyle)myPreferredStatusBarStyle
 
 {
     

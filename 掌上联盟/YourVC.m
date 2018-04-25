@@ -14,6 +14,11 @@
     UITextField *textF;
     
 }
+- (void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
+    
+    
+}
 - (void)viewDidLoad{
     
     [self.view addSubview:[self btn]];
