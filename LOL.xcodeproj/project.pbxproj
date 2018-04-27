@@ -1638,6 +1638,8 @@
 		04E1E3F71F5D56E3006A7AE2 /* UIImageView+HighlightedWebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E1E3E51F5D56E2006A7AE2 /* UIImageView+HighlightedWebCache.m */; };
 		04E1E3F81F5D56E3006A7AE2 /* UIImageView+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E1E3E71F5D56E2006A7AE2 /* UIImageView+WebCache.m */; };
 		04E1E3F91F5D56E3006A7AE2 /* UIView+WebCacheOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E1E3E91F5D56E2006A7AE2 /* UIView+WebCacheOperation.m */; };
+		97CD75EC20917DC00026A30A /* friendsCellTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 97CD75EA20917DC00026A30A /* friendsCellTableViewCell.m */; };
+		97CD75ED20917DC00026A30A /* friendsCellTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 97CD75EB20917DC00026A30A /* friendsCellTableViewCell.xib */; };
 		97DE00A720909E29000FA918 /* DT_friendsHeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = 97DE00A620909E29000FA918 /* DT_friendsHeadView.m */; };
 /* End PBXBuildFile section */
 
@@ -3356,6 +3358,9 @@
 		04E1E3E71F5D56E2006A7AE2 /* UIImageView+WebCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+WebCache.m"; sourceTree = "<group>"; };
 		04E1E3E81F5D56E2006A7AE2 /* UIView+WebCacheOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+WebCacheOperation.h"; sourceTree = "<group>"; };
 		04E1E3E91F5D56E2006A7AE2 /* UIView+WebCacheOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+WebCacheOperation.m"; sourceTree = "<group>"; };
+		97CD75E920917DC00026A30A /* friendsCellTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = friendsCellTableViewCell.h; sourceTree = "<group>"; };
+		97CD75EA20917DC00026A30A /* friendsCellTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = friendsCellTableViewCell.m; sourceTree = "<group>"; };
+		97CD75EB20917DC00026A30A /* friendsCellTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = friendsCellTableViewCell.xib; sourceTree = "<group>"; };
 		97DE00A520909E29000FA918 /* DT_friendsHeadView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DT_friendsHeadView.h; sourceTree = "<group>"; };
 		97DE00A620909E29000FA918 /* DT_friendsHeadView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DT_friendsHeadView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -5395,6 +5400,9 @@
 			children = (
 				97DE00A520909E29000FA918 /* DT_friendsHeadView.h */,
 				97DE00A620909E29000FA918 /* DT_friendsHeadView.m */,
+				97CD75E920917DC00026A30A /* friendsCellTableViewCell.h */,
+				97CD75EA20917DC00026A30A /* friendsCellTableViewCell.m */,
+				97CD75EB20917DC00026A30A /* friendsCellTableViewCell.xib */,
 			);
 			name = friendsTableView;
 			sourceTree = "<group>";
@@ -6126,6 +6134,7 @@
 				042822821F46E36A0033413F /* personal_refresh_loading28@2x.png in Resources */,
 				042821AC1F46E36A0033413F /* mobile_store_title_news_good_icon@2x.png in Resources */,
 				042820481F46E36A0033413F /* friend_cycle_trend_type_share@2x.png in Resources */,
+				97CD75ED20917DC00026A30A /* friendsCellTableViewCell.xib in Resources */,
 				04281F201F46E36A0033413F /* battle_detail_small_ancitent_golem_lose@2x.png in Resources */,
 				042823991F46E36A0033413F /* smiley_78@2x.png in Resources */,
 				042820891F46E36A0033413F /* hero_btn_update_right_bar_normal@2x.png in Resources */,
@@ -7141,6 +7150,7 @@
 				044AA7121F4D18C600566590 /* DT_PictureCell.m in Sources */,
 				043465691F57B8C400E7D0C4 /* yourSelfVC.m in Sources */,
 				045435C41F4A8D1000FEEA40 /* PersonSet.m in Sources */,
+				97CD75EC20917DC00026A30A /* friendsCellTableViewCell.m in Sources */,
 				04E1E3F11F5D56E3006A7AE2 /* SDWebImageManager.m in Sources */,
 				0472AB2A1F46A74E00B654E0 /* AppDelegate.m in Sources */,
 				045435CE1F4AAABD00FEEA40 /* DT_HeroVC.m in Sources */,

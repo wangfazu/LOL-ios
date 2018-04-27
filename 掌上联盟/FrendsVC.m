@@ -8,6 +8,7 @@
 
 #import "FrendsVC.h"
 #import "DT_friendsHeadView.h"
+#import "friendsCellTableViewCell.h"
 @interface FrendsVC ()
 
 @end
@@ -42,8 +43,8 @@
     dataArr = [[NSMutableArray alloc]init];
     dataForGameArrr = [[NSMutableArray alloc]init];
     for (int i=0; i<10; i++) {
-        [dataArr addObject:@"0"];
-        [dataForGameArrr addObject:@"2"];
+        [dataArr addObject:@"岳林-最强黑铁"];
+        [dataForGameArrr addObject:@"老鼠精"];
     }
     //加上 搜索栏
     UIView *titleView = [[UIView alloc] initWithFrame:CGRectMake(0, 64, APPWidth, 35)];//allocate titleView
@@ -148,7 +149,7 @@
     
 
     
-    return APPHeight /7.5;//BaseCell
+    return 100;//BaseCell
     
 }
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
@@ -157,23 +158,23 @@
 }
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     
-    static NSString *ID = @"baseCell";
-    static NSString *VideoID = @"videoCell";
-    static NSString *PictureID = @"pictureCell";
-    
-    DT_BaseCell *baseCell = [tableView dequeueReusableCellWithIdentifier:ID];
-    DT_VideoCell *videoCell =[tableView dequeueReusableCellWithIdentifier:VideoID];
-    DT_PictureCell *pictureCell = [tableView dequeueReusableCellWithIdentifier:PictureID];
-  
-        if (!baseCell) {
-            baseCell = [[DT_BaseCell new]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:ID];
-            
-        }
-        
-        baseCell.titLab.text  = @"title";
-        baseCell.detilLab.text = @"detiLab";
-    
-        return baseCell;//BaseCell
+//    static NSString *ID = @"baseCell";
+//    static NSString *VideoID = @"videoCell";
+//    static NSString *PictureID = @"pictureCell";
+//
+//    DT_BaseCell *baseCell = [tableView dequeueReusableCellWithIdentifier:ID];
+//    DT_VideoCell *videoCell =[tableView dequeueReusableCellWithIdentifier:VideoID];
+//    DT_PictureCell *pictureCell = [tableView dequeueReusableCellWithIdentifier:PictureID];
+    friendsCellTableViewCell *fCell = [tableView dequeueReusableCellWithIdentifier:@"fCell"];
+    if (!fCell) {
+        fCell = [[friendsCellTableViewCell new]initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:@"fCell"];
+    }
+    fCell.nameLab.textColor = RandomColor;
+    fCell.nameLab.text = @"岳林-最强黑铁";
+    fCell.gameNameLab.text = @"蛇皮";
+
+
+        return fCell;//BaseCell
         
         
     
