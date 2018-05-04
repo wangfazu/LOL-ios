@@ -66,7 +66,7 @@
                 break;
             case 1:
 //                if (indexPath.row ==0) {
-                    return APPHeight /7.3;//BaseCell
+                    return APPWidth/2.5*0.75+5;//BaseCell
                 
                 
                 break;
@@ -115,13 +115,13 @@
     }
     if (!cardCell) {
         cardCell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"ccell"];
-        _scroView = [[UIScrollView alloc]initWithFrame:CGRectMake(5, 0, APPWidth, APPHeight/7.5)];
+        _scroView = [[UIScrollView alloc]initWithFrame:CGRectMake(5, 0, APPWidth, APPWidth/2.5*0.75+5)];
         _scroView.delegate = self;
         _scroView.contentSize = CGSizeMake(6*(APPWidth/2.5+10) , 0);
         [cardCell addSubview:_scroView];
 //        NSArray *arr = [@"sai"]
         for (int i= 0; i<6; i++) {
-            UIImageView *imgv = [[UIImageView alloc]initWithFrame:CGRectMake((APPWidth/2.5+10)*i, 5, APPWidth/2.5, APPHeight/8)];
+            UIImageView *imgv = [[UIImageView alloc]initWithFrame:CGRectMake((APPWidth/2.5+10)*i, 5, APPWidth/2.5, APPWidth/2.5*0.75)];
             imgv.backgroundColor = RandomColor;
             imgv.layer.cornerRadius = 8;
             imgv.clipsToBounds = YES;
