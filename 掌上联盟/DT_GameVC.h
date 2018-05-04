@@ -8,6 +8,9 @@
 
 #import "BaseForLOL.h"
 
-@interface DT_GameVC : BaseForLOL
+@interface DT_GameVC : BaseForLOL<UITableViewDelegate,UITableViewDataSource,UIScrollViewDelegate>
+@property (nonatomic,retain) UITableView *gameTV;
+@property (nonatomic,retain) UIScrollView *scroView;
+
 
 @end
