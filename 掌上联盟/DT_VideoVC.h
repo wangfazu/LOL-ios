@@ -8,6 +8,7 @@
 
 #import "BaseForLOL.h"
 
-@interface DT_VideoVC : BaseForLOL
+@interface DT_VideoVC : BaseForLOL<UITableViewDelegate,UITableViewDataSource>
+@property (nonatomic,retain) UITableView *videoTV;
 
 @end

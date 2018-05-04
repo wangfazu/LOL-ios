@@ -8,6 +8,7 @@
 
 #import "BaseForLOL.h"
 
-@interface DT_HeroVC : BaseForLOL
+@interface DT_HeroVC : BaseForLOL<UITableViewDelegate,UITableViewDataSource>
+@property (nonatomic,retain) UITableView *lastTV;
 
 @end

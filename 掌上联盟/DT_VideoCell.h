@@ -9,8 +9,11 @@
 #import <UIKit/UIKit.h>
 #import "LLGifImageView.h"
 #import "LLGifView.h"
+#import "ZXVideoPlayerController.h"
 
 @interface DT_VideoCell : UITableViewCell
 @property (nonatomic, retain) LLGifView *gifView;
 @property (nonatomic, retain) LLGifImageView *gifImageView;
+@property (nonatomic, strong)     ZXVideo *zxVideo;
+
 @end

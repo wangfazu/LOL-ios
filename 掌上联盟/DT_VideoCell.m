@@ -27,6 +27,7 @@
 
 - (void)addVideo{
     video = [[ZXVideo alloc] init];
+    
     video.playUrl = @"http://baobab.wdjcdn.com/1451897812703c.mp4";
     video.title = @"Rollin'Wild 圆滚滚的";
     

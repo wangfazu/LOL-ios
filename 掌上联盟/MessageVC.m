@@ -115,7 +115,13 @@
 
 - (void)tab_selectClick:(UIButton *)btn{
     aint = btn.tag - 100;
-    tab_selectedV.frame = CGRectMake(15+ (10+APPWidth/6) *aint, titleBtn.marginY -10, 40, 8);
+    [UIView animateWithDuration:0.75 // 动画时长
+                     animations:^{
+                         
+                         // code
+                          tab_selectedV.frame = CGRectMake(15+ (10+APPWidth/6) *aint, titleBtn.marginY -10, 40, 8);
+
+                     }];
      mainScrV.contentOffset = CGPointMake(APPWidth*aint, 0);
 }
 
