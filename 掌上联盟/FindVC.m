@@ -8,11 +8,16 @@
 
 #import "FindVC.h"
 #import "findCell.h"
+#import "Find_headview.h"
+#import "FindDescViewController.h"
 @interface FindVC ()<UITableViewDataSource,UITableViewDelegate>
 @property (nonatomic,retain) UITableView *lastTV;
 @end
 
 @implementation FindVC
+{
+    NSArray *arry;
+}
 - (void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];
 
@@ -21,15 +26,16 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+        arry = [NSArray arrayWithObjects:@"最新电竞资讯",@"比赛", @"对战成绩",@"游戏解说",@"战队信息",@"英雄资料",@"召唤师查询",@"附近玩家",@"LOL宇宙",@"对战助手",@"附近网吧特权",@"游戏资料",@"英雄时刻",@"壁纸",@"粉丝俱乐部",nil];
     [self.view addSubview:self.lastTV];
 }
 
 - (UITableView *)lastTV{
     if (!_lastTV) {
-        _lastTV = [[UITableView alloc]initWithFrame:CGRectMake(10, 0, APPWidth -20, APPHeight) style:UITableViewStylePlain];
+        _lastTV = [[UITableView alloc]initWithFrame:CGRectMake(0, 0, APPWidth , APPHeight) style:UITableViewStylePlain];
         _lastTV.delegate = self;
         _lastTV.dataSource = self;
-        _lastTV.tableHeaderView = [[DT_LastHeadView alloc]init];
+        _lastTV.tableHeaderView = [[Find_headview alloc]init];
     }
     return _lastTV;
 }
@@ -39,24 +45,40 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
     
-    return 5;
+    return arry.count;
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
-    NSString *ID;
-    if ([tableView dequeueReusableCellWithIdentifier:ID]) {
-        return APPHeight /7.5;
-    }
-    return APPHeight /7.5;
+//    NSString *ID;
+    return 60;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell"];
+    
+    //    UITableViewCell *
+    //最新电竞资讯，其中包含比赛、对战成绩、游戏解说、战队信息、英雄资料、召唤师查询、附近玩家、LOL宇宙、对战助手、附近网吧特权、游戏资料、英雄时刻、壁纸、粉丝俱乐部
 
-    findCell *cell = [findCell TableViewCellWith:tableView indexPath:indexPath];
+    if (!cell) {
+        cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"cell"];
+        UILabel *modelLab = [[UILabel alloc]initWithFrame:CGRectMake(80 +10, 15, 150, 30)];
+        modelLab.textColor = APPColor;
+        modelLab.text = @"排位模式";
+        modelLab.tag = 1001;
+        modelLab.font = [UIFont systemFontOfSize:20 weight:2];
+        [cell addSubview:modelLab];
+    }
+    UILabel *name = [cell viewWithTag:1001];
+    name.text = arry[indexPath.row];
     return cell;
 }
 
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    FindDescViewController *vc = [FindDescViewController new];
+    vc.nameStr = arry[indexPath.row];
+    [self.navigationController pushViewController:vc animated:YES];
+}
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.

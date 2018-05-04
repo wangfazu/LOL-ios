@@ -64,7 +64,8 @@
     [self.view addSubview: _titleImgV];
     _titleImgV.backgroundColor = UIColorFromRGB(0x43d3a2);
     _titleImgV.image = [UIImage imageNamed:@"personal_info_share_back_ground"];
-    
+//    _titleImgV.userInteractionEnabled = YES;
+//    _titleImgV.userinter
     _lab  = [[UILabel alloc]initWithFrame:CGRectMake(APPWidth/2-100, 28, 200, 29)];
     _lab.textColor = APPColor;
     _lab.text = setString;
@@ -77,12 +78,12 @@
 
 - (void)setButtonForBackNavgation{
     _backBtn = [[UIButton alloc]initWithFrame:CGRectMake(12, 30, 15, 22.1)];
-    [_backBtn addTarget:self action:@selector(backClick:) forControlEvents:UIControlEventTouchUpInside];
+    [_backBtn addTarget:self action:@selector(backCclick:) forControlEvents:UIControlEventTouchUpInside];
     [_backBtn setBackgroundImage:[UIImage imageNamed:@"nav_btn_back_tiny_normal"] forState:UIControlStateNormal];
     [_titleImgV addSubview:_backBtn];
     
 }
-- (void)backClick:(UIButton *)btn{
+- (void)backCclick:(UIButton *)btn{
     [self.navigationController popViewControllerAnimated:YES];
     
 }

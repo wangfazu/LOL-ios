@@ -7,7 +7,7 @@
 //
 
 #import "DT_friendsHeadView.h"
-
+#import "SheQuViewController.h"
 @implementation DT_friendsHeadView
 {
 }
@@ -103,6 +103,7 @@ forControlEvents:UIControlEventTouchUpInside];
         isDeleteFriends = YES;
 
     }
+    
 }
 - (void)sheQuClick{
     //    NSLog(@"")
@@ -115,7 +116,9 @@ forControlEvents:UIControlEventTouchUpInside];
         isDeleteSheQu = YES;
         
     }
-}
+    SheQuViewController *vc = [[SheQuViewController alloc]init];
+
+    }
 - (void)showLoveClick{
     //    NSLog(@"")
     if (isDeleteShowLove == YES) {

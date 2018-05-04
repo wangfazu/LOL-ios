@@ -9,6 +9,7 @@
 #import "FrendsVC.h"
 #import "DT_friendsHeadView.h"
 #import "friendsCellTableViewCell.h"
+#import "SheQuViewController.h"
 @interface FrendsVC ()
 
 @end

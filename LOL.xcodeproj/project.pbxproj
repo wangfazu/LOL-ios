@@ -1645,6 +1645,11 @@
 		97878174209C6FAD003F8B41 /* sai3.png in Resources */ = {isa = PBXBuildFile; fileRef = 9787816E209C6FAB003F8B41 /* sai3.png */; };
 		97878175209C6FAD003F8B41 /* sai1.png in Resources */ = {isa = PBXBuildFile; fileRef = 9787816F209C6FAB003F8B41 /* sai1.png */; };
 		97878176209C6FAD003F8B41 /* sai4.png in Resources */ = {isa = PBXBuildFile; fileRef = 97878170209C6FAC003F8B41 /* sai4.png */; };
+		9787817E209C9DA5003F8B41 /* dongtaiViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9787817D209C9DA5003F8B41 /* dongtaiViewController.m */; };
+		97878181209CAC82003F8B41 /* mineHeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = 97878180209CAC82003F8B41 /* mineHeadView.m */; };
+		97878184209CBCC6003F8B41 /* Find_headview.m in Sources */ = {isa = PBXBuildFile; fileRef = 97878183209CBCC6003F8B41 /* Find_headview.m */; };
+		97878187209CC161003F8B41 /* FindDescViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 97878186209CC161003F8B41 /* FindDescViewController.m */; };
+		9787818A209CD9A4003F8B41 /* SheQuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 97878189209CD9A4003F8B41 /* SheQuViewController.m */; };
 		97CD75EC20917DC00026A30A /* friendsCellTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 97CD75EA20917DC00026A30A /* friendsCellTableViewCell.m */; };
 		97CD75ED20917DC00026A30A /* friendsCellTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 97CD75EB20917DC00026A30A /* friendsCellTableViewCell.xib */; };
 		97DDF365209C2A01008AC20A /* Hero+headView.m in Sources */ = {isa = PBXBuildFile; fileRef = 97DDF364209C2A01008AC20A /* Hero+headView.m */; };
@@ -3373,6 +3378,16 @@
 		9787816E209C6FAB003F8B41 /* sai3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sai3.png; sourceTree = "<group>"; };
 		9787816F209C6FAB003F8B41 /* sai1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sai1.png; sourceTree = "<group>"; };
 		97878170209C6FAC003F8B41 /* sai4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sai4.png; sourceTree = "<group>"; };
+		9787817C209C9DA5003F8B41 /* dongtaiViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = dongtaiViewController.h; sourceTree = "<group>"; };
+		9787817D209C9DA5003F8B41 /* dongtaiViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = dongtaiViewController.m; sourceTree = "<group>"; };
+		9787817F209CAC82003F8B41 /* mineHeadView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = mineHeadView.h; sourceTree = "<group>"; };
+		97878180209CAC82003F8B41 /* mineHeadView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = mineHeadView.m; sourceTree = "<group>"; };
+		97878182209CBCC6003F8B41 /* Find_headview.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Find_headview.h; sourceTree = "<group>"; };
+		97878183209CBCC6003F8B41 /* Find_headview.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Find_headview.m; sourceTree = "<group>"; };
+		97878185209CC161003F8B41 /* FindDescViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FindDescViewController.h; sourceTree = "<group>"; };
+		97878186209CC161003F8B41 /* FindDescViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FindDescViewController.m; sourceTree = "<group>"; };
+		97878188209CD9A4003F8B41 /* SheQuViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SheQuViewController.h; sourceTree = "<group>"; };
+		97878189209CD9A4003F8B41 /* SheQuViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SheQuViewController.m; sourceTree = "<group>"; };
 		97CD75E920917DC00026A30A /* friendsCellTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = friendsCellTableViewCell.h; sourceTree = "<group>"; };
 		97CD75EA20917DC00026A30A /* friendsCellTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = friendsCellTableViewCell.m; sourceTree = "<group>"; };
 		97CD75EB20917DC00026A30A /* friendsCellTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = friendsCellTableViewCell.xib; sourceTree = "<group>"; };
@@ -5156,6 +5171,8 @@
 			children = (
 				045435C21F4A8D1000FEEA40 /* PersonSet.h */,
 				045435C31F4A8D1000FEEA40 /* PersonSet.m */,
+				9787817C209C9DA5003F8B41 /* dongtaiViewController.h */,
+				9787817D209C9DA5003F8B41 /* dongtaiViewController.m */,
 				043465671F57B8C400E7D0C4 /* yourSelfVC.h */,
 				043465681F57B8C400E7D0C4 /* yourSelfVC.m */,
 			);
@@ -5289,6 +5306,8 @@
 			children = (
 				0472AB691F46AE2100B654E0 /* FrendsVC.h */,
 				0472AB6A1F46AE2100B654E0 /* FrendsVC.m */,
+				97878177209C7E2A003F8B41 /* shequ */,
+				97878178209C7E31003F8B41 /* show_love */,
 				97DE00A420909DE0000FA918 /* friendsTableView */,
 			);
 			name = frends;
@@ -5309,6 +5328,10 @@
 			children = (
 				0472AB6F1F46AEAD00B654E0 /* FindVC.h */,
 				0472AB701F46AEAD00B654E0 /* FindVC.m */,
+				97878182209CBCC6003F8B41 /* Find_headview.h */,
+				97878183209CBCC6003F8B41 /* Find_headview.m */,
+				97878185209CC161003F8B41 /* FindDescViewController.h */,
+				97878186209CC161003F8B41 /* FindDescViewController.m */,
 				044557891F591B540033021E /* findCell */,
 			);
 			name = find;
@@ -5319,6 +5342,8 @@
 			children = (
 				0472AB721F46AEC200B654E0 /* MineVC.h */,
 				0472AB731F46AEC200B654E0 /* MineVC.m */,
+				9787817F209CAC82003F8B41 /* mineHeadView.h */,
+				97878180209CAC82003F8B41 /* mineHeadView.m */,
 				0445578F1F5952E20033021E /* mineCell */,
 				0434656F1F57E75800E7D0C4 /* YourVC.h */,
 				043465701F57E75800E7D0C4 /* YourVC.m */,
@@ -5423,6 +5448,22 @@
 				045435D31F4AAB0100FEEA40 /* DT_GameVC.m */,
 			);
 			name = saishi;
+			sourceTree = "<group>";
+		};
+		97878177209C7E2A003F8B41 /* shequ */ = {
+			isa = PBXGroup;
+			children = (
+				97878188209CD9A4003F8B41 /* SheQuViewController.h */,
+				97878189209CD9A4003F8B41 /* SheQuViewController.m */,
+			);
+			name = shequ;
+			sourceTree = "<group>";
+		};
+		97878178209C7E31003F8B41 /* show_love */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = show_love;
 			sourceTree = "<group>";
 		};
 		97DDF362209C29D1008AC20A /* Hero */ = {
@@ -7176,6 +7217,7 @@
 				0472AB6E1F46AE9E00B654E0 /* ShopVC.m in Sources */,
 				04E1E3F21F5D56E3006A7AE2 /* SDWebImagePrefetcher.m in Sources */,
 				0472AB781F46AF3B00B654E0 /* LoginVC.m in Sources */,
+				97878187209CC161003F8B41 /* FindDescViewController.m in Sources */,
 				042818C21F46C9160033413F /* LLGifView.m in Sources */,
 				04E1E3EB1F5D56E2006A7AE2 /* NSData+ImageContentType.m in Sources */,
 				04E1E3F41F5D56E3006A7AE2 /* UIImage+GIF.m in Sources */,
@@ -7187,6 +7229,8 @@
 				0445578D1F591B6C0033021E /* findCell.m in Sources */,
 				044D10E21F4E78B6008ACDD1 /* ZXVideoPlayerController.m in Sources */,
 				04E1E3EA1F5D56E2006A7AE2 /* MKAnnotationView+WebCache.m in Sources */,
+				97878184209CBCC6003F8B41 /* Find_headview.m in Sources */,
+				9787818A209CD9A4003F8B41 /* SheQuViewController.m in Sources */,
 				0472AB5B1F46AA1500B654E0 /* UIView+Frame.m in Sources */,
 				04E1E3C71F5D55CC006A7AE2 /* MyHttpRequesr.m in Sources */,
 				04E1E3EF1F5D56E3006A7AE2 /* SDWebImageDownloader.m in Sources */,
@@ -7194,6 +7238,7 @@
 				0427601E1F4BFFFB00061222 /* DT_LastHeadView.m in Sources */,
 				043465711F57E75800E7D0C4 /* YourVC.m in Sources */,
 				045435DB1F4AD91B00FEEA40 /* DT_BaseCell.m in Sources */,
+				97878181209CAC82003F8B41 /* mineHeadView.m in Sources */,
 				04E1E3F91F5D56E3006A7AE2 /* UIView+WebCacheOperation.m in Sources */,
 				044D10E11F4E78B6008ACDD1 /* ZXVideoPlayerBrightnessView.m in Sources */,
 				0472AB741F46AEC200B654E0 /* MineVC.m in Sources */,
@@ -7205,6 +7250,7 @@
 				04E1E3F81F5D56E3006A7AE2 /* UIImageView+WebCache.m in Sources */,
 				045435D71F4AAB3400FEEA40 /* DT_ColumnVC.m in Sources */,
 				04E1E3F01F5D56E3006A7AE2 /* SDWebImageDownloaderOperation.m in Sources */,
+				9787817E209C9DA5003F8B41 /* dongtaiViewController.m in Sources */,
 				044AA7121F4D18C600566590 /* DT_PictureCell.m in Sources */,
 				043465691F57B8C400E7D0C4 /* yourSelfVC.m in Sources */,
 				045435C41F4A8D1000FEEA40 /* PersonSet.m in Sources */,

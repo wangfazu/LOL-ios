@@ -7,7 +7,7 @@
 //
 
 #import "PersonSet.h"
-
+#import "dongtaiViewController.h"
 @interface PersonSet ()
 
 @end
@@ -92,6 +92,7 @@
         btn.frame = CGRectMake(48+(22+60)*(i%3), _nameLab.marginY+66, 22, 16);
         btn.backgroundColor = [UIColor grayColor];
         btn.tag = 100+i;
+        [btn addTarget:self action:@selector(selectClick:) forControlEvents:UIControlEventTouchUpInside];
         [self.view addSubview:btn];
         
         myLab = [[UILabel alloc]init];
@@ -104,6 +105,7 @@
         /* i-> 我的动态 我的订阅 我的收藏*/
         undBtn = [UIButton buttonWithType:UIButtonTypeCustom];
         undBtn.frame = CGRectMake(22.5, _underLine.marginY+32+(26+32)*i, 26, 26);
+        [undBtn addTarget:self action:@selector(selectClick:) forControlEvents:UIControlEventTouchUpInside];
         undBtn.backgroundColor = [UIColor whiteColor];
         undBtn.tag =200+i;
         [self.view addSubview:undBtn];
@@ -152,7 +154,33 @@
     
     
 }
-
+- (void)selectClick:(UIButton *)btn{
+    switch (btn.tag) {
+        case 100:
+            NSLog(@"thi si one");
+            break;
+            case 101:
+            NSLog(@"this is two");
+            break;
+            case 102:
+            NSLog(@"this is three");
+            case 200:
+            NSLog(@"dongtai");
+            [self presentViewController:[dongtaiViewController alloc] animated:YES completion:^{
+                
+            }];
+            break;
+            case 201:
+            NSLog(@"dingyue");
+            break;
+            case 202:
+            NSLog(@"wodeshoucang");
+            break;
+            
+        default:
+            break;
+    }
+}
 - (void)yourSelfSetClick{
     NSLog(@"go to new world!");
     [self presentViewController:[yourSelfVC new] animated:YES completion:nil];
